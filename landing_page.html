@@ -6,23 +6,210 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <script src="https://kit.fontawesome.com/05dfa6a87b.js" crossorigin="anonymous"></script>
   <style>
     #main {
+      height: 5000px;
       border: 1px solid black;
       display: grid;
       grid-template-areas:
-        "a b"
-        "c"
-        "d"
-        "e"
-        "f"
-        "g"
-        "h"
-        "i"
-        "j"
-        "k"
-        "l"
-        "m";
+        "z z z z z z z z"
+        "a a a a a a b b"
+        "a a a a a a b b"
+        "a a a a a a b b"
+        "a a a a a a b b"
+        "c c c c c c c c"
+        "c c c c c c c c"
+        "c c c c c c c c"
+        "c c c c c c c c"
+        "d d d d d d d d"
+        "d d d d d d d d"
+        "e e e e e e e e"
+        "e e e e e e e e"
+        "f f f f f f f f"
+        "f f f f f f f f"
+        "g g g g g g g g"
+        "g g g g g g g g"
+        "h h h h h h h h"
+        "h h h h h h h h"
+        "i i i i i i i i"
+        "i i i i i i i i"
+        "j j j j j j j j"
+        "j j j j j j j j"
+        "k k k k k k k k"
+        "k k k k k k k k"
+        "l l l l l l l l"
+        "l l l l l l l l"
+        "m m m m m m m m"
+        "n n n n n n n n"
+        "n n n n n n n n"
+        "o o o o o o o o"
+        "o o o o o o o o"
+        "o o o o o o o o"
+        "o o o o o o o o"
+        "p p p p p p p p"
+        "p p p p p p p p"
+        "p p p p p p p p"
+        "p p p p p p p p"
+        "p p p p p p p p"
+        "p p p p p p p p"
+        "p p p p p p p p"
+        "p p p p p p p p"
+        "p p p p p p p p"
+        "p p p p p p p p"
+        "p p p p p p p p"
+        "p p p p p p p p";
+
+      grid-gap: 15px;
+    }
+
+    #main>div {
+      border: 1px solid red;
+      font-family: sans-serif;
+    }
+
+    #main>div:nth-child(1) {
+      grid-area: a;
+    }
+
+    #main>div:nth-child(2) {
+      grid-area: b;
+    }
+
+    #main>div:nth-child(3) {
+      grid-area: c;
+    }
+
+    #main>div:nth-child(4) {
+      grid-area: d;
+    }
+
+    #main>div:nth-child(5) {
+      grid-area: e;
+    }
+
+    #main>div:nth-child(6) {
+      grid-area: f;
+    }
+
+    #main>div:nth-child(7) {
+      grid-area: g;
+    }
+
+    #main>div:nth-child(8) {
+      grid-area: h;
+    }
+
+    #main>div:nth-child(9) {
+      grid-area: i;
+    }
+
+    #main>div:nth-child(10) {
+      grid-area: j;
+    }
+
+    #main>div:nth-child(11) {
+      grid-area: k;
+    }
+
+    #main>div:nth-child(12) {
+      grid-area: l;
+    }
+
+    #main>div:nth-child(13) {
+      grid-area: m;
+    }
+
+    #main>div:nth-child(14) {
+      grid-area: n;
+    }
+
+    #main>div:nth-child(15) {
+      grid-area: o;
+    }
+
+    #main>div:nth-child(16) {
+      grid-area: p;
+    }
+
+    #main>div:nth-child(17) {
+      grid-area: z;
+
+    }
+
+    #main>div>div {
+      border: 1px solid green;
+      text-align: left;
+      padding: 15px;
+    }
+
+    #btm1 {
+      /* height: 10%; */
+    }
+
+    #btm2 {
+      /* height: 20%; */
+      background-color: #0b7670;
+      font: 12px;
+      font-family: Roboto, sans-serif;
+      color: #51c9a6;
+    }
+
+    #btm3 {
+      /* height: 70%; */
+      background-color: #51c9a6;
+      color: #e7fbfd;
+    }
+
+    #copyRight {
+      text-align: center;
+      color: #117150;
+      margin-top: 20px;
+
+    }
+
+    #btm2>div {
+      border: 1px solid red;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    #btm2>div>div {
+      border: 1px solid red;
+      margin: auto;
+      margin-top: 10px;
+    }
+
+    #btm2>div>div>p:nth-child(1) {
+      color: white;
+    }
+
+    #btm1 {
+      display: flex;
+    }
+
+    #btm1>div {
+      margin: auto;
+      text-align: center;
+    }
+
+    #btm1>div>p {
+      color: #c9cacc;
+    }
+
+    h6 {
+      margin: 10px;
+    }
+
+    h3 {
+      margin: 0%;
+      font-weight: lighter;
+    }
+
+    p {
+      font-size: 11px;
+      margin: 0%;
+      font-weight: lighter;
     }
   </style>
 </head>
@@ -44,7 +231,238 @@
     <div></div>
     <div></div>
     <div></div>
-    <div></div>
+    <div>
+      <div id="btm1">
+        <div>
+          <i class="fas fa-shield-alt" style="color: #0b7670;"></i>
+          <h3>100% SECURE</h3>
+          <p>100% Payments Protection</p>
+        </div>
+        <div>
+          <i class="fas fa-wallet" style="color: #0b7670;"></i>
+          <h3>CASH ON DELIVERY</h3>
+          <p>Get First Pay Later</p>
+        </div>
+        <div>
+          <i class="fas fa-undo-alt" style="color: #0b7670;"></i>
+          <h3>EASY RETURN</h3>
+          <p>Easy Return & Refund</p>
+        </div>
+        <div>
+          <i class="fas fa-hands-helping" style="color: #0b7670;"></i>
+          <h3>HELP CENTER</h3>
+          <p>Call: 7838389846 Or Read FAQs</p>
+        </div>
+      </div>
+      <div id="btm2">
+        <div>
+          <div>
+            <p>Policies</p>
+            <p>Privacy Policy</p>
+            <p>Terms of Use</p>
+            <p>Returns and Cancellations</p>
+          </div>
+          <div>
+            <p>HealthMug</p>
+            <p>Contact Us</p>
+            <p>About Us</p>
+            <p>Blogs</p>
+          </div>
+          <div>
+            <p>May we help you</p>
+            <p>Track Your Order</p>
+            <p>Change / Cancel</p>
+            <p>Order</p>
+            <p>Report Abouse/</p>
+            <p>Infringement</p>
+            <p>FAQ</p>
+          </div>
+          <div>
+            <p>Stay Connected</p>
+            <p>
+              <i class="fab fa-facebook-f"></i>
+            <p>facebook</p>
+            </p>
+            <p>
+              <i class="fab fa-twitter"></i>
+            <p>Twitter</p>
+            </p>
+          </div>
+          <div>
+            <p>Payment Methods</p>
+            <p>
+              <i class="far fa-credit-card"></i>
+            <p>Debit/Credit Cards</p>
+            </p>
+            <p>
+              <i class="fas fa-desktop"></i>
+            <p>Net Banking</p>
+            </p>
+            <p>
+              <i class="fas fa-money-check-alt"></i>
+            <p>Cash On Delivery</p>
+            </p>
+            <p>
+              <i class="fas fa-wallet"></i>
+            <p>E-Wallet</p>
+            </p>
+          </div>
+          <div>
+            <p>Download App</p>
+            <div style="display: flex;">
+              <i class="fab fa-google-play"></i>
+              <div>
+                <p>GET IT ON</p>
+                <H3>Google Play</H3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <i class="fas fa-shield-alt" style="color: white;"></i>
+            <span>100% Secured & Trusted</span>
+            <div style="color: white; font-size: 12px; padding-left: 25px;">Secure payment by Razorpay</>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="btm3">
+        <p><strong>Homeopathy:</strong> Dr. Reckeweg/ Dr. Willmar Schwabe/ Adel Pekana/ SBL/ Bakson’s/ Wheezal/ New
+          Life/ R S Bhargava/
+          Adven/
+          Bhandari/ Hapdco/ Medisynth/ Allen/ B.Jain/ Bioforce/ Dr.Wellmans/ Bios Lab/ HL/ Haslab/ Lords/ Jhactions/
+          Indo
+          German/
+          REPL/ Ralson</p>
+        <p><strong>Homeopathic Dilutions:</strong> Allium Cepa/ Alumina/ Antim Crud/ Antim Tart/ Apis Mel/ Arnica/
+          Arsenic Album/ Baryta Carb/ Belladonna/ Bryonia/
+          Calcarea Carb/ Carvo Veg/ Causticum/ Cina/ China/ Colocynthis/ Conium/ Eupatorium Perf/ Gelsemium/
+          Graphites/
+          Hepar
+          Sulph/ Ignatia/ Ipecac/ Kali Bichrom/ Ledum Pal/ Lycopodium/ Merc sol/ Nitric Acid/ Nux Vomica/ Ocimum Can/
+          Petroleum/
+          Phosphoric Acid/ Phosphorus/ Pulsatilla/ Rhus tox/ Ruta/ Sepia/ Sulphur/ Thuja</p>
+        <p>
+          <strong>Homeopathic Mother Tinctures :</strong>
+          Aesculus/ Agnus Castus/ Alfalfa/ Aspidosperma/ Avena Sativa/ Berberis Vulgaris/ Blatta/ Calendula/
+          Cantharis/
+          Carduus
+          Marianus/ Chelidonium/ Chimaphilla/ Crateagus/ Damina/ Drosera/ Echinacea/ Euphrasia/ Ginseng/ Hamamelis/
+          Hydrastis/
+          Hypericum/ Justicea/ Kalmegh/ Kreosote/ Lemna Minor/ Millefolium/ Phytolacca/ Plantago/ Sabadilla/ Sabal
+          Serrulata/
+          Senega/ Spongia/ Symphytum/ Teucrium Marum Verum/ Thlaspi Bursa Pestoris/ Uva Ursi
+        </p>
+        <p>
+          <strong>Bio-Chemic :</strong>
+          Calcarea Flour/ Calcarea Phos/ Calcarea Sulph/ Ferrum Phos/ Kali Mur/ Kali Phos/ Kali Sulph/ Mag Phos/ Nat
+          Mur/ Nat Phos/ Nat Sulph/ Silicea
+          Ayurveda and Unani : Patanjali/ Baidyanath/ Dabur/ Himalaya/ Charak/ Zandu/ Aimil/ Vyas/ Organic India/
+          Alarsin/
+          Dhootapapeshwar/ Hamdard/ Gurukul/ Maharishi Ayurved/ Multani/ Nagarjuna/ Kudos/ Unjha/ Aroma Magic/ Basic
+          Ayurveda/
+          Vicco
+        </p>
+        <p><strong>Bio-Chemic:</strong>Calcarea Flour/ Calcarea Phos/ Calcarea Sulph/ Ferrum Phos/ Kali Mur/ Kali
+          Phos/
+          Kali Sulph/ Mag Phos/ Nat Mur/ Nat
+          Phos/ Nat Sulph/ Silicea</p>
+        <p><strong>Ayurveda and Unani:</strong> Patanjali/ Baidyanath/ Dabur/ Himalaya/ Charak/ Zandu/ Aimil/ Vyas/
+          Organic India/ Alarsin/
+          Dhootapapeshwar/ Hamdard/ Gurukul/ Maharishi Ayurved/ Multani/ Nagarjuna/ Kudos/ Unjha/ Aroma Magic/ Basic
+          Ayurveda/
+          Vicco</p>
+        <p><strong>Ayurvedic Medicines:</strong> Ras and Sindoor/ Bhasm and Pishti/ Bati, Gutika and Guggulu/ Asava
+          Arishta and Kadha/ Loha and
+          Mandur/ Churan, Avleha and Pak/ Tailam and Ghrita/ Chyawanprash/ Honey/ Digestives/ Green Tea</p>
+        <p><strong>Herbal and Vegetable Juice:</strong> AloeVera Juice/ Amla Juice/ Apple Cider Vinegar/ Lauki Juice/
+          Jamun Juice/ Karela (Bitter
+          Guard) Juice/ Triphala Juice/ Panch Tulsi Juice/ Grass Meal Juice/ Neem Leaf Juice/ Brahmi Juice/ Giloy
+          Juice/
+          Noni
+          Juice</p>
+        <p><strong>Aroma Oils (Essential Oils):</strong> Beautiful Skin Oil/ Fairy Oil/ Stimulate Oil/ Dry Skin Oil/
+          Tea Tree Oil/ Jasmine Oil/
+          Sandalwood Oil/ Patchouli Oil/ Fennel Seed Oil/ Petitgrain Oil/ Exotica Oil/ Cedarwood Oil/ Cinnamom Oil/
+          Oily
+          Skin Oil/
+          Vertiver Oil/ Cypress Oil/ Rose Oil/ Rosemary Oil/ Frankincense Oil/ Ginger Oil/ Geranium Oil/ Flaky Oil/
+          Ylang Ylang
+          Oil/ Peppermint Oil/ Juniper Berry Oil/ Clarysage Oil/ Dreams Oil/ Bergamot Oil/ Lemongrass Oil/ Sensitive
+          Skin Oil/
+          Orange Oil/ Carrot Seed Oil/ Peace Oil/ Rosewood Oil/ Basil Oil/ Neroli Oil/ Lavender Oil/ Clove Oil/ Pine
+          Oil/
+          Eucaplytus Oil/ Happiness Oil/ Palmarosa Oil/ Lemon Oil/ Thyme Oil/ Morning Due Oil/ Nutmeg Oil</p>
+        <p><strong>Beauty and Personal Care:</strong> Natural and Organic Cosmetics/ Creams/ Shampoo/ Hair Oils/
+          Mehandi/ Hair Color/ Talcs/ Soaps/
+          Tooth Paste and Mouth Wash</p>
+        <h2>About Healthmug</h2>
+        <p>With a vision of bridging the gap between a pharmacy and the consumers, Healthmug came into its existence
+          in
+          2016. A
+          vision that quickly broadened up and helped it in becoming more than just a mere online portal, to an online
+          marketplace
+          for shopping Ayurvedic to Homeopathy to Unani medicines to Health Supplements and much more. Since its
+          inception,
+          Healthmug has grown into a world-class e-platform for everything related to health & fitness. What draws a
+          major
+          distinction between us and our contemporaries is the way we promote a harmonious relationship between the
+          sellers and
+          the buyers for the greater good.</p>
+        <p>Healthmug is the brainchild of Dr. Mohit Agarwal & Mr. Anubhav Bansal. They started this online platform
+          with
+          an idea of
+          supporting the local manufacturers & sellers through building a platform for Ayurvedic, Homeopathy & Unani
+          medicines and
+          to improve the health of the consumers in a holistic way. With an ever-expanding range of products and
+          services,
+          Healthmug is growing rapidly and seeks to become a one-stop portal for all healthcare needs.</p>
+        <p>While Healthmug brings medicines at your fingertips and at affordable prices, it also makes shopping online
+          an easy
+          task. Not just for the consumers, even for the sellers & the brands, this platform makes selling products
+          easy
+          and
+          hassle-free. Since day one, we have supported many small & medium local brands to sell their products and
+          have
+          helped
+          them in sharpening their entrepreneurial skills. Along with these, we have also given numerous big brands a
+          platform to
+          expand their customer base. We believe in the philosophy of growing together and thus we motivate the
+          sellers
+          to do
+          their best. All thanks to our comprehendible policies, everyone from a small seller to a wholesaler to a
+          brand, can
+          easily connect with us and sell their products.</p>
+        <p>Shop for medicines, wellness products, and health supplements online from top brands like Dr. Reckeweg, Dr.
+          Willmar
+          Schwabe, Adel Pekana, SBL, Haslab, Bakson etc. Customers can shop from a wide range of Ayurvedic products
+          available
+          online like Bhasma & Pishti, Bati, Gutika & Guggulu Ras, Sindoor, Asava Arishtha etc. at attractive prices.
+          For organic
+          food items, Herbal Juices, Green Teas, etc. from popular brands like Dabur, Baidyanath, Zandu, Himalaya,
+          Organic India,
+          Unjha, Basic Ayurveda and counting, customers can shop online and buy these products at attractive prices
+          and
+          offers.
+          Customers can now enjoy the benefit of shopping online for Allopathic medicines and getting them delivered
+          right at
+          their doorsteps. Shop from our online pharmacy for Allopathic medicines and drugs at great prices. Shop
+          online
+          from the
+          widest range of products listed across on our website, across a wide range of categories and give yourself
+          and
+          your
+          loved ones a gift of wellbeing. Come, join us and start living a healthy life and be a part of the Healthmug
+          family.</p>
+        <div id="copyRight">
+          <p>Copyright© 2019. All rights reserved.</p>
+          <h6>In compliance with Drug and Cosmetic Act and Rules, we dont sell schedule H, H1, X or any habit forming
+            drugs.</h6>
+          <h3>Healthmug.com</h3>
+        </div>
+      </div>
+    </div>
     <div></div>
   </div>
 </body>
