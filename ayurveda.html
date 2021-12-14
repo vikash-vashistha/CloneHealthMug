@@ -6,7 +6,414 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ayurveda</title>
 </head>
+<style>
+    body{
+        cursor: pointer;
+        background-color: rgb(244,244,244);
+    }
+    /* main container */
+     .container{
+         display: grid;
+         width: 100%;
+         /* border: 1px solid red; */
+         grid-template-columns: repeat(20,1fr);
+         grid-template-rows: 100px repeat(1, auto);
+         grid-gap: 10px;
+         justify-content: space-around;
+         grid-template-areas: 
+         "a a a a a a a a a a a a a a a a a a a a"
+         "b b b b c c c c c c c c c c c c c c c ."
+         ;
+
+     }
+         /* container chileds */
+     .container>div:nth-child(1){
+         grid-area: a;
+         border: 1px solid;
+     }
+     .container>div:nth-child(2){
+         grid-area: b;
+         border: 1px solid;
+     }
+     .container>div:nth-child(3){
+         grid-area: c;
+         /* border: 1px solid; */
+     }
+ 
+     /* product div style bellow */     /* offers */
+
+     .products{
+         display: grid;
+         grid-template-columns: repeat(12,1fr);
+         grid-template-rows: 70px 60px auto;
+         grid-gap: 7px;
+         grid-template-areas: 
+         "a a a a b b b b c c c c"
+         "d d d d d d d d d d d d"
+         "e e e e e e e e e e e e"
+         ;
+     }
+         
+     /* product chileds */        
+     .products>div:nth-child(1){
+         grid-area: a;
+         border: 1px solid;
+     }
+     .products>div:nth-child(1) img{
+         width: 100%;
+         height: 100%;
+     }
+     .products>div:nth-child(2){
+         grid-area: b;
+         border: 1px solid;
+     }
+     .products>div:nth-child(2) img{
+         width: 100%;
+         height: 100%;
+     }
+     .products>div:nth-child(3){
+         grid-area: c;
+         border: 1px solid;
+     }
+     .products>div:nth-child(3) img{
+         width: 100%;
+         height: 100%;
+     }
+                         /* search bar*/
+     .products>div:nth-child(4){
+         grid-area: d;
+         /* border: 1px solid; */
+     }
+     .products>div:nth-child(5){
+         display: flex;
+         flex-flow: wrap;
+         /* justify-content:left;      */
+         grid-area: e;
+         /* border: 1px solid; */
+         justify-content:space-between ;                    /*the gap comming in btw product because of that */
+     }         
+                                           
+      
+                            /* css for item present in class items */
+     .items>.itm{
+         width: 24%;
+         margin-bottom: 20px;
+         height: 320px;
+         display: grid;
+         background-color: white;
+         grid-template-columns: repeat(12,1fr);
+         grid-template-rows: 55% 25% 10% 10%;
+        grid-template-areas: 
+        "a a a a a a a a a a a a"
+        "b b b b b b b b b b b b"
+        "c c c c c c d d d d d d"
+        "e e e e e e f f f f f f"
+        ;
+     }
+     .items>.itm:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+     }
+     .itm>div:nth-child(1){
+         grid-area: a;
+         /* border: 1px solid; */
+         
+     }
+     .itm>div:nth-child(2){
+        grid-area: b;
+         /* border: 1px solid; */
+
+     }
+     .itm>div:nth-child(3){
+        grid-area: c;
+         /* border: 1px solid; */
+
+     }
+     .itm>div:nth-child(4){
+        grid-area: d;
+         /* border: 1px solid; */
+     }
+     .itm>div:nth-child(5){
+        grid-area: e;
+         /* border: 1px solid; */
+     }
+     .itm>div:nth-child(6){
+        grid-area: f;
+         /* border: 1px solid; */
+     }
+
+     
+     .itm>div>img{
+         width: 100%;
+         height: 100%;
+     }
+     .itm>div>p{
+         line-height: 15px;
+         margin-left: 5px;
+         font-size: 14px;
+     }
+     .itm>div{
+      box-sizing: border-box;
+      overflow: hidden;
+     }
+     #iname{
+         font-size: 16px;
+     }
+     #price{
+         font-size: 22px;
+         line-height: 0px;
+     }
+
+
+
+     /* filter portion  */
+     .filters{
+         display: grid;
+         grid-template-columns: 100%;
+         grid-template-rows: 70px repeat(4, auto);
+         grid-template-areas: 
+         "a" 
+         "b" "c" "d" "e"
+         ;
+     }
+     .filters>div:nth-child(1){
+         grid-area: a;
+         border-bottom: 1px solid;
+     }
+     .filters>div:nth-child(2){
+         grid-area: b;
+         border-bottom: 1px solid;
+     }
+     .filters>div:nth-child(3){
+         grid-area: c;
+         border-bottom: 1px solid;
+     }
+     .filters>div:nth-child(4){
+         grid-area: d;
+         border-bottom: 1px solid;
+     }
+     .filters>div:nth-child(5){
+         grid-area: e;
+         border-bottom: 1px solid;
+     }
+
+
+
+
+     /* ALL MEDIA QUERRY HERE */
+
+     @media only screen and (min-width:376px) and (max-width:768px){
+        .products{
+         display: grid;
+         grid-template-columns: repeat(8,1fr);
+         grid-template-rows: 70px 70px 60px auto;
+         grid-gap: 7px;
+         grid-template-areas: 
+         "a a a a b b b b"
+         "c c c c . . . ."
+         "d d d d d d d d"
+         "e e e e e e e e"
+         ;
+     }
+     .products>div:nth-child(5){
+         display: flex;
+         flex-flow: wrap;
+         justify-content:space-between ;                    /*the gap comming in btw product because of that */
+     }   
+     .items>.itm{
+         width: 33%;
+     }      
+     }
+     @media only screen and (min-width:0px) and (max-width:375px){
+        .products{
+         display: grid;
+         grid-template-columns: repeat(4,1fr);
+         grid-template-rows: 60px 60px 60px 60px auto;
+         grid-gap: 7px;
+         grid-template-areas: 
+         "a a a a"
+         "b b b b"
+         "c c c c"
+         "d d d d"
+         "e e e e"
+         ;
+     }
+     .products>div:nth-child(5){
+         display: flex;
+         flex-flow: wrap;
+         justify-content:space-between ;                    /*the gap comming in btw product because of that */
+     }   
+     .items>.itm{
+         width: 100%;
+     }      
+     }
+
+
+</style>
 <body>
-    <h1>hello</h1>
+    <!-- main container -->
+    <div class="container">
+         
+        <div class="head"></div>
+
+         <!-- filter left side portion -->
+        <div class="filters"> 
+            <div><h3>Filter by</h3></div>
+            <div>Ayurveda</div>
+            <div>PRICE</div>
+            <div>BRAND</div>
+            <div>TREATMENT</div>
+
+        </div>
+
+        <div class="products">
+
+            <div class="cupancode1"><img src="https://static.oxinis.com/healthmug/image/asset/1027-mh-480.jpg" alt=""></div>
+            <div class="cupancode2"><img src="https://static.oxinis.com/healthmug/image/asset/19-bh-480.png" alt=""></div>
+            <div class="cupancode3"><img src="https://static.oxinis.com/healthmug/image/asset/597-qt-480.png" alt=""></div>
+
+            <div class="searchBar"></div>
+
+            <div class="items">
+
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+
+<script>
+    // product data store in arr of object bellow
+      var productData = [
+    
+    {
+        img:"https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
+        nam:"Dr. Loonawat Wartosin (3ml)",
+        detail:"Ayurvedic composition for elevated or hanging warts",
+        logo:"	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+        price:"80",
+    },
+    {
+        img:"https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
+        nam:"Dr. Loonawat Wartosin (3ml)",
+        detail:"Ayurvedic composition for elevated or hanging warts",
+        logo:"	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+        price:"80",
+    },
+    {
+        img:"https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
+        nam:"Dr. Loonawat Wartosin (3ml)",
+        detail:"Ayurvedic composition for elevated or hanging warts",
+        logo:"	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+        price:"80",
+    },
+    {
+        img:"https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
+        nam:"Dr. Loonawat Wartosin (3ml)",
+        detail:"Ayurvedic composition for elevated or hanging warts",
+        logo:"	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+        price:"80",
+    },
+    {
+        img:"https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
+        nam:"Dr. Loonawat Wartosin (3ml)",
+        detail:"Ayurvedic composition for elevated or hanging warts",
+        logo:"	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+        price:"80",
+    },
+    {
+        img:"https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
+        nam:"Dr. Loonawat Wartosin (3ml)",
+        detail:"Ayurvedic composition for elevated or hanging warts",
+        logo:"	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+        price:"80",
+    },
+    {
+        img:"https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
+        nam:"Dr. Loonawat Wartosin (3ml)",
+        detail:"Ayurvedic composition for elevated or hanging warts",
+        logo:"	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+        price:"80",
+    },
+    {
+        img:"https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
+        nam:"Dr. Loonawat Wartosin (3ml)",
+        detail:"Ayurvedic composition for elevated or hanging warts",
+        logo:"	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+        price:"80",
+    },
+    {
+        img:"https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
+        nam:"Dr. Loonawat Wartosin (3ml)",
+        detail:"Ayurvedic composition for elevated or hanging warts",
+        logo:"	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+        price:"80",
+    },
+    {
+        img:"https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
+        nam:"Dr. Loonawat Wartosin (3ml)",
+        detail:"Ayurvedic composition for elevated or hanging warts",
+        logo:"	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+        price:"80",
+    },
+    {
+        img:"https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
+        nam:"Dr. Loonawat Wartosin (3ml)",
+        detail:"Ayurvedic composition for elevated or hanging warts",
+        logo:"	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+        price:"80",
+    },
+    {
+        img:"https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
+        nam:"Dr. Loonawat Wartosin (3ml)",
+        detail:"Ayurvedic composition for elevated or hanging warts",
+        logo:"	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+        price:"80",
+    },
+]
+         
+//                 map productData and append in to div bellow
+ 
+        productData.map(function(ele,index){
+          
+            var mainD = document.createElement("div");
+            mainD.setAttribute("class","itm");                   // main div for item img and details
+
+            var d1 = document.createElement("div");               //img
+            var img = document.createElement("img");
+            img.setAttribute("src",ele.img);
+            d1.append(img)
+
+            var d2 = document.createElement("div");
+            var name = document.createElement("p");   
+            name.setAttribute("id","iname")             //name of product
+            name.textContent = ele.nam;
+            var detail = document.createElement("p");
+            detail.textContent = ele.detail;
+            d2.prepend(name,detail)
+            
+            
+            var d3 = document.createElement("div");    // img for review stras img (still ppending)
+
+            var d4 = document.createElement("div");
+            var logo = document.createElement("img");
+            logo.setAttribute("src",ele.logo);
+            logo.setAttribute("src",ele.logo);
+            d4.append(logo)
+
+            var d5 = document.createElement("div");
+            var price = document.createElement("p");
+            price.setAttribute("id","price")
+            price.textContent = ele.price;
+            d5.append(price);
+            
+            var d6 = document.createElement("div");       // add to cart logo 
+
+
+          
+              mainD.append(d1,d2,d3,d4,d5,d6)
+           document.querySelector(".items").append(mainD)
+
+
+        })
+
+</script>
