@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ayurveda</title>
+</head>
+<style>
+    /* main container */
+     .container{
+         display: grid;
+         width: 100%;
+         /* border: 1px solid red; */
+         grid-template-columns: repeat(18,1fr);
+         grid-template-rows: 100px repeat(1, auto);
+         grid-gap: 10px;
+         justify-content: space-around;
+         grid-template-areas: 
+         "a a a a a a a a a a a a a a a a a a"
+         ". b b b b b c c c c c c c c c c c ."
+         ;
+     }
+         /* container chileds */
+     .container>div:nth-child(1){
+         grid-area: a;
+         border: 1px solid;
+     }
+     .container>div:nth-child(2){
+         grid-area: b;
+         border: 1px solid;
+     }
+     .container>div:nth-child(3){
+         grid-area: c;
+         /* border: 1px solid; */
+     }
+ 
+     /* product div style bellow */
+     .products{
+         display: grid;
+         grid-template-columns: repeat(12,1fr);
+         grid-template-rows: 50px 50px auto;
+         grid-gap: 7px;
+         grid-template-areas: 
+         "a a a a b b b b c c c c"
+         "d d d d d d d d d d d d"
+         "e e e e e e e e e e e e"
+         ;
+     }
+         
+     /* product chileds */
+     .products>div:nth-child(1){
+         grid-area: a;
+         border: 1px solid;
+     }
+     .products>div:nth-child(2){
+         grid-area: b;
+         border: 1px solid;
+     }
+     .products>div:nth-child(3){
+         grid-area: c;
+         border: 1px solid;
+     }
+     .products>div:nth-child(4){
+         grid-area: d;
+         border: 1px solid;
+     }
+     .products>div:nth-child(5){
+         display: flex;
+         flex-flow: wrap;
+         
+         grid-area: e;
+         border: 1px solid;
+         justify-content: space-between;
+     }                                                 
+      
+                            /* css for item present in class items */
+     .items>.itm{
+         width: 24%;
+         margin-bottom: 20px;
+         height: 320px;
+         display: grid;
+         /* border: 1px solid; */
+         grid-template-columns: repeat(12,1fr);
+         grid-template-rows: 55% 25% 10% 10%;
+        grid-template-areas: 
+        "a a a a a a a a a a a a"
+        "b b b b b b b b b b b b"
+        "c c c c c c d d d d d d"
+        "e e e e e e f f f f f f"
+        ;
+     }
+     .itm>div:nth-child(1){
+         grid-area: a;
+         /* border: 1px solid; */
+         
+     }
+     .itm>div:nth-child(2){
+        grid-area: b;
+         /* border: 1px solid; */
+     }
+     .itm>div:nth-child(3){
+        grid-area: c;
+         /* border: 1px solid; */
+     }
+     .itm>div:nth-child(4){
+        grid-area: d;
+         /* border: 1px solid; */
+     }
+     .itm>div:nth-child(5){
+        grid-area: e;
+         /* border: 1px solid; */
+     }
+     .itm>div:nth-child(6){
+        grid-area: f;
+         /* border: 1px solid; */
+     }
+     
+     .itm>div>img{
+         width: 100%;
+         height: 100%;
+         border: 1px solid  yellow;
+     }
+     .itm>div>p{
+         line-height: 15px;
+         margin-left: 5px;
+         font-size: 14px;
+         border: 1px solid red;
+         
+     }
+     .itm>div{
+      box-sizing: border-box;
+      /* overflow: hidden; */
+      border: 1px solid  blue;
+      
+       
+     }
+     #iname{
+         font-size: 12px;
+        
+     }
+     #price{
+         font-size: 22px;
+         line-height: 0px;
+        
+     }
+     #p{
+        color: slategray;
+     }
+     
+
+</style>
+<body>
+    <!-- main container -->
+    <div class="container">
+         
+        <div class="head"></div>
+         <!-- filter left side portion -->
+        <div class="filters"> 
+        </div>
+        <div class="products">
+            <div class="cupancode1"><img src="" alt=""></div>
+            <div class="cupancode2"><img src="" alt=""></div>
+            <div class="cupancode3"><img src="" alt=""></div>
+            <div class="searchBar"></div>
+            <div class="items">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    // product data store in arr of object bellow
+      var productData = [
+    {
+        img:"https://static.oxinis.com/healthmug/image/product/1883-1-200.jpg",
+        name:"SBL Thuja Occidentalis 200 CH (30ml)",
+        detail:"Warts, overgrowth of tissues, Stiff Joints, Brown spots on skin.",
+        logo:" https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+        strikedOffPrice:"$100.00",
+        price:"92",
+
+
+    },
+
+    {
+        img:"https://static.oxinis.com/healthmug/image/product/6308-1-200.jpg",
+        name:"Willmar Schwabe India Berberis Aquifolium 1X (Q) (30ml)",
+        detail:"Clear complexion, Pimples, acne, Blotches, psoriasis, Joint pains.",
+        logo:" https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+        price:"195",
+
+
+    },
+    {
+        img:"https://static.oxinis.com/healthmug/image/product/1883-1-200.jpg",
+        name:"SBL Thuja Occidentalis 200 CH (30ml)",
+        detail:"Warts, overgrowth of tissues, Stiff Joints, Brown spots on skin.",
+        logo:" https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+        price:"92",
+
+
+    },
+
+    {
+        img:"https://static.oxinis.com/healthmug/image/product/1883-1-200.jpg",
+        name:"SBL Thuja Occidentalis 200 CH (30ml)",
+        detail:"Warts, overgrowth of tissues, Stiff Joints, Brown spots on skin.",
+        logo:" https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+        price:"92",
+
+
+    },
+
+    {
+        img:"https://static.oxinis.com/healthmug/image/product/1883-1-200.jpg",
+        name:"SBL Thuja Occidentalis 200 CH (30ml)",
+        detail:"Warts, overgrowth of tissues, Stiff Joints, Brown spots on skin.",
+        logo:" https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+        price:"92",
+
+
+    },
+     
+]
+           
+        productData.map(function(ele,index){
+          
+            var mainD = document.createElement("div");
+            mainD.setAttribute("class","itm");                   // main div for item img and details
+            var d1 = document.createElement("div");               //img
+            var img = document.createElement("img");
+            img.setAttribute("src",ele.img);
+            d1.append(img)
+            var d2 = document.createElement("div");
+            var name = document.createElement("p");   
+            name.setAttribute("id","iname")             //name of product
+            name.textContent = ele.name;
+            var detail = document.createElement("p");
+               detail.setAttribute("id","p") 
+            detail.textContent = ele.detail;
+            d2.prepend(name,detail)
+            
+            
+            var d3 = document.createElement("div");    // img for review stras img (still ppending)
+            var d4 = document.createElement("div");
+            var logo = document.createElement("img");
+            logo.setAttribute("src",ele.logo);
+            
+            d4.append(logo)
+            var d5 = document.createElement("div");
+            var price = document.createElement("p");
+            price.setAttribute("id","price")
+            price.textContent = ele.price;
+ 
+            d5.append(price);
+            
+            var d6 = document.createElement("div");       // add to cart logo 
+          
+              mainD.append(d1,d2,d3,d4,d5,d6)
+           document.querySelector(".items").append(mainD)
+        })
+
+
+</script>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   #container{
+       width:100%;
+       height: 700px ;
+       border: 1px solid red;
+   
+       
+   }
+   #top{
+       width:100%;
+        height: 100px ;
+       border: 1px solid red;
+      
+   }
+   #box{
+    width:100%;
+        height:600px ;
+       border: 1px solid blue;
+       display: flex;
+        
+   }
+
+   #filter
+   {
+    width:20%;
+        height:600px ;
+       border: 1px solid red;
+ 
+   }
+   #heading{
+        width:50%;
+       height:50px ;
+       border: 1px solid red; 
+       margin-bottom:0%;
+   }
+   #sort{
+    width:50%;
+       height:50px ;
+       border: 1px solid red; 
+       margin:0%;
+       margin-top:0%;
+   }
+   #search{
+    width:200%;
+       height:60px ;
+       border: 1px solid red;
+   }
+   #image{
+    width:200%;
+       height:450px ;
+       border: 1px solid red;
+        
+   }
+   #img1{
+        display:flex;
+    width: 100%;
+    border: 1px solid red;
+    
+    }
+
+    </style>
+
+</head>
+<body>
+<div id="container"> 
+<div id="top"> </div>
+
+<div id="box"> 
+<div id="filter"></div>
+ 
+<div id="heading">
+    <h1> Arthritis </h1>
+    <div id="search"></div> 
+    <div id="image">
+        <div id="img1">
+            <div>
+                <img width="200%" height="150px"
+                src=" https://static.oxinis.com/healthmug/image/product/1883-1-200.jpg" alt="">
+            </div>
+        </div>
+         
+        <div></div>
+    </div> 
+   
+
+</div>
+
+<div id="sort"></div> 
+</div>
+ 
+
+</div>
+</body>
+</html> -->
