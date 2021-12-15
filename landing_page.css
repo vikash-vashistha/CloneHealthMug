@@ -207,6 +207,11 @@ p {
 .adv_l > div:nth-child(1) {
   height: 80%;
 }
+
+.sliderImg {
+  display: flex;
+}
+
 img {
   height: 100%;
   width: 100%;
