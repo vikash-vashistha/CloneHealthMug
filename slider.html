@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Image slider</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<style>
+/* .Slides {display:none;} */
+
+.Slides{
+    height: 380px;
+    width: 580px;
+    justify-content: center;
+}
+.sliderImg{
+    margin: auto;
+}
+</style>
+</head>
+
+<body>
+
+
+ 
+<div class="sliderImg" style="max-width:1200px">
+   
+  <img class="Slides" src="https://static.oxinis.com/healthmug/image/asset/454-ru.png" style="width:100%">
+  <img class="Slides" src="https://static.oxinis.com/healthmug/image/asset/386-mu.png" style="width:100%">
+  <img class="Slides" src="https://static.oxinis.com/healthmug/image/asset/354-wn.jpg" style="width:100%">
+  <img class="Slides" src="https://static.oxinis.com/healthmug/image/asset/528-po.png" style="width:100%">
+  
+</div>
+
+
+</body>
+</html>
+
+<script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("Slides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 4000); // change in every 4 sec//
+    }
+    </script>
