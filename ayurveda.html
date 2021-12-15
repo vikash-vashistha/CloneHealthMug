@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+<!-- <link rel="ayurveda.css" href=""> -->
+
 <style>
     body{
         cursor: pointer;
@@ -34,8 +36,10 @@
          border: 1px solid;
      }
      .container>div:nth-child(2){
+         margin-left: 20px;
          grid-area: b;
-         border: 1px solid;
+         /* border: 1px solid; */
+         padding-left: 10px;
      }
      .container>div:nth-child(3){
          grid-area: c;
@@ -47,8 +51,8 @@
      .products{
          display: grid;
          grid-template-columns: repeat(12,1fr);
-         grid-template-rows: 70px 80px auto;
-         grid-gap: 7px;
+         grid-template-rows: 70px 100px auto;
+         grid-column-gap: 7px;
          grid-template-areas: 
          "a a a a b b b b c c c c"
          "d d d d d d d d d d d d"
@@ -68,28 +72,29 @@
      .products>div:nth-child(2){
          grid-area: b;
          border: 1px solid;
-     }
-     .products>div:nth-child(2) img{
-         width: 100%;
-         height: 100%;
-     }
-     .products>div:nth-child(3){
-         grid-area: c;
-         border: 1px solid;
-     }
-     .products>div:nth-child(3) img{
-         width: 100%;
-         height: 100%;
-     }
-                         /* search bar*/
-     .products>div:nth-child(4){
-         grid-area: d;
+        }
+        .products>div:nth-child(2) img{
+            width: 100%;
+            height: 100%;
+        }
+        .products>div:nth-child(3){
+            grid-area: c;
+            border: 1px solid;
+        }
+        .products>div:nth-child(3) img{
+            width: 100%;
+            height: 100%;
+        }
+        /* search bar*/
+        .products>div:nth-child(4){
+            margin-top: 16px;
+            grid-area: d;
          display: grid;
          grid-template-columns: repeat(12,1fr);
-         grid-template-rows: 70% 30%;
+         grid-template-rows: 65% 35%;
          grid-template-areas: 
          "a a a a a a a a b b b b"
-         "c d d d d d d d d d d d"
+         "c c d d d d d d d d d d"
          ;
          /* border: 1px solid; */
      }
@@ -134,8 +139,17 @@
      }               
      .products>div:nth-child(4)>div:nth-child(4){
         grid-area: d;
+        display: flex;
+        align-items: center;
          border: 1px solid red;
-     }               
+     }   
+     .sortby>span{
+         margin-left: 18px;
+         font-size: 12px;
+     }        
+     .sortby>span:hover{
+         color:  rgb(81,201,166);
+     }
 
      .products>div:nth-child(5){
          display: flex;
@@ -151,6 +165,7 @@
      .items>.itm{
          width: 24%;
          margin-bottom: 20px;
+         margin-top: 10px;
          height: 350px;
          display: grid;
          background-color: white;
@@ -189,7 +204,13 @@
      }
      .itm>div:nth-child(4){
         grid-area: d;
+        display: flex;
+        justify-content: end;
          /* border: 1px solid; */
+     }
+     .itm>div:nth-child(4) img{
+         width: 60%;
+         height: 60%;
      }
      .itm>div:nth-child(5){
         grid-area: e;                              /* price */
@@ -239,8 +260,9 @@
      /* filter portion  */
      .filters{
          display: grid;
+         background-color: white;
          grid-template-columns: 100%;
-         grid-template-rows: 50px 300px 200px;
+         grid-template-rows: 50px 350px 200px 350px 370px;
          grid-template-areas: 
          "a" 
          "b" "c" "d" "e"
@@ -300,7 +322,7 @@
      }
      .filters>div:nth-child(5){
          grid-area: e;
-         border-bottom: 1px solid;
+         /* border-bottom: 1px solid; */
      }
 
 
@@ -312,7 +334,7 @@
         .products{
          display: grid;
          grid-template-columns: repeat(8,1fr);
-         grid-template-rows: 70px 70px 60px auto;
+         grid-template-rows: 70px 70px 90px auto;
          grid-gap: 7px;
          grid-template-areas: 
          "a a a a b b b b"
@@ -321,6 +343,7 @@
          "e e e e e e e e"
          ;
      }
+    
      .products>div:nth-child(5){
          display: flex;
          flex-flow: wrap;
@@ -328,9 +351,40 @@
      }   
      .items>.itm{
          width: 33%;
-     }      
+     }   
+    
+     .products>div:nth-child(4){
+            margin-top: 16px;
+            grid-area: d;
+         display: grid;
+         grid-template-columns: repeat(12,1fr);
+         grid-template-rows: 65% 35%;
+         grid-template-areas: 
+         "b b b b b b b b b b b b"
+         "c c d d d d d d d d d d"
+         ;
+         /* border: 1px solid; */
+     }
+     .products>div:nth-child(4)>div:nth-child(1){
+         display: none;
+     }  
      }
      @media only screen and (min-width:0px) and (max-width:375px){
+        .container{
+         /* display: grid; */
+         /* width: 100%; */
+         /* border: 1px solid red; */
+         /* grid-template-columns: repeat(20,1fr); */
+         grid-template-rows: 40px repeat(1, auto);
+         /* grid-gap: 10px; */
+         /* justify-content: space-around; */
+         grid-template-areas: 
+         "a a a a a a a a a a a a a a a a a a a a"
+         "c c c c c c c c c c c c c c c c c c c c"
+         ;
+
+     }
+      
         .products{
          display: grid;
          grid-template-columns: repeat(4,1fr);
@@ -344,6 +398,33 @@
          "e e e e"
          ;
      }
+     .products>div:nth-child(4){
+            margin-top: 16px;
+            grid-area: d;
+         display: grid;
+         grid-template-columns: repeat(12,1fr);
+         grid-template-rows: 100%;
+         grid-template-areas: 
+         "b b b b b b b b b b b b"
+         /* "c c d d d d d d d d d d" */
+         ;
+         /* border: 1px solid; */
+     }
+     .products>div:nth-child(4)>div:nth-child(3){
+         display: none;
+     }
+     .products>div:nth-child(4)>div:nth-child(4){
+         display: none;
+     }
+     .products>div:nth-child(4)>div:nth-child(1){
+         display: none;
+     }
+     
+     
+     
+     .filters{
+         display: none;
+     }
      .products>div:nth-child(5){
          display: flex;
          flex-flow: wrap;
@@ -354,6 +435,9 @@
      }      
      }
 
+
+
+     
 
 </style>
 <body>
@@ -422,9 +506,9 @@
             <div class="searchBar">
                                                     <!-- search bar  -->
                    <div class="categories">Ayurveda</div>
-                   <div><input type="text"><div><i class="fas fa-search"></i></div></div>
+                   <div><input type="text" placeholder="Search here"><div><i class="fas fa-search"></i></div></div>
                    <div>sort by:</div>
-                   <div></div>
+                   <div class="sortby"><span>Popularity</span><span>Name</span><span>Price Low to High</span><span>Price High To Low</span> <span>Discount</span><span>New Arival</span></div>
             </div>
 
             <div class="items">
@@ -432,6 +516,9 @@
             </div>
         </div>
     </div>
+
+     
+
 </body>
 </html>
 <script src="ayurveda.js"></script>
