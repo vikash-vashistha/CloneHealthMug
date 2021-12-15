@@ -171,7 +171,7 @@
         nam:"Dr. Loonawat Wartosin (3ml)",
         detail:"Ayurvedic composition for elevated or hanging warts",
         logo:"	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
-        price:"80",
+        price:"22",
         s1:"fas fa-star",
         s2:"fas fa-star",
         s3:"fas fa-star",
@@ -193,7 +193,9 @@
 ]
          
 //                 map productData and append in to div bellow
- 
+      function display(productData){
+
+     
         productData.map(function(ele,index){
           
             var mainD = document.createElement("div");
@@ -238,7 +240,8 @@
             price.setAttribute("id","price")
             price.textContent = ele.price;
             var rupeeLogo = document.createElement("i");
-            rupeeLogo.setAttribute("class","fas fa-rupee-sign")
+            rupeeLogo.textContent = "₹"
+            rupeeLogo.style.fontSize = "20px"
             d5.append(rupeeLogo,price);
             
             var d6 = document.createElement("div");       // add to cart logo 
@@ -248,9 +251,24 @@
             d6.append(cartLogo)
 
 
-          
-              mainD.append(d1,d2,d3,d4,d5,d6)
-           document.querySelector(".items").append(mainD)
-
-
+            mainD.append(d1,d2,d3,d4,d5,d6)
+            document.querySelector(".items").append(mainD)
+            
+            // display(productData)
+            //  display(productData)
         })
+    }
+   display(productData)
+     var ss = document.querySelector(".sbyName").addEventListener("click",sortbyname)
+    
+     
+
+
+    function sortbyname(){
+            productData.sort(function(a,b){
+                return a.nam-b.nam;
+            })
+            // display(productData)
+        
+        console.log(productData)
+    }

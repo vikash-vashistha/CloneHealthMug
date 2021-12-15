@@ -24,7 +24,7 @@
 .nav-bar a {
   float: left;
   margin-top: 20px;
-  margin: 10px 50px;
+  margin: 10px 20px;
 }
 .form {
   height: 30px;
@@ -46,13 +46,19 @@
   height: 36px;
   width: 50px;
   background-color:  rgb(81,201,166);
-  background: rgb(81,201,166);
+  /* background: rgb(81,201,166); */
   color: white;
+  border: none;
+}
+.btn:hover{
+    background-color: rgb(11, 184, 126);
 }
 .icon {
   width: 32%;
   height: 40px;
   /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-around;
   float: right;
   margin-top: 20px;
 }
@@ -77,6 +83,8 @@ li:hover {
 }
 input[type="text"] {
   width: 480px;
+  margin-left: 40px;
+  border: 0.5px solid #e5d6d6;
   height: 30px;
 }
 .icon {
@@ -95,7 +103,7 @@ input[type="text"] {
 }
 .icon i {
   font-size: 20px;
-  margin: 0%;
+  margin-left: 10%;
   color: gray;
   margin-right: 25px;
 }
@@ -304,6 +312,7 @@ input[type="text"] {
 }
 #btm1 {
   display: flex;
+  /* font-size: 30px; */
   background-color: white;
   height: 160px;
 }
@@ -313,6 +322,9 @@ input[type="text"] {
 }
 #btm1 > div > p {
   color: #c9cacc;
+}
+#btm1 > div i{
+    font-size: 40px;
 }
 h6 {
   margin: 10px;
@@ -408,10 +420,10 @@ img {
 
      }
          /* container chileds */
-     .container>div:nth-child(1){
+     /* .container>div:nth-child(1){ */
          /* grid-area: a; */
-         border: 1px solid;
-     }
+         /* border: 1px solid; */
+     /* } */
      .container>div:nth-child(2){
          margin-left: 20px;
          grid-area: b;
@@ -440,7 +452,7 @@ img {
      /* product chileds */        
      .products>div:nth-child(1){
          grid-area: a;
-         border: 1px solid;
+         /* border: 1px solid; */
      }
      .products>div:nth-child(1) img{
          width: 100%;
@@ -448,7 +460,7 @@ img {
      }
      .products>div:nth-child(2){
          grid-area: b;
-         border: 1px solid;
+         /* border: 1px solid; */
         }
         .products>div:nth-child(2) img{
             width: 100%;
@@ -456,7 +468,7 @@ img {
         }
         .products>div:nth-child(3){
             grid-area: c;
-            border: 1px solid;
+            /* border: 1px solid; */
         }
         .products>div:nth-child(3) img{
             width: 100%;
@@ -935,7 +947,7 @@ img {
                    <div class="categories">Ayurveda</div>
                    <div><input type="text" placeholder="Search here"><div><i class="fas fa-search"></i></div></div>
                    <div>sort by:</div>
-                   <div class="sortby"><span>Popularity</span><span>Name</span><span>Price Low to High</span><span>Price High To Low</span> <span>Discount</span><span>New Arival</span></div>
+                   <div class="sortby"><span class="sbyPopularity">Popularity</span><span class="sbyName">Name</span><span>Price Low to High</span><span>Price High To Low</span> <span>Discount</span><span>New Arival</span></div>
             </div>
 
             <div class="items">
