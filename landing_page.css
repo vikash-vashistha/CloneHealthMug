@@ -334,6 +334,10 @@ input[type="text"] {
   justify-content: end;
 }
 
+.icon > div > p {
+  color: #898989;
+}
+
 .icon i {
   font-size: 20px;
   margin: 0%;
@@ -411,4 +415,35 @@ input[type="text"] {
   margin: auto;
   height: 90%;
   width: 32%;
+}
+/* START CONSULTATION */
+.SC > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.SC > div > div {
+  display: flex;
+  /* flex-direction: row; */
+}
+
+.SC > div > div > div > p {
+  font-size: 13px;
+  margin: 10px 0px;
+}
+
+.SC > div > div > div > img {
+  border: 1px solid #898989;
+  border-radius: 100%;
+  height: 60%;
+  width: 80%;
+}
+
+.SC > div > div > div > button {
+  border: 1px solid #51c9a6;
+  background-color: white;
+  color: #51c9a6;
+  border-radius: 20px;
+  width: 120px;
+  height: 40px;
 }
