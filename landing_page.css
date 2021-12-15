@@ -225,26 +225,34 @@ img {
 }
 
 /* Top Categories */
-.TC {
+.TC > div:nth-child(1) {
+  font-weight: 550;
+  color: #525d5d;
+}
+.TC > div:nth-child(2) {
+  color: #525d5d;
   display: flex;
   flex-wrap: wrap;
 }
-.TC > div {
+.TC > div > div {
   border: 1px dashed black;
   margin: 10px;
   height: 35%;
   width: 10%;
 }
 
-.TC > div > div:nth-child(1) {
+.TC > div > div > div:nth-child(1) {
+  margin-left: 5px;
   height: 80%;
 }
-.TC > div > div > img {
+.TC > div > div > div > img {
+  padding: 5px;
+  width: 100px;
   border-radius: 100%;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.TC > div > div:nth-child(2) {
+.TC > div > div > div:nth-child(2) {
   height: 10%;
   text-align: center;
   margin-top: 20px;
@@ -357,6 +365,7 @@ input[type="text"] {
 
 /* shop by health concern */
 .HC {
+  color: #525d5d;
   display: flex;
   justify-content: space-between;
 }
@@ -384,6 +393,7 @@ input[type="text"] {
 
 /* SHOP BY TOP BRANDS */
 .TB {
+  color: #525d5d;
   display: flex;
   justify-content: space-between;
 }
@@ -420,8 +430,12 @@ input[type="text"] {
 .SC > div {
   display: flex;
   justify-content: space-between;
+  color: #525d5d;
 }
-
+.SC > div:nth-child(1) {
+  font-weight: 550;
+  /* color: #525d5d; */
+}
 .SC > div > div {
   display: flex;
   /* flex-direction: row; */
@@ -446,4 +460,80 @@ input[type="text"] {
   border-radius: 20px;
   width: 120px;
   height: 40px;
+}
+
+/* Blogs */
+.blog {
+  margin: auto;
+  display: grid;
+  grid-template-areas:
+    ". . a a a a . ."
+    "b b b b c c d d"
+    "b b b b c c d d"
+    "b b b b e e f f"
+    "b b b b e e f f";
+  grid-gap: 5px;
+}
+
+.blog > div {
+  border: 1px solid red;
+}
+
+.blog > div:nth-child(1) {
+  grid-area: a;
+}
+
+.blog > div:nth-child(2) {
+  grid-area: b;
+}
+
+.blog > div:nth-child(3) {
+  grid-area: c;
+}
+
+.blog > div:nth-child(4) {
+  grid-area: d;
+}
+
+.blog > div:nth-child(5) {
+  grid-area: e;
+}
+
+.blog > div:nth-child(6) {
+  grid-area: f;
+}
+
+.blog > div > div:nth-child(1) {
+  height: 70%;
+}
+
+.blog > div > p {
+  font-size: 13px;
+  margin-top: 15px;
+  color: #51c9a6;
+}
+
+.blog > div > div > h4 {
+  margin: auto;
+  margin-top: 15px;
+  width: 80%;
+  text-align: center;
+  color: #51c9a6;
+  font-weight: lighter;
+}
+
+.blog > div > div > div {
+  /* border: 1px solid red; */
+  margin: auto;
+  margin-top: 15px;
+  font-size: 12px;
+  width: 90%;
+  text-align: center;
+  color: #898989;
+}
+
+#blog_head {
+  margin: auto;
+  color: #fb8903;
+  font-size: 25px;
 }
