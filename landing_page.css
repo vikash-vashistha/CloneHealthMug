@@ -131,7 +131,7 @@
   border: 1px solid green;
   text-align: left;
   padding: 15px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 }
 
 #btm1 {
@@ -241,6 +241,7 @@ img {
 }
 .TC > div > div > img {
   border-radius: 100%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .TC > div > div:nth-child(2) {
@@ -322,7 +323,92 @@ input[type="text"] {
   height: 30px;
 }
 
-.icon a {
+.icon {
+  border: 1px solid red;
+  /* margin-left: 125px;
+  padding-left: 200px;
+  align-items: flex-end; */
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.icon i {
   font-size: 20px;
-  background: #cccc;
+  margin: 0%;
+  margin-right: 25px;
+}
+
+/* Bubble Advertisment */
+.bbl {
+  display: flex;
+}
+
+.bbl > img {
+  margin: auto;
+  height: 90%;
+  width: 32%;
+}
+
+/* shop by health concern */
+.HC {
+  display: flex;
+  justify-content: space-between;
+}
+.HC > div {
+  border: 1px dashed black;
+  margin: 10px;
+  height: 35%;
+  width: 13%;
+}
+
+.HC > div > div:nth-child(1) {
+  height: 80%;
+}
+.HC > div > div > img {
+  border-radius: 100%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.HC > div > div:nth-child(2) {
+  height: 10%;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+/* SHOP BY TOP BRANDS */
+.TB {
+  display: flex;
+  justify-content: space-between;
+}
+.TB > div {
+  border: 1px dashed black;
+  margin: 10px;
+  height: 35%;
+  width: 13%;
+}
+
+.TB > div > div:nth-child(1) {
+  height: 80%;
+}
+
+.TB > div > div:nth-child(2) {
+  height: 10%;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+/* Static advertisment */
+
+.SA {
+  display: flex;
+}
+
+.SA > img {
+  margin: auto;
+  height: 90%;
+  width: 32%;
 }
