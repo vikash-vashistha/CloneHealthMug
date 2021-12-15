@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ayurveda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <style>
     body{
         cursor: pointer;
         background-color: rgb(244,244,244);
-    }
+        font-family: 'Roboto', sans-serif;    }
     /* main container */
      .container{
          display: grid;
@@ -22,7 +24,7 @@
          justify-content: space-around;
          grid-template-areas: 
          "a a a a a a a a a a a a a a a a a a a a"
-         "b b b b c c c c c c c c c c c c c c c ."
+         "b b b b c c c c c c c c c c c c c c c c"
          ;
 
      }
@@ -45,7 +47,7 @@
      .products{
          display: grid;
          grid-template-columns: repeat(12,1fr);
-         grid-template-rows: 70px 60px auto;
+         grid-template-rows: 70px 80px auto;
          grid-gap: 7px;
          grid-template-areas: 
          "a a a a b b b b c c c c"
@@ -82,8 +84,59 @@
                          /* search bar*/
      .products>div:nth-child(4){
          grid-area: d;
+         display: grid;
+         grid-template-columns: repeat(12,1fr);
+         grid-template-rows: 70% 30%;
+         grid-template-areas: 
+         "a a a a a a a a b b b b"
+         "c d d d d d d d d d d d"
+         ;
          /* border: 1px solid; */
      }
+      
+     .products>div:nth-child(4)>div:nth-child(1){
+         display: flex;
+         padding-left: 1%;
+         grid-area: a;
+         font-size: 30px;
+         align-items: center;
+         border: 1px solid red;
+     }               
+     .products>div:nth-child(4)>div:nth-child(2){
+        grid-area: b;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+         border: 1px solid red;
+     }    
+     .products>div:nth-child(4)>div:nth-child(2) input{
+         width: 80%;
+         height: 50%;
+         border: 0.5px solid rgb(228, 223, 223);
+     }
+     .products>div:nth-child(4)>div:nth-child(2) div{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 10%;
+         height: 57%;
+         /* border: 2px solid blue; */
+         color: white;
+         background-color: rgb(81,201,166);
+     }
+
+     .products>div:nth-child(4)>div:nth-child(3){
+        grid-area: c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+         border: 1px solid red;
+     }               
+     .products>div:nth-child(4)>div:nth-child(4){
+        grid-area: d;
+         border: 1px solid red;
+     }               
+
      .products>div:nth-child(5){
          display: flex;
          flex-flow: wrap;
@@ -98,11 +151,11 @@
      .items>.itm{
          width: 24%;
          margin-bottom: 20px;
-         height: 320px;
+         height: 350px;
          display: grid;
          background-color: white;
          grid-template-columns: repeat(12,1fr);
-         grid-template-rows: 55% 25% 10% 10%;
+         grid-template-rows: 58% 22% 10% 10%;
         grid-template-areas: 
         "a a a a a a a a a a a a"
         "b b b b b b b b b b b b"
@@ -110,6 +163,7 @@
         "e e e e e e f f f f f f"
         ;
      }
+     
      .items>.itm:hover{
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
      }
@@ -124,21 +178,38 @@
 
      }
      .itm>div:nth-child(3){
-        grid-area: c;
+         display: flex;
+         align-items: center;
+        grid-area: c;                            /* star portion for riview*/
+        padding-left: 5%;
          /* border: 1px solid; */
-
+     }
+     .itm>div:nth-child(3) i{
+         color: gold;
      }
      .itm>div:nth-child(4){
         grid-area: d;
          /* border: 1px solid; */
      }
      .itm>div:nth-child(5){
-        grid-area: e;
-         /* border: 1px solid; */
+        grid-area: e;                              /* price */
+        display: flex;
+        align-items: center;
+        padding-left: 5%;
      }
      .itm>div:nth-child(6){
         grid-area: f;
-         /* border: 1px solid; */
+        display: flex;
+        justify-content: center;               /*cart logo*/       
+        align-items: center;
+        border-radius: 100px;
+      
+     }
+     .itm>div:nth-child(6) i{
+         color: gray;
+     }
+     .itm>div:nth-child(6) i:hover{
+         color: rgb(81,201,166);
      }
 
      
@@ -147,16 +218,16 @@
          height: 100%;
      }
      .itm>div>p{
-         line-height: 15px;
+         line-height: 12px;
          margin-left: 5px;
-         font-size: 14px;
+         font-size: 12px;
      }
      .itm>div{
       box-sizing: border-box;
       overflow: hidden;
      }
      #iname{
-         font-size: 16px;
+         font-size: 15px;
      }
      #price{
          font-size: 22px;
@@ -169,7 +240,7 @@
      .filters{
          display: grid;
          grid-template-columns: 100%;
-         grid-template-rows: 70px repeat(4, auto);
+         grid-template-rows: 50px 300px 200px;
          grid-template-areas: 
          "a" 
          "b" "c" "d" "e"
@@ -179,11 +250,47 @@
          grid-area: a;
          border-bottom: 1px solid;
      }
+     .filters>.byayurveda>div{
+         font-size: 12px;
+         margin-left: 25px;
+         margin-top: 10px;
+         color: gray;
+        }
+        .filters>.byayurveda>div:hover{
+            color: black;
+        }
+        .filters>.byprice>div{
+         margin-top: 10px;
+         font-size: 12px;
+         margin-left: 20px;
+         color: gray;
+        }
+        .filters>.byprice>div:hover{
+            color: black;
+        }
+        .filters>.bybrand>div{
+            font-size: 12px;
+         margin-left: 25px;
+         margin-top: 10px;
+         color: gray;
+        }
+        .filters>.bybrand>div:hover{
+            color: black;
+        }
+        .filters>.bytreatment>div{
+            font-size: 12px;
+         margin-left: 25px;
+         margin-top: 10px;
+         color: gray;
+        }
+        .filters>.bytreatment>div:hover{
+           color: black;
+        }
      .filters>div:nth-child(2){
          grid-area: b;
          border-bottom: 1px solid;
-     }
-     .filters>div:nth-child(3){
+        }
+        .filters>div:nth-child(3){
          grid-area: c;
          border-bottom: 1px solid;
      }
@@ -258,20 +365,67 @@
          <!-- filter left side portion -->
         <div class="filters"> 
             <div><h3>Filter by</h3></div>
-            <div>Ayurveda</div>
-            <div>PRICE</div>
-            <div>BRAND</div>
-            <div>TREATMENT</div>
+            <div class="byayurveda">
+                <p>Ayurveda</p>
+                <div>medicine</div>
+                <div>Ras & Sindur</div>
+                <div>Bhasma & Pishti</div>
+                <div>Vati Gutika & Guggulu</div>
+                <div>Asava Arishta & Kadha</div>
+                <div>Loha & Mandur</div>
+                <div>Churna, Avleha & Pak</div>
+                <div>Tailam & Ghrita</div>
+                <div>Herbs</div>
+            </div>
+            <div class="byprice">
+                  <p>PRICE</p>
+                 <div><input type="checkbox"><spann>BELOW 200</spann></div>
+                 <div><input type="checkbox"><spann>200 - 500</spann></div>
+                 <div><input type="checkbox"><spann>501 - 1000</spann></div>
+                 <div><input type="checkbox"><spann>ABOVE 1000</spann></div>
+            </div>
+            <div class="bybrand">
+                <p>BRAND</p>
+                <div>Baidyanath</div>
+                <div>Dabur</div>
+                <div>Unjha</div>
+                <div>Himalaya</div>
+                <div>Nagarjun</div>
+                <div>Dhootapapeshwar</div>
+                <div>Baidyanath (Nagpur)</div>
+                <div>Basic Ayurveda</div>
+                <div>Vyas</div>
+                <div>Sri Sri Tattva</div>
+            </div>
+            <div class="bytreatment">
+                <p>TREATMENT</p>
+                <div><input type="checkbox"><spann>Acne & Pimples</spann></div>
+                <div><input type="checkbox"><spann>Addiction</spann></div>
+                <div><input type="checkbox"><spann>Allergic Rhinitis</spann></div>
+                <div><input type="checkbox"><spann>Alopecia & Bald Patches</spann></div>
+                <div><input type="checkbox"><spann>Alzheimer's</spann></div>
+                <div><input type="checkbox"><spann>Anaemia</spann></div>
+                <div><input type="checkbox"><spann>Anxiety & Depression</spann></div>
+                <div><input type="checkbox"><spann>Appendicitis</spann></div>
+                <div><input type="checkbox"><spann>Arthritis & Rheumatism</spann></div>
+                <div><input type="checkbox"><spann>Asthma</spann></div>
+            </div>
 
         </div>
 
-        <div class="products">
-
+        <div class="products">          
+                                     <!-- right side of filter  -->
             <div class="cupancode1"><img src="https://static.oxinis.com/healthmug/image/asset/1027-mh-480.jpg" alt=""></div>
             <div class="cupancode2"><img src="https://static.oxinis.com/healthmug/image/asset/19-bh-480.png" alt=""></div>
             <div class="cupancode3"><img src="https://static.oxinis.com/healthmug/image/asset/597-qt-480.png" alt=""></div>
 
-            <div class="searchBar"></div>
+            <div class="searchBar">
+                                                    <!-- search bar  -->
+                   <div class="categories">Ayurveda</div>
+                   <div><input type="text"><div><i class="fas fa-search"></i></div></div>
+                   <div>sort by:</div>
+                   <div></div>
+            </div>
 
             <div class="items">
 
@@ -280,140 +434,4 @@
     </div>
 </body>
 </html>
-
-<script>
-    // product data store in arr of object bellow
-      var productData = [
-    
-    {
-        img:"https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
-        nam:"Dr. Loonawat Wartosin (3ml)",
-        detail:"Ayurvedic composition for elevated or hanging warts",
-        logo:"	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
-        price:"80",
-    },
-    {
-        img:"https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
-        nam:"Dr. Loonawat Wartosin (3ml)",
-        detail:"Ayurvedic composition for elevated or hanging warts",
-        logo:"	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
-        price:"80",
-    },
-    {
-        img:"https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
-        nam:"Dr. Loonawat Wartosin (3ml)",
-        detail:"Ayurvedic composition for elevated or hanging warts",
-        logo:"	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
-        price:"80",
-    },
-    {
-        img:"https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
-        nam:"Dr. Loonawat Wartosin (3ml)",
-        detail:"Ayurvedic composition for elevated or hanging warts",
-        logo:"	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
-        price:"80",
-    },
-    {
-        img:"https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
-        nam:"Dr. Loonawat Wartosin (3ml)",
-        detail:"Ayurvedic composition for elevated or hanging warts",
-        logo:"	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
-        price:"80",
-    },
-    {
-        img:"https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
-        nam:"Dr. Loonawat Wartosin (3ml)",
-        detail:"Ayurvedic composition for elevated or hanging warts",
-        logo:"	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
-        price:"80",
-    },
-    {
-        img:"https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
-        nam:"Dr. Loonawat Wartosin (3ml)",
-        detail:"Ayurvedic composition for elevated or hanging warts",
-        logo:"	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
-        price:"80",
-    },
-    {
-        img:"https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
-        nam:"Dr. Loonawat Wartosin (3ml)",
-        detail:"Ayurvedic composition for elevated or hanging warts",
-        logo:"	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
-        price:"80",
-    },
-    {
-        img:"https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
-        nam:"Dr. Loonawat Wartosin (3ml)",
-        detail:"Ayurvedic composition for elevated or hanging warts",
-        logo:"	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
-        price:"80",
-    },
-    {
-        img:"https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
-        nam:"Dr. Loonawat Wartosin (3ml)",
-        detail:"Ayurvedic composition for elevated or hanging warts",
-        logo:"	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
-        price:"80",
-    },
-    {
-        img:"https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
-        nam:"Dr. Loonawat Wartosin (3ml)",
-        detail:"Ayurvedic composition for elevated or hanging warts",
-        logo:"	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
-        price:"80",
-    },
-    {
-        img:"https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
-        nam:"Dr. Loonawat Wartosin (3ml)",
-        detail:"Ayurvedic composition for elevated or hanging warts",
-        logo:"	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
-        price:"80",
-    },
-]
-         
-//                 map productData and append in to div bellow
- 
-        productData.map(function(ele,index){
-          
-            var mainD = document.createElement("div");
-            mainD.setAttribute("class","itm");                   // main div for item img and details
-
-            var d1 = document.createElement("div");               //img
-            var img = document.createElement("img");
-            img.setAttribute("src",ele.img);
-            d1.append(img)
-
-            var d2 = document.createElement("div");
-            var name = document.createElement("p");   
-            name.setAttribute("id","iname")             //name of product
-            name.textContent = ele.nam;
-            var detail = document.createElement("p");
-            detail.textContent = ele.detail;
-            d2.prepend(name,detail)
-            
-            
-            var d3 = document.createElement("div");    // img for review stras img (still ppending)
-
-            var d4 = document.createElement("div");
-            var logo = document.createElement("img");
-            logo.setAttribute("src",ele.logo);
-            logo.setAttribute("src",ele.logo);
-            d4.append(logo)
-
-            var d5 = document.createElement("div");
-            var price = document.createElement("p");
-            price.setAttribute("id","price")
-            price.textContent = ele.price;
-            d5.append(price);
-            
-            var d6 = document.createElement("div");       // add to cart logo 
-
-
-          
-              mainD.append(d1,d2,d3,d4,d5,d6)
-           document.querySelector(".items").append(mainD)
-
-
-        })
-
-</script>
+<script src="ayurveda.js"></script>
