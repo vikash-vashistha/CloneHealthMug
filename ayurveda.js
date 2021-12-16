@@ -1,274 +1,597 @@
+// product data store in arr of object bellow
+var productData = [
+  {
+    img: "https://static.oxinis.com/healthmug/image/product/6125-1-200.jpg",
+    nam: "Baidyanath Bhringrajasava (450ml)",
+    detail:
+      "Useful in seasonal cold and viral flu, reduces bloating and helps in digestive process",
+    logo: "	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+    price: "90",
+    discount: "40",
+    actualprice: "110",
+    cat: "medicine",
+    s1: "fas fa-star",
+    s2: "fas fa-star",
+    s3: "fas fa-star-half-alt",
+    s4: "far fa-star",
+    s5: "far fa-star",
+  },
+  {
+    img: "https://static.oxinis.com/healthmug/image/product/6125-1-200.jpg",
+    nam: "Baidyanath Bhringrajasava (450ml)",
+    detail:
+      "Useful in seasonal cold and viral flu, reduces bloating and helps in digestive process",
+    logo: "	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+    price: "90",
+    discount: "40",
+    actualprice: "110",
+    cat: "medicine",
+    s1: "fas fa-star",
+    s2: "fas fa-star",
+    s3: "fas fa-star-half-alt",
+    s4: "far fa-star",
+    s5: "far fa-star",
+  },
+  {
+    img: "https://static.oxinis.com/healthmug/image/product/6125-1-200.jpg",
+    nam: "Baidyanath Bhringrajasava (450ml)",
+    detail:
+      "Useful in seasonal cold and viral flu, reduces bloating and helps in digestive process",
+    logo: "	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+    price: "90",
+    discount: "40",
+    actualprice: "110",
+    cat: "medicine",
+    s1: "fas fa-star",
+    s2: "fas fa-star",
+    s3: "fas fa-star-half-alt",
+    s4: "far fa-star",
+    s5: "far fa-star",
+  },
+  {
+    img: "https://static.oxinis.com/healthmug/image/product/6125-1-200.jpg",
+    nam: "Baidyanath Bhringrajasava (450ml)",
+    detail:
+      "Useful in seasonal cold and viral flu, reduces bloating and helps in digestive process",
+    logo: "	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+    price: "90",
+    discount: "40",
+    actualprice: "110",
+    cat: "medicine",
+    s1: "fas fa-star",
+    s2: "fas fa-star",
+    s3: "fas fa-star-half-alt",
+    s4: "far fa-star",
+    s5: "far fa-star",
+  },
+  {
+    img: "https://static.oxinis.com/healthmug/image/product/6125-1-200.jpg",
+    nam: "Baidyanath Bhringrajasava (450ml)",
+    detail:
+      "Useful in seasonal cold and viral flu, reduces bloating and helps in digestive process",
+    logo: "	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+    price: "90",
+    discount: "50",
+    actualprice: "110",
+    s1: "fas fa-star",
+    s2: "fas fa-star",
+    s3: "fas fa-star-half-alt",
+    s4: "far fa-star",
+    s5: "far fa-star",
+  },
+  {
+    img: "https://static.oxinis.com/healthmug/image/product/6125-1-200.jpg",
+    nam: "Baidyanath Bhringrajasava (450ml)",
+    detail:
+      "Useful in seasonal cold and viral flu, reduces bloating and helps in digestive process",
+    logo: "	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+    price: "90",
+    discount: "30",
+    actualprice: "110",
+    cat: "Ras & Sindur",
+    s1: "fas fa-star",
+    s2: "fas fa-star",
+    s3: "fas fa-star-half-alt",
+    s4: "far fa-star",
+    s5: "far fa-star",
+  },
+  {
+    img: "https://static.oxinis.com/healthmug/image/product/6125-1-200.jpg",
+    nam: "Baidyanath Bhringrajasava (450ml)",
+    detail:
+      "Useful in seasonal cold and viral flu, reduces bloating and helps in digestive process",
+    logo: "	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+    price: "90",
+    cat: "Ras & Sindur",
+    s1: "fas fa-star",
+    s2: "fas fa-star",
+    s3: "fas fa-star-half-alt",
+    s4: "far fa-star",
+    s5: "far fa-star",
+  },
+  {
+    img: "https://static.oxinis.com/healthmug/image/product/6125-1-200.jpg",
+    nam: "Baidyanath Bhringrajasava (450ml)",
+    detail:
+      "Useful in seasonal cold and viral flu, reduces bloating and helps in digestive process",
+    logo: "	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+    price: "90",
+    s1: "fas fa-star",
+    s2: "fas fa-star",
+    s3: "fas fa-star-half-alt",
+    s4: "far fa-star",
+    s5: "far fa-star",
+  },
 
+  {
+    img: "https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
+    nam: "Dr. Loonawat Wartosin (3ml)",
+    detail: "Ayurvedic composition for elevated or hanging warts",
+    logo: "	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+    price: "80",
+    s1: "fas fa-star",
+    s2: "fas fa-star",
+    s3: "fas fa-star-half-alt",
+    s4: "far fa-star",
+    s5: "far fa-star",
+  },
+  {
+    img: "https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
+    nam: "Dr. Loonawat Wartosin (3ml)",
+    detail: "Ayurvedic composition for elevated or hanging warts",
+    logo: "	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+    price: "80",
+  },
+  {
+    img: "https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
+    nam: "Dr. Loonawat Wartosin (3ml)",
+    detail: "Ayurvedic composition for elevated or hanging warts",
+    logo: "	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+    price: "80",
+    s1: "fas fa-star",
+    s2: "fas fa-star",
+    s3: "fas fa-star-half-alt",
+    s4: "far fa-star",
+    s5: "far fa-star",
+  },
+  {
+    img: "https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
+    nam: "Dr. Loonawat Wartosin (3ml)",
+    detail: "Ayurvedic composition for elevated or hanging warts",
+    logo: "	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+    price: "80",
+  },
+  {
+    img: "https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
+    nam: "Dr. Loonawat Wartosin (3ml)",
+    detail: "Ayurvedic composition for elevated or hanging warts",
+    logo: "	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+    price: "400",
+    s1: "fas fa-star",
+    s2: "fas fa-star",
+    s3: "fas fa-star-half-alt",
+    s4: "far fa-star",
+    s5: "far fa-star",
+  },
+  {
+    img: "https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
+    nam: "Dr. Loonawat Wartosin (3ml)",
+    detail: "Ayurvedic composition for elevated or hanging warts",
+    logo: "	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+    price: "80",
+  },
+  {
+    img: "https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
+    nam: "Dr. Loonawat Wartosin (3ml)",
+    detail: "Ayurvedic composition for elevated or hanging warts",
+    logo: "	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+    price: "300",
+    s1: "fas fa-star",
+    s2: "fas fa-star",
+    s3: "fas fa-star-half-alt",
+    s4: "far fa-star",
+    s5: "far fa-star",
+  },
+  {
+    img: "https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
+    nam: "Dr. Loonawat Wartosin (3ml)",
+    detail: "Ayurvedic composition for elevated or hanging warts",
+    logo: "	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+    price: "80",
+  },
+  {
+    img: "https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
+    nam: "Dr. Loonawat Wartosin (3ml)",
+    detail: "Ayurvedic composition for elevated or hanging warts",
+    logo: "	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+    price: "350",
+    s1: "fas fa-star",
+    s2: "fas fa-star",
+    s3: "fas fa-star-half-alt",
+    s4: "far fa-star",
+    s5: "far fa-star",
+  },
+  {
+    img: "https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
+    nam: "Dr. Loonawat Wartosin (3ml)",
+    detail: "Ayurvedic composition for elevated or hanging warts",
+    logo: "	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+    price: "167",
+  },
+  {
+    img: "https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
+    nam: "Dr. Loonawat Wartosin (3ml)",
+    detail: "Ayurvedic composition for elevated or hanging warts",
+    logo: "	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+    price: "80",
+    s1: "fas fa-star",
+    s2: "fas fa-star",
+    s3: "fas fa-star-half-alt",
+    s4: "far fa-star",
+    s5: "far fa-star",
+  },
+  {
+    img: "https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
+    nam: "Dr. Loonawat Wartosin (3ml)",
+    detail: "Ayurvedic composition for elevated or hanging warts",
+    logo: "	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+    price: "80",
+  },
+  {
+    img: "https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
+    nam: "Dr. Loonawat Wartosin (3ml)",
+    detail: "Ayurvedic composition for elevated or hanging warts",
+    logo: "	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+    price: "80",
+    s1: "fas fa-star",
+    s2: "fas fa-star",
+    s3: "fas fa-star-half-alt",
+    s4: "far fa-star",
+    s5: "far fa-star",
+  },
+  {
+    img: "https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
+    nam: "Dr. Loonawat Wartosin (3ml)",
+    detail: "Ayurvedic composition for elevated or hanging warts",
+    logo: "	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+    price: "80",
+  },
+  {
+    img: "https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
+    nam: "Dr. Loonawat Wartosin (3ml)",
+    detail: "Ayurvedic composition for elevated or hanging warts",
+    logo: "	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+    price: "80",
+    s1: "fas fa-star",
+    s2: "fas fa-star",
+    s3: "fas fa-star-half-alt",
+    s4: "far fa-star",
+    s5: "far fa-star",
+  },
+  {
+    img: "https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
+    nam: "Dr. Loonawat Wartosin (3ml)",
+    detail: "Ayurvedic composition for elevated or hanging warts",
+    logo: "	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+    price: "80",
+  },
+  {
+    img: "https://static.oxinis.com/healthmug/image/product/3263-2-400.jpg",
+    nam: "Himalaya Ashwagandha Tablet (60tab)",
+    detail:
+      "Remedy for nerves, mind and body's weakness, for body's defense mechanism.",
+    logo: "	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+    price: "165",
+    s1: "fas fa-star",
+    s2: "fas fa-star",
+    s3: "fas fa-star",
+    s4: "fas fa-star-half-alt",
+    s5: "far fa-star",
+  },
+  {
+    img: "https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
+    nam: "Dr. Loonawat Wartosin (3ml)",
+    detail: "Ayurvedic composition for elevated or hanging warts",
+    logo: "	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+    price: "80",
+    s1: "fas fa-star",
+    s2: "fas fa-star",
+    s3: "fas fa-star",
+    s4: "fas fa-star-half-alt",
+    s5: "far fa-star",
+  },
+  {
+    img: "https://static.oxinis.com/healthmug/image/product/6125-1-200.jpg",
+    nam: "Baidyanath Bhringrajasava (450ml)",
+    detail:
+      "Useful in seasonal cold and viral flu, reduces bloating and helps in digestive process",
+    logo: "	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+    price: "90",
+    s1: "fas fa-star",
+    s2: "fas fa-star",
+    s3: "fas fa-star-half-alt",
+    s4: "far fa-star",
+    s5: "far fa-star",
+  },
+  {
+    img: "https://static.oxinis.com/healthmug/image/product/134473-1-200.jpg",
+    nam: "Keva Stone Crush (100ml)",
+    detail:
+      "A complete formula for overall kidney health and useful in kidney stones also.",
+    logo: "	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+    price: "77",
+    s1: "fas fa-star",
+    s2: "fas fa-star",
+    s3: "fas fa-star",
+    s4: "fas fa-star-half-alt",
+    s5: "far fa-star",
+  },
+  {
+    img: "https://static.oxinis.com/healthmug/image/product/130156-2-400.jpg",
+    nam: "Unjha Bilwasav (450ml)",
+    detail: "For helping with indigestion and dysentery",
+    logo: "	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+    price: "165",
+    s1: "fas fa-star",
+    s2: "fas fa-star",
+    s3: "fas fa-star",
+    s4: "fas fa-star-half-alt",
+    s5: "far fa-star",
+  },
+  {
+    img: "https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
+    nam: "Dr. Loonawat Wartosin (3ml)",
+    detail: "Ayurvedic composition for elevated or hanging warts",
+    logo: "	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+    price: "80",
+    s1: "fas fa-star",
+    s2: "fas fa-star",
+    s3: "fas fa-star-half-alt",
+    s4: "far fa-star",
+    s5: "far fa-star",
+  },
+  {
+    img: "https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
+    nam: "Dr. Loonawat Wartosin (3ml)",
+    detail: "Ayurvedic composition for elevated or hanging warts",
+    logo: "	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+    price: "80",
+  },
+  {
+    img: "https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
+    nam: "Dr. Loonawat Wartosin (3ml)",
+    detail: "Ayurvedic composition for elevated or hanging warts",
+    logo: "	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+    price: "80",
+    s1: "fas fa-star",
+    s2: "fas fa-star",
+    s3: "fas fa-star",
+    s4: "fas fa-star-half-alt",
+    s5: "far fa-star",
+  },
+  {
+    img: "https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
+    nam: "Dr. Loonawat Wartosin (3ml)",
+    detail: "Ayurvedic composition for elevated or hanging warts",
+    logo: "	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+    price: "80",
+    s1: "fas fa-star",
+    s2: "fas fa-star",
+    s3: "fas fa-star-half-alt",
+    s4: "far fa-star",
+    s5: "far fa-star",
+  },
+  {
+    img: "https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
+    nam: "Dr. Loonawat Wartosin (3ml)",
+    detail: "Ayurvedic composition for elevated or hanging warts",
+    logo: "	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+    price: "80",
+    cat: "Vati Gutika & Guggulu",
+  },
+  {
+    img: "https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
+    nam: "Dr. Loonawat Wartosin (3ml)",
+    detail: "Ayurvedic composition for elevated or hanging warts",
+    logo: "	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+    price: "22",
+    cat: "Vati Gutika & Guggulu",
+    s1: "fas fa-star",
+    s2: "fas fa-star",
+    s3: "fas fa-star",
+    s4: "fas fa-star-half-alt",
+    s5: "far fa-star",
+  },
+  {
+    img: "https://static.oxinis.com/healthmug/image/product/3263-2-400.jpg",
+    nam: "Himalaya Ashwagandha Tablet (60tab)",
+    detail:
+      "Remedy for nerves, mind and body's weakness, for body's defense mechanism.",
+    logo: "	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
+    price: "165",
+    cat: "Vati Gutika & Guggulu",
+    s1: "fas fa-star",
+    s2: "fas fa-star",
+    s3: "fas fa-star",
+    s4: "fas fa-star-half-alt",
+    s5: "far fa-star",
+  },
+];
 
-    // product data store in arr of object bellow
-      var productData = [
-        {
-            img:"https://static.oxinis.com/healthmug/image/product/6125-1-200.jpg",
-            nam:"Baidyanath Bhringrajasava (450ml)",
-            detail:"Useful in seasonal cold and viral flu, reduces bloating and helps in digestive process",
-            logo:"	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
-            price:"90",
-            s1:"fas fa-star",
-            s2:"fas fa-star",
-            s3:"fas fa-star-half-alt",
-            s4:"far fa-star",
-            s5:"far fa-star",
-        },{
-            img:"https://static.oxinis.com/healthmug/image/product/6125-1-200.jpg",
-            nam:"Baidyanath Bhringrajasava (450ml)",
-            detail:"Useful in seasonal cold and viral flu, reduces bloating and helps in digestive process",
-            logo:"	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
-            price:"90",
-            s1:"fas fa-star",
-            s2:"fas fa-star",
-            s3:"fas fa-star-half-alt",
-            s4:"far fa-star",
-            s5:"far fa-star",
-        },{
-            img:"https://static.oxinis.com/healthmug/image/product/6125-1-200.jpg",
-            nam:"Baidyanath Bhringrajasava (450ml)",
-            detail:"Useful in seasonal cold and viral flu, reduces bloating and helps in digestive process",
-            logo:"	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
-            price:"90",
-            s1:"fas fa-star",
-            s2:"fas fa-star",
-            s3:"fas fa-star-half-alt",
-            s4:"far fa-star",
-            s5:"far fa-star",
-        },
-    
-   
-    {
-        img:"https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
-        nam:"Dr. Loonawat Wartosin (3ml)",
-        detail:"Ayurvedic composition for elevated or hanging warts",
-        logo:"	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
-        price:"80",
-        s1:"fas fa-star",
-        s2:"fas fa-star",
-        s3:"fas fa-star-half-alt",
-        s4:"far fa-star",
-        s5:"far fa-star",
-    },
-    {
-        img:"https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
-        nam:"Dr. Loonawat Wartosin (3ml)",
-        detail:"Ayurvedic composition for elevated or hanging warts",
-        logo:"	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
-        price:"80",
-    },
-    {
-        img:"https://static.oxinis.com/healthmug/image/product/3263-2-400.jpg",
-        nam:"Himalaya Ashwagandha Tablet (60tab)",
-        detail:"Remedy for nerves, mind and body's weakness, for body's defense mechanism.",
-        logo:"	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
-        price:"165",
-        s1:"fas fa-star",
-        s2:"fas fa-star",
-        s3:"fas fa-star",
-        s4:"fas fa-star-half-alt",
-        s5:"far fa-star",
-    },
-    {
-        img:"https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
-        nam:"Dr. Loonawat Wartosin (3ml)",
-        detail:"Ayurvedic composition for elevated or hanging warts",
-        logo:"	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
-        price:"80",
-        s1:"fas fa-star",
-        s2:"fas fa-star",
-        s3:"fas fa-star",
-        s4:"fas fa-star-half-alt",
-        s5:"far fa-star",
-    },
-    {
-        img:"https://static.oxinis.com/healthmug/image/product/6125-1-200.jpg",
-        nam:"Baidyanath Bhringrajasava (450ml)",
-        detail:"Useful in seasonal cold and viral flu, reduces bloating and helps in digestive process",
-        logo:"	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
-        price:"90",
-        s1:"fas fa-star",
-        s2:"fas fa-star",
-        s3:"fas fa-star-half-alt",
-        s4:"far fa-star",
-        s5:"far fa-star",
-    },
-    {
-        img:"https://static.oxinis.com/healthmug/image/product/134473-1-200.jpg",
-        nam:"Keva Stone Crush (100ml)",
-        detail:"A complete formula for overall kidney health and useful in kidney stones also.",
-        logo:"	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
-        price:"77",
-        s1:"fas fa-star",
-        s2:"fas fa-star",
-        s3:"fas fa-star",
-        s4:"fas fa-star-half-alt",
-        s5:"far fa-star",
-    },
-    {
-        img:"https://static.oxinis.com/healthmug/image/product/130156-2-400.jpg",
-        nam:"Unjha Bilwasav (450ml)",
-        detail:"For helping with indigestion and dysentery",
-        logo:"	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
-        price:"165",
-        s1:"fas fa-star",
-        s2:"fas fa-star",
-        s3:"fas fa-star",
-        s4:"fas fa-star-half-alt",
-        s5:"far fa-star",
-    },
-    {
-        img:"https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
-        nam:"Dr. Loonawat Wartosin (3ml)",
-        detail:"Ayurvedic composition for elevated or hanging warts",
-        logo:"	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
-        price:"80",
-        s1:"fas fa-star",
-        s2:"fas fa-star",
-        s3:"fas fa-star-half-alt",
-        s4:"far fa-star",
-        s5:"far fa-star",
-    },
-    {
-        img:"https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
-        nam:"Dr. Loonawat Wartosin (3ml)",
-        detail:"Ayurvedic composition for elevated or hanging warts",
-        logo:"	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
-        price:"80",
-    },
-    {
-        img:"https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
-        nam:"Dr. Loonawat Wartosin (3ml)",
-        detail:"Ayurvedic composition for elevated or hanging warts",
-        logo:"	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
-        price:"80",
-        s1:"fas fa-star",
-        s2:"fas fa-star",
-        s3:"fas fa-star",
-        s4:"fas fa-star-half-alt",
-        s5:"far fa-star",
-    }, {
-        img:"https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
-        nam:"Dr. Loonawat Wartosin (3ml)",
-        detail:"Ayurvedic composition for elevated or hanging warts",
-        logo:"	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
-        price:"80",
-        s1:"fas fa-star",
-        s2:"fas fa-star",
-        s3:"fas fa-star-half-alt",
-        s4:"far fa-star",
-        s5:"far fa-star",
-    },
-    {
-        img:"https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
-        nam:"Dr. Loonawat Wartosin (3ml)",
-        detail:"Ayurvedic composition for elevated or hanging warts",
-        logo:"	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
-        price:"80",
-    },
-    {
-        img:"https://static.oxinis.com/healthmug/image/product/5317-2-200.jpg",
-        nam:"Dr. Loonawat Wartosin (3ml)",
-        detail:"Ayurvedic composition for elevated or hanging warts",
-        logo:"	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
-        price:"22",
-        s1:"fas fa-star",
-        s2:"fas fa-star",
-        s3:"fas fa-star",
-        s4:"fas fa-star-half-alt",
-        s5:"far fa-star",
-    },
-    {
-        img:"https://static.oxinis.com/healthmug/image/product/3263-2-400.jpg",
-        nam:"Himalaya Ashwagandha Tablet (60tab)",
-        detail:"Remedy for nerves, mind and body's weakness, for body's defense mechanism.",
-        logo:"	https://static.oxinis.com/healthmug/image/asset/498-rm-150.png",
-        price:"165",
-        s1:"fas fa-star",
-        s2:"fas fa-star",
-        s3:"fas fa-star",
-        s4:"fas fa-star-half-alt",
-        s5:"far fa-star",
-    },
-]
-         
 //                 map productData and append in to div bellow
-      function display(productData){
+function display(productData) {
+  document.querySelector(".items").textContent = "";
+  productData.map(function (ele, index) {
+    var mainD = document.createElement("div");
+    mainD.setAttribute("class", "itm"); //main div for item img and details
 
-     
-        productData.map(function(ele,index){
-          
-            var mainD = document.createElement("div");
-            mainD.setAttribute("class","itm");                   //main div for item img and details
+    var d1 = document.createElement("div"); //img
+    var img = document.createElement("img");
+    img.setAttribute("src", ele.img);
+    d1.append(img);
 
-            var d1 = document.createElement("div");               //img
-            var img = document.createElement("img");
-            img.setAttribute("src",ele.img);
-            d1.append(img)
+    var d2 = document.createElement("div");
+    var name = document.createElement("p");
+    name.setAttribute("id", "iname"); //name of product
+    name.textContent = ele.nam;
+    var detail = document.createElement("p");
+    detail.textContent = ele.detail;
+    d2.prepend(name, detail);
 
-            var d2 = document.createElement("div");
-            var name = document.createElement("p");   
-            name.setAttribute("id","iname")             //name of product
-            name.textContent = ele.nam;
-            var detail = document.createElement("p");
-            detail.textContent = ele.detail;
-            d2.prepend(name,detail)
-            
-            
-            var d3 = document.createElement("div");    // img for review stras img (still ppending)
-            var stardiv1 = document.createElement("i");
-            var stardiv2 = document.createElement("i");
-            var stardiv3 = document.createElement("i");
-            var stardiv4 = document.createElement("i");
-            var stardiv5 = document.createElement("i");
-            stardiv1.setAttribute("class", ele.s1)
-            stardiv2.setAttribute("class", ele.s2)
-            stardiv3.setAttribute("class", ele.s3)
-            stardiv4.setAttribute("class", ele.s4)
-            stardiv5.setAttribute("class", ele.s5)
-            d3.append(stardiv1,stardiv2,stardiv3,stardiv4,stardiv5)
+    var d3 = document.createElement("div"); // img for review stras img (still ppending)
+    var stardiv1 = document.createElement("i");
+    var stardiv2 = document.createElement("i");
+    var stardiv3 = document.createElement("i");
+    var stardiv4 = document.createElement("i");
+    var stardiv5 = document.createElement("i");
+    stardiv1.setAttribute("class", ele.s1);
+    stardiv2.setAttribute("class", ele.s2);
+    stardiv3.setAttribute("class", ele.s3);
+    stardiv4.setAttribute("class", ele.s4);
+    stardiv5.setAttribute("class", ele.s5);
+    d3.append(stardiv1, stardiv2, stardiv3, stardiv4, stardiv5);
 
+    var d4 = document.createElement("div");
+    var logo = document.createElement("img");
+    logo.setAttribute("src", ele.logo);
+    logo.setAttribute("src", ele.logo);
+    d4.append(logo);
 
-            var d4 = document.createElement("div");
-            var logo = document.createElement("img");
-            logo.setAttribute("src",ele.logo);
-            logo.setAttribute("src",ele.logo);
-            d4.append(logo)
+    var d5 = document.createElement("div");
+    var price = document.createElement("p");
+    price.setAttribute("id", "price");
+    price.textContent = ele.price;
+    var rupeeLogo = document.createElement("span");
+    rupeeLogo.textContent = "₹";
+    rupeeLogo.style.fontSize = "20px";
+    var rupeeLogo1 = document.createElement("span");
+    rupeeLogo1.textContent = "₹";
+    rupeeLogo1.style.fontSize = "20px";
+    rupeeLogo1.style.color = "#b7b7b7";
+    var actualPrice = document.createElement("span");
+    actualPrice.textContent = ele.actualprice;
+    actualPrice.style.fontSize = "20px";
+    actualPrice.style.color = "#b7b7b7";
+    actualPrice.style.marginRight = "15px";
+    actualPrice.style.textDecoration = "line-through";
 
-            var d5 = document.createElement("div");
-            var price = document.createElement("p");
-            price.setAttribute("id","price")
-            price.textContent = ele.price;
-            var rupeeLogo = document.createElement("i");
-            rupeeLogo.textContent = "₹"
-            rupeeLogo.style.fontSize = "20px"
-            d5.append(rupeeLogo,price);
-            
-            var d6 = document.createElement("div");       // add to cart logo 
-            var cartLogo = document.createElement("i");
-            cartLogo.setAttribute("class","fas fa-cart-plus")
-            cartLogo.style.fontSize = "20px"
-            d6.append(cartLogo)
+    d5.append(rupeeLogo1, actualPrice, rupeeLogo, price);
 
+    var d6 = document.createElement("div"); // add to cart logo
+    var cartLogo = document.createElement("i");
+    cartLogo.setAttribute("class", "fas fa-cart-plus");
+    cartLogo.style.fontSize = "20px";
+    d6.append(cartLogo);
 
-            mainD.append(d1,d2,d3,d4,d5,d6)
-            document.querySelector(".items").append(mainD)
-            
-            // display(productData)
-            //  display(productData)
-        })
-    }
-   display(productData)
-     var ss = document.querySelector(".sbyName").addEventListener("click",sortbyname)
+    mainD.append(d1, d2, d3, d4, d5, d6);
+    document.querySelector(".items").append(mainD);
+
     
-     
+    
+    
+});
+// var numberofitem = document.createElement("div");
+// numberofitem.textContent = productData.length;
+// console.log(numberofitem);
+// document.querySelector(".products>div:nth-child(4)>div:nth-child(1)").append(numberofitem)
+}
+// document.querySelector(".products>div:nth-child(4)>div:nth-child(1)").textContent= "";
+display(productData);
+//sorting bellow
+// sort by name
+document.querySelector(".sbyName").addEventListener("click", sortbyname);
+
+function sortbyname() {
+  productData.sort(function (a, b) {
+    if (a.nam > b.nam) return -1;
+    if (a.nam < b.nam) return -1;
+    return 0;
+  });
+  display(productData);
+  // console.log(productData)
+}
+
+// sort by price   --1
+document.querySelector(".LtoH").addEventListener("click", sortbyLtoH);
+
+function sortbyLtoH() {
+  productData.sort(function (a, b) {
+    return Number(a.price) - Number(b.price);
+  });
+  display(productData);
+
+  // console.log(productData)
+}
+
+// sort by price   --2
+
+document.querySelector(".HtoL").addEventListener("click", sortbyHtoL);
+
+function sortbyHtoL() {
+  productData.sort(function (a, b) {
+    return Number(b.price) - Number(a.price);
+  });
+  display(productData);
+
+  // console.log(productData)
+}
 
 
-    function sortbyname(){
-            productData.sort(function(a,b){
-                return a.nam-b.nam;
-            })
-            // display(productData)
-        
-        console.log(productData)
-    }
+document.querySelector(".bayurveda1").addEventListener("click", filterby1);
+function filterby1() {
+  var filtitem = productData.filter(function (ele) {
+    return ele.cat == "medicine";
+  });
+  console.log(filtitem);
+  display(filtitem);
+}
+
+document.querySelector(".bayurveda2").addEventListener("click", filterby2);
+function filterby2() {
+  var filtitem = productData.filter(function (ele) {
+    return ele.cat == "Ras & Sindur";
+  });
+  console.log(filtitem);
+  display(filtitem);
+}
+
+document.querySelector(".bayurveda3").addEventListener("click", filterby3);
+function filterby3() {
+  var filtitem = productData.filter(function (ele) {
+    return ele.cat == "Bhasma & Pishti";
+  });
+  console.log(filtitem);
+  display(filtitem);
+}
+
+document.querySelector(".bayurveda4").addEventListener("click", filterby4);
+function filterby4() {
+  var filtitem = productData.filter(function (ele) {
+    return ele.cat == "Vati Gutika & Guggulu";
+  });
+//   console.log(filtitem);
+  display(filtitem);
+}
+
+
+//by price filter
+//bellow 200
+document.querySelector(".b200").addEventListener("click", filtby200);
+function filtby200(){
+    var filtbyprice = productData.filter(function(ele){
+        return Number(ele.price)<= 100;
+    }); 
+      console.log(filtbyprice)
+      display(filtbyprice)
+}
+
+//bellow 500 and abow 200
+document.querySelector(".b500").addEventListener("click", filtby500);
+function filtby500(){
+    var filtbyprice = productData.filter(function(ele){
+        return Number(ele.price)<= 500 &&  Number(ele.price)>= 201;
+    }); 
+      console.log(filtbyprice)
+      display(filtbyprice)
+}
+
