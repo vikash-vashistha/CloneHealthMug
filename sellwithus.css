@@ -1,0 +1,141 @@
+#container{
+    width: 100%;
+    height :600px;
+    border: 1px solid red;
+    margin-top: 90px;
+
+}
+#top{
+    width: 100%;
+    border: 1px solid red;
+    height :150px;
+  overflow: hidden;
+}
+#bottom{
+    width: 100%;
+    border: 1px solid blue;
+    height :430px; 
+    display: flex;
+    
+}
+#right{
+    width: 40%;
+    /* border: 1px solid red; */
+    height :410px;
+    margin-left:10%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 2%;
+    border: 1px solid red;
+     
+    
+}
+#box1{
+    width: 100%;
+    border: 1px solid green;
+    height :280px;
+    display: flex;
+}
+
+.box2{
+    width: 70%;
+    border: 1px solid yellow;
+    height :280px;
+  
+}
+
+
+form>input{
+    margin-bottom: 20px;
+    margin-top: 10px;
+   
+     
+}
+
+form>placeholder{
+    margin-left: 20px;
+    border: 1px solid grey;
+    
+}
+label{
+    color: grey;
+}
+  .Company{
+    height:30px;
+    text-align: center;
+  }
+
+  .name{
+      height: 30px;
+      text-align: center;
+  }
+
+  #state{
+    height: 30px;
+     text-align: center;
+     width: 180px;
+  }
+  .phone{
+    height: 30px;
+    text-align: center;
+  }
+
+#companytype{
+    margin-top: 5px;
+    height:30px;
+    /* width: 205px; */
+    border: 1px solid grey;
+    text-align: center;
+}
+
+.email{
+    height:30px;
+    text-align: center;
+}
+.city{
+    height:30px;
+    text-align: center;
+}
+#time{
+    margin-top: 5px;
+    height:30px;
+    width: 180px;
+    border: 1px solid grey;
+    text-align: center;
+}
+
+
+
+#left{
+    width: 40%;
+    border: 1px solid red;
+    height :400px;
+    margin-left: 10%;
+    text-align: left;
+   padding: 10px ;
+   margin-top: 20px;
+   font-style: inherit;
+}
+p{
+    color:  rgb(80,80,80);
+    /* padding: 10px; */
+     
+    
+}
+
+button{
+    width: 200px;
+    background-color: rgb(81,201,166);
+padding: 10px;
+cursor: pointer;
+color: white;
+ border: 0;
+margin-left: 30%;
+margin-top: 5px;
+height: 40px;
+ 
+}
+
+button:hover {
+    background-color: rgb(81,201,166);
+    color: white;
+  }
