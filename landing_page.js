@@ -32,3 +32,16 @@ function carousel() {
   y[myIndex - 1].style.color = "#51c9a6";
   setTimeout(carousel, 4000); // change in every 4 sec//
 }
+
+// START CONSULTATION
+var btn = document.querySelectorAll(".SC_H_btn");
+for (var i = 0; i < btn.length; i++) {
+  btn[i].addEventListener("click", function () {
+    window.location.href = "SC_H.html";
+  });
+}
+
+// Blog
+document.querySelector("#blog1").addEventListener("click", function () {
+  window.location.href = "blog1.html";
+});

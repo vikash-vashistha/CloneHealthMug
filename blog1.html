@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    #firstbox {
+      width: 100%;
+      display: flex;
+      border-bottom: solid #51c9a6;
+      font-family: sans-serif;
+      display: flex;
+      /* cursor: pointer; */
+    }
+
+    #firstbox>div>p {
+      padding-left: 50px;
+      font-size: medium;
+      cursor: pointer;
+      /* border: 1px solid red; */
+    }
+
+    #secondbox {
+      width: 100%;
+      display: flex;
+    }
+
+    #mini1s {
+      width: 50%;
+      border: 1px solid transparent;
+      margin-top: 150px;
+      margin-left: 50px;
+      font-family: sans-serif;
+    }
+
+    #mini1s>img {
+      width: 100%;
+    }
+
+    #mini1s>P {
+      color: gray;
+      line-height: 25px;
+    }
+
+    #minibox {
+      display: flex;
+    }
+
+    #minibox>div {
+      border: 1px solid transparent;
+      margin-left: 60px;
+    }
+
+    #red {
+      margin-left: 35%;
+
+    }
+
+    #blue {
+      width: 100%;
+      height: 200px;
+      border: 1px solid transparent;
+      display: flex;
+    }
+
+    #blue>div>img {
+      height: 200px;
+      margin-left: 50px;
+      border-radius: 50%;
+    }
+
+    #blue>div:nth-child(2) {
+      margin-left: 20px;
+    }
+
+    #h2 {
+      border-left: 5px solid red;
+
+    }
+
+    #h2>h2 {
+      padding-left: 5px;
+    }
+
+    #new {
+      width: 100%;
+      height: 500px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 150px 150px 150px;
+      grid-gap: 10px;
+    }
+
+    #new>div {
+      border: 1px solid transparent;
+      display: flex;
+      cursor: pointer;
+    }
+
+    #new>div>div {
+      width: 45%;
+      height: 100%;
+    }
+
+    #new>div>div>img {
+      height: 100%;
+      width: 100%;
+    }
+
+    #new>div>div>h3 {
+      margin-left: 10px;
+      font-family: sans-serif;
+      color: gray;
+    }
+
+    #new>div>div>p {
+      margin-left: 10px;
+      font-family: sans-serif;
+      color: rgb(35, 160, 209);
+    }
+
+    #mini2s {
+      border: 1px solid transparent;
+      width: 40%;
+      margin-left: 20px;
+      margin-top: 150px;
+    }
+
+    #new1 {
+      /* display: ; */
+      width: 100%;
+      height: 500px;
+      display: grid;
+      /* grid-template-columns: repeat(2, 1fr); */
+      grid-template-rows: 100px 100px 100px 100px 100px;
+      grid-gap: 10px;
+    }
+
+    #new1>div {
+      border: 1px solid transparent;
+      display: flex;
+      cursor: pointer;
+    }
+
+    #new1>div>div {
+      width: 45%;
+      height: 100%;
+      border: 1px solid transparent;
+    }
+
+    #new1>div>div>img {
+      height: 100%;
+      width: 100%;
+    }
+
+    #new1>div>div>h3 {
+      margin-left: 10px;
+      font-family: sans-serif;
+      color: gray;
+      cursor: pointer;
+    }
+
+    #new1>div>div>p {
+      margin-left: 10px;
+      font-family: sans-serif;
+      color: rgb(35, 160, 209);
+    }
+
+    #share1 {
+      border-left: 5px solid red;
+
+    }
+
+    #share>div>h2 {
+      padding-left: 5px;
+    }
+
+    #share2 {
+      width: 60%;
+      height: 70px;
+      border: 1px solid transparent;
+      display: flex;
+    }
+
+    #share2>div {
+      width: 60%;
+      height: 100%;
+      border: 1px solid transparent;
+      margin-left: 10px;
+    }
+
+    #share2>div>a>img {
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
+
+    /* Title Bar */
+    #btm2 {
+      /* height: 20%; */
+      background-color: #0b7670;
+      font: 12px;
+      font-family: Roboto, sans-serif;
+      color: #51c9a6;
+    }
+
+    #btm3 {
+      /* height: 70%; */
+      background-color: #51c9a6;
+      color: #e7fbfd;
+    }
+
+    #copyRight {
+      text-align: center;
+      color: #117150;
+      margin-top: 20px;
+    }
+
+    #btm2>div {
+      /* border: 1px solid red; */
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    #btm2>div>div {
+      /* border: 1px solid red; */
+      margin: auto;
+      margin-top: 10px;
+    }
+
+    #btm2>div>div>p:nth-child(1) {
+      color: white;
+    }
+
+    #btm1 {
+      display: flex;
+    }
+
+    #btm1>div {
+      margin: auto;
+      text-align: center;
+    }
+
+    #btm1>div>p {
+      color: #c9cacc;
+    }
+
+    h6,
+    h2 {
+      margin: 10px 15px;
+    }
+
+    h3 {
+      margin: 0px 15px;
+      font-weight: lighter;
+    }
+
+    p {
+      font-size: 11px;
+      margin: 0px 15px;
+      font-weight: lighter;
+    }
+  </style>
+</head>
+
+<body style="font-family: sans-serif;">
+
+  <div id="firstbox">
+    <div>
+      <img style="cursor: pointer;" src="https://static.oxinis.com/healthmug/image/blog/healthmug-logo.png" />
+    </div>
+    <div>
+      <p>OILS</p>
+    </div>
+    <div>
+      <p>BEAUTY</p>
+    </div>
+    <div>
+      <p>HEALTH CARE</p>
+    </div>
+
+    <!-- <hr> -->
+  </div>
+  <div id="secondbox">
+    <div id="mini1s">
+      <h1>Mirror, Mirror On The Wall- If They Laugh Then Screw Them ALL!!!!</h1>
+      <div id="minibox">
+        <div> Sohini Hazra</div>
+        <div> July 18, 2019</div>
+        <div> Views : 2739</div>
+        <div> 1 Comment</div>
+      </div>
+      <br>
+      <br>
+      <img src="https://static.oxinis.com/healthmug/image/blog/article/205-banner-700.jpg" alt="">
+
+      <P>Let me ask my readers a question: Have you ever looked at your reflection in the mirror and felt dissatisfied
+        with your body? Did you ever feel that you are too fat, too lean, your nose is a bit out of the place, and that
+        you have a double chin or just the fact that you don't look like any other super model out there! Well, if your
+        answer is yes, then this is what constitutes Body Image.</P>
+      <p>Body image is the perception that a person has of their physical self and the thoughts and feelings that result
+        from that perception.</p>
+      <p>According to the definition, these feelings can be positive (that the person feels extremely confident under
+        his/her own skin) negative (that the person doesn't feel confident under his/ her own skin) or both, and are
+        influenced by individual and environmental factors. But in accordance to research studies, chances are that the
+        latter part is more predominant i.e That feeling that you don't look like a supermodel, that you do not confer
+        to the conventional beauty standards of having a zero to negative figure, beautiful hair and flawless skin,
+        proper height and booty etc. This leads to the changing eating patterns. Because after all! Where will all those
+        carbs go?</p>
+      <P>The MINDS Foundation recognises that both social stigma and economic burden keeps many of the Indians from
+        seeking help for mental health issues. India, a refuge for billions but refuge only physically and I don't think
+        so the same goes for mental health as well! Is the same even taken into consideration?</P>
+      <P>Well! I could vouch on the fact that half of the population (and some of the readers of this blog as well)
+        don't even know what mental health is all about! A place where people visit temples and address cynical
+        religious Guru Ji's when any sign of abnormal behaviour is displayed.</P>
+      <P>According, to an NGO which works in the sector of mental wellness, 86% of the suicides occur in the low and
+        middle class in developing countries like India. This even defies the well-known idiom that riches cause
+        sleepless nights. Thus, the entire burden falls on the energy that we derive from, i.e. our food! The result is
+        disturbed eating patterns.</P>
+      <p>Binge watching some YouTube diet videos, listening to the advice of some diet consultant and deciding upon a
+        diet which doesn't even take your body type or blood group into account, ends up with people falling prey into
+        one of the following eating disorders:</p>
+      <p>Eating Disorders describe illnesses that are characterized by irregular eating habits and severe distress or
+        concern about body weight or shape.</p>
+      <p>Eating disturbances may include inadequate or excessive food intake which can ultimately damage an individual's
+        well-being. The most common forms of eating disorders include Anorexia Nervosa, Bulimia Nervosa, and Binge
+        Eating Disorder and affect both females and males.</p>
+      <h2>Anorexia Nervosa</h2>
+      <img src="https://th.bing.com/th/id/OIP.jqbBDy20BQc-VyVm7jPidgHaFz?w=240&h=188&c=7&r=0&o=5&dpr=1.05&pid=1.7"
+        alt="">
+      <P>The male or female suffering from anorexia nervosa will typically have an obsessive fear of gaining weight,
+        refusal to maintain a healthy body weight and an unrealistic perception of body image. Many people with anorexia
+        nervosa will fiercely limit the quantity of food they consume and view themselves as overweight, even when they
+        are clearly underweight. Anorexia can have damaging health effects, such as brain damage, multi-organ failure,
+        bone loss, heart difficulties, and infertility. The risk of death is highest in individuals with this disease.
+        Combating this mental condition requires mental strength and above all will power. Still some medicines can
+        provide you with a tranquil sensation so as to aid the process of recovery. Ayurvedic medicines can go a long
+        way in the healing process of the mind like Ashwagandha Tablets by Himalaya. You can directly click on the link
+        to buy the medicine.</P><span><a
+          href="https://www.healthmug.com/product/himalaya-ashwagandha-tablet-60tab/677797299">https://www.healthmug.com/product/himalaya-ashwagandha-tablet-60tab/677797299</a></span>
+      <h2>Bulimia Nervosa</h2>
+      <img
+        src="data:image/jpeg;base64,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"
+        alt="">
+      <p>This eating disorder is characterized by repeated binge eating followed by behaviours that compensate for the
+        overeating, such as forced vomiting, excessive exercise, or extreme use of laxatives or diuretics. Men and women
+        who suffer from Bulimia may fear weight gain and feel severely unhappy with their body size and shape. The
+        binge-eating and purging cycle is typically done in secret, creating feelings of shame, guilt, and lack of
+        control. Bulimia can have injuring effects, such as gastrointestinal problems, severe dehydration, and heart
+        difficulties resulting from an electrolyte imbalance. Combating this mental condition requires mental strength
+        and above all will power. Still some medicines can provide you with a tranquil sensation so as to aid the
+        process of recovery. Ayurvedic medicines can go a long way in the healing process of the mind like Dr.
+        Reckeweg's sedative drops. You can buy the medicine here by directly clicking on the link.</p>
+      <a
+        href="https://www.healthmug.com/product/dr-reckeweg-r15-vita-c15-250ml/1842571711">https://www.healthmug.com/product/dr-reckeweg-r15-vita-c15-250ml/1842571711</a>
+      <h2>Binge Eating Disorder</h2>
+      <img
+        src="data:image/jpeg;base64,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"
+        alt="">
+
+      <p>This eating disorder is characterized by repeated binge eating followed by behaviours that compensate for the
+        overeating, such as forced vomiting, excessive exercise, or extreme use of laxatives or diuretics. Men and women
+        who suffer from Bulimia may fear weight gain and feel severely unhappy with their body size and shape. The
+        binge-eating and purging cycle is typically done in secret, creating feelings of shame, guilt, and lack of
+        control. Bulimia can have injuring effects, such as gastrointestinal problems, severe dehydration, and heart
+        difficulties resulting from an electrolyte imbalance. Combating this mental condition requires mental strength
+        and above all will power. Still some medicines can provide you with a tranquil sensation so as to aid the
+        process of recovery. Ayurvedic medicines can go a long way in the healing process of the mind like Dr.
+        Reckeweg's sedative drops. You can buy the medicine here by directly clicking on the link.</p>
+      <a
+        href="https://www.healthmug.com/product/dr-reckeweg-r15-vita-c15-250ml/1842571711">https://www.healthmug.com/product/dr-reckeweg-r15-vita-c15-250ml/1842571711</a>
+      <p>Although there are a lot more different classes and categories of eating disorders which have cropped up
+        recently due to the increasing social stigma and peer pressure, yet to summarize these were the common few
+        types.</p>
+      <p>If you land upon identifying with one of these eating disorders or struggle everyday with your body image, I
+        would like to say that always remember that you are not alone. Nobody is perfect and there are millions out
+        there who feel the same. Always seek medical help if the burden feels cumbersome. Coming out is pretty difficult
+        but then help is always available. If my blog impacts even a single person, I would deem myself as successful.
+      </p>
+      <p>In the end I would like to end by quoting a few lines from Maya Angelou:</p>
+      <strong>"Pretty women wonder where my secret lies.
+
+      </strong><br><br>
+      <strong>I'm not cute or built to suit a fashion model's size</strong><br><br>
+      <strong>But when I start to tell them,</strong><br><br>
+      <strong>They think I'm telling lies..."</strong><br><br>
+      <p>Folks, this is the confidence one should inculcate within oneself. Maya Angelou is as an inspiration for many
+        and continues to be my idol.</p>
+
+      <div id="red">
+        <p>- SHARE THIS POST -</p>
+        <img
+          src="https://th.bing.com/th?q=Blue+Facebook+Icon&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.05&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247"
+          alt="">
+
+      </div>
+      <hr>
+      <div id="blue">
+        <!-- <hr> -->
+        <div>
+          <img src="https://static.oxinis.com/healthmug/image/blog/author/9.jpg" />
+        </div>
+        <div>
+          <h3>Sohini Hazra</h3>
+          <p>Just a couple of lines which I think are enough to define who, what and how I am! I am an independent lady,
+            With my spine straight. No matter how much you twist it It would NOT break..</p>
+        </div>
+        <!-- <hr> -->
+      </div>
+      <hr>
+      <div id="h2">
+        <h2>Related post</h2>
+      </div>
+      <div id="new">
+        <div>
+          <div>
+            <img src="https://static.oxinis.com/healthmug/image/blog/article/204-banner-120.jpg" alt="">
+          </div>
+          <div>
+            <h3>The Insomniac Couch/Coach!!!</h3>
+            <p>Healthmug Writer</p>
+          </div>
+
+        </div>
+        <div>
+          <div>
+            <img src=https://static.oxinis.com/healthmug/image/blog/article/207-banner-120.jpg alt="">
+          </div>
+          <div>
+            <h3>Dwayne “The Rock” Johnson’s healthy lifestyle and motivation</h3>
+            <!-- <p>Healthmug Writer</p> -->
+          </div>
+        </div>
+        <div>
+          <div>
+            <img src=https://static.oxinis.com/healthmug/image/blog/article/211-banner-120.jpg alt="">
+          </div>
+          <div>
+            <h3>Quick and easy tips to bid farewell to those irritating PMS symptoms</h3>
+            <!-- <p>Healthmug Writer</p> -->
+          </div>
+        </div>
+        <div>
+          <div>
+            <img src="https://static.oxinis.com/healthmug/image/blog/article/209-banner-120.jpg" alt="">
+          </div>
+          <div>
+            <h3>2020 Health Resolutions</h3>
+            <p>Healthmug Writer</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img src="https://static.oxinis.com/healthmug/image/blog/article/203-banner-120.jpg" alt="">
+          </div>
+          <div>
+            <h3>3 Steps Everyday Skin Care Guide for Healthy Looking Skin</h3>
+            <!-- <p>Healthmug Writer</p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="mini2s">
+
+      <div id="share">
+        <div id="share1">
+          <h2>Share</h2>
+        </div>
+        <div id="share2">
+          <div>
+            <a href="https://www.facebook.com/"><img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR76V7w3SQDNkzWGlAJ6J7e43N1IOIAi5P9Zg&usqp=CAU"
+                alt=""></a>
+          </div>
+          <div></div>
+        </div>
+
+
+      </div>
+
+      <div id="h2">
+        <h2>Tranding post</h2>
+      </div>
+      <div id="new1">
+        <div>
+          <div>
+            <img src="https://static.oxinis.com/healthmug/image/blog/article/216-banner-120.jpg" alt="">
+          </div>
+          <div>
+            <h3>The Insomniac Couch/Coach!!!</h3>
+            <p>Healthmug Writer</p>
+          </div>
+
+        </div>
+        <div>
+          <div>
+            <img src=https://static.oxinis.com/healthmug/image/blog/article/215-banner-120.jpg alt="">
+          </div>
+          <div>
+            <h3>Dwayne “The Rock” Johnson’s healthy lifestyle and motivation</h3>
+            <!-- <p>Healthmug Writer</p> -->
+          </div>
+        </div>
+        <div>
+          <div>
+            <img src=https://static.oxinis.com/healthmug/image/blog/article/214-banner-120.jpg alt="">
+          </div>
+          <div>
+            <h3>Quick and easy tips to bid farewell to those irritating PMS symptoms</h3>
+            <!-- <p>Healthmug Writer</p> -->
+          </div>
+        </div>
+        <div>
+          <div>
+            <img src="https://static.oxinis.com/healthmug/image/blog/article/213-banner-120.jpg" alt="">
+          </div>
+          <div>
+            <h3>2020 Health Resolutions</h3>
+            <p>Healthmug Writer</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img src="https://static.oxinis.com/healthmug/image/blog/article/212-banner-120.jpg" alt="">
+          </div>
+          <div>
+            <h3>3 Steps Everyday Skin Care Guide for Healthy Looking Skin</h3>
+            <!-- <p>Healthmug Writer</p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div id="btm1">
+      <div>
+        <i class="fas fa-shield-alt" style="color: #0b7670;"></i>
+        <h3>100% SECURE</h3>
+        <p>100% Payments Protection</p>
+      </div>
+      <div>
+        <i class="fas fa-wallet" style="color: #0b7670;"></i>
+        <h3>CASH ON DELIVERY</h3>
+        <p>Get First Pay Later</p>
+      </div>
+      <div>
+        <i class="fas fa-undo-alt" style="color: #0b7670;"></i>
+        <h3>EASY RETURN</h3>
+        <p>Easy Return & Refund</p>
+      </div>
+      <div>
+        <i class="fas fa-hands-helping" style="color: #0b7670;"></i>
+        <h3>HELP CENTER</h3>
+        <p>Call: 7838389846 Or Read FAQs</p>
+      </div>
+    </div>
+    <div id="btm2">
+      <div>
+        <div>
+          <p>Policies</p>
+          <p>Privacy Policy</p>
+          <p>Terms of Use</p>
+          <p>Returns and Cancellations</p>
+        </div>
+        <div>
+          <p>HealthMug</p>
+          <p>Contact Us</p>
+          <p>About Us</p>
+          <p>Blogs</p>
+        </div>
+        <div>
+          <p>May we help you</p>
+          <p>Track Your Order</p>
+          <p>Change / Cancel</p>
+          <p>Order</p>
+          <p>Report Abouse/</p>
+          <p>Infringement</p>
+          <p>FAQ</p>
+        </div>
+        <div>
+          <p>Stay Connected</p>
+          <p>
+            <i class="fab fa-facebook-f"></i>
+          <p>facebook</p>
+          </p>
+          <p>
+            <i class="fab fa-twitter"></i>
+          <p>Twitter</p>
+          </p>
+        </div>
+        <div>
+          <p>Payment Methods</p>
+          <p>
+            <i class="far fa-credit-card"></i>
+          <p>Debit/Credit Cards</p>
+          </p>
+          <p>
+            <i class="fas fa-desktop"></i>
+          <p>Net Banking</p>
+          </p>
+          <p>
+            <i class="fas fa-money-check-alt"></i>
+          <p>Cash On Delivery</p>
+          </p>
+          <p>
+            <i class="fas fa-wallet"></i>
+          <p>E-Wallet</p>
+          </p>
+        </div>
+        <div>
+          <p>Download App</p>
+          <div style="display: flex;">
+            <i class="fab fa-google-play"></i>
+            <div>
+              <p>GET IT ON</p>
+              <H3>Google Play</H3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <i class="fas fa-shield-alt" style="color: white;"></i>
+          <span>100% Secured & Trusted</span>
+          <div style="color: white; font-size: 12px; padding-left: 25px;">Secure payment by Razorpay</di>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="btm3">
+      <p><strong>Homeopathy:</strong> Dr. Reckeweg/ Dr. Willmar Schwabe/ Adel Pekana/ SBL/ Bakson’s/ Wheezal/ New
+        Life/ R S Bhargava/
+        Adven/
+        Bhandari/ Hapdco/ Medisynth/ Allen/ B.Jain/ Bioforce/ Dr.Wellmans/ Bios Lab/ HL/ Haslab/ Lords/ Jhactions/
+        Indo
+        German/
+        REPL/ Ralson</p>
+      <p><strong>Homeopathic Dilutions:</strong> Allium Cepa/ Alumina/ Antim Crud/ Antim Tart/ Apis Mel/ Arnica/
+        Arsenic Album/ Baryta Carb/ Belladonna/ Bryonia/
+        Calcarea Carb/ Carvo Veg/ Causticum/ Cina/ China/ Colocynthis/ Conium/ Eupatorium Perf/ Gelsemium/
+        Graphites/
+        Hepar
+        Sulph/ Ignatia/ Ipecac/ Kali Bichrom/ Ledum Pal/ Lycopodium/ Merc sol/ Nitric Acid/ Nux Vomica/ Ocimum Can/
+        Petroleum/
+        Phosphoric Acid/ Phosphorus/ Pulsatilla/ Rhus tox/ Ruta/ Sepia/ Sulphur/ Thuja</p>
+      <p>
+        <strong>Homeopathic Mother Tinctures :</strong>
+        Aesculus/ Agnus Castus/ Alfalfa/ Aspidosperma/ Avena Sativa/ Berberis Vulgaris/ Blatta/ Calendula/
+        Cantharis/
+        Carduus
+        Marianus/ Chelidonium/ Chimaphilla/ Crateagus/ Damina/ Drosera/ Echinacea/ Euphrasia/ Ginseng/ Hamamelis/
+        Hydrastis/
+        Hypericum/ Justicea/ Kalmegh/ Kreosote/ Lemna Minor/ Millefolium/ Phytolacca/ Plantago/ Sabadilla/ Sabal
+        Serrulata/
+        Senega/ Spongia/ Symphytum/ Teucrium Marum Verum/ Thlaspi Bursa Pestoris/ Uva Ursi
+      </p>
+      <p>
+        <strong>Bio-Chemic :</strong>
+        Calcarea Flour/ Calcarea Phos/ Calcarea Sulph/ Ferrum Phos/ Kali Mur/ Kali Phos/ Kali Sulph/ Mag Phos/ Nat
+        Mur/ Nat Phos/ Nat Sulph/ Silicea
+        Ayurveda and Unani : Patanjali/ Baidyanath/ Dabur/ Himalaya/ Charak/ Zandu/ Aimil/ Vyas/ Organic India/
+        Alarsin/
+        Dhootapapeshwar/ Hamdard/ Gurukul/ Maharishi Ayurved/ Multani/ Nagarjuna/ Kudos/ Unjha/ Aroma Magic/ Basic
+        Ayurveda/
+        Vicco
+      </p>
+      <p><strong>Bio-Chemic:</strong>Calcarea Flour/ Calcarea Phos/ Calcarea Sulph/ Ferrum Phos/ Kali Mur/ Kali
+        Phos/
+        Kali Sulph/ Mag Phos/ Nat Mur/ Nat
+        Phos/ Nat Sulph/ Silicea</p>
+      <p><strong>Ayurveda and Unani:</strong> Patanjali/ Baidyanath/ Dabur/ Himalaya/ Charak/ Zandu/ Aimil/ Vyas/
+        Organic India/ Alarsin/
+        Dhootapapeshwar/ Hamdard/ Gurukul/ Maharishi Ayurved/ Multani/ Nagarjuna/ Kudos/ Unjha/ Aroma Magic/ Basic
+        Ayurveda/
+        Vicco</p>
+      <p><strong>Ayurvedic Medicines:</strong> Ras and Sindoor/ Bhasm and Pishti/ Bati, Gutika and Guggulu/ Asava
+        Arishta and Kadha/ Loha and
+        Mandur/ Churan, Avleha and Pak/ Tailam and Ghrita/ Chyawanprash/ Honey/ Digestives/ Green Tea</p>
+      <p><strong>Herbal and Vegetable Juice:</strong> AloeVera Juice/ Amla Juice/ Apple Cider Vinegar/ Lauki Juice/
+        Jamun Juice/ Karela (Bitter
+        Guard) Juice/ Triphala Juice/ Panch Tulsi Juice/ Grass Meal Juice/ Neem Leaf Juice/ Brahmi Juice/ Giloy
+        Juice/
+        Noni
+        Juice</p>
+      <p><strong>Aroma Oils (Essential Oils):</strong> Beautiful Skin Oil/ Fairy Oil/ Stimulate Oil/ Dry Skin Oil/
+        Tea Tree Oil/ Jasmine Oil/
+        Sandalwood Oil/ Patchouli Oil/ Fennel Seed Oil/ Petitgrain Oil/ Exotica Oil/ Cedarwood Oil/ Cinnamom Oil/
+        Oily
+        Skin Oil/
+        Vertiver Oil/ Cypress Oil/ Rose Oil/ Rosemary Oil/ Frankincense Oil/ Ginger Oil/ Geranium Oil/ Flaky Oil/
+        Ylang Ylang
+        Oil/ Peppermint Oil/ Juniper Berry Oil/ Clarysage Oil/ Dreams Oil/ Bergamot Oil/ Lemongrass Oil/ Sensitive
+        Skin Oil/
+        Orange Oil/ Carrot Seed Oil/ Peace Oil/ Rosewood Oil/ Basil Oil/ Neroli Oil/ Lavender Oil/ Clove Oil/ Pine
+        Oil/
+        Eucaplytus Oil/ Happiness Oil/ Palmarosa Oil/ Lemon Oil/ Thyme Oil/ Morning Due Oil/ Nutmeg Oil</p>
+      <p><strong>Beauty and Personal Care:</strong> Natural and Organic Cosmetics/ Creams/ Shampoo/ Hair Oils/
+        Mehandi/ Hair Color/ Talcs/ Soaps/
+        Tooth Paste and Mouth Wash</p>
+      <h2>About Healthmug</h2>
+      <p>With a vision of bridging the gap between a pharmacy and the consumers, Healthmug came into its existence
+        in
+        2016. A
+        vision that quickly broadened up and helped it in becoming more than just a mere online portal, to an online
+        marketplace
+        for shopping Ayurvedic to Homeopathy to Unani medicines to Health Supplements and much more. Since its
+        inception,
+        Healthmug has grown into a world-class e-platform for everything related to health & fitness. What draws a
+        major
+        distinction between us and our contemporaries is the way we promote a harmonious relationship between the
+        sellers and
+        the buyers for the greater good.</p>
+      <p>Healthmug is the brainchild of Dr. Mohit Agarwal & Mr. Anubhav Bansal. They started this online platform
+        with
+        an idea of
+        supporting the local manufacturers & sellers through building a platform for Ayurvedic, Homeopathy & Unani
+        medicines and
+        to improve the health of the consumers in a holistic way. With an ever-expanding range of products and
+        services,
+        Healthmug is growing rapidly and seeks to become a one-stop portal for all healthcare needs.</p>
+      <p>While Healthmug brings medicines at your fingertips and at affordable prices, it also makes shopping online
+        an easy
+        task. Not just for the consumers, even for the sellers & the brands, this platform makes selling products
+        easy
+        and
+        hassle-free. Since day one, we have supported many small & medium local brands to sell their products and
+        have
+        helped
+        them in sharpening their entrepreneurial skills. Along with these, we have also given numerous big brands a
+        platform to
+        expand their customer base. We believe in the philosophy of growing together and thus we motivate the
+        sellers
+        to do
+        their best. All thanks to our comprehendible policies, everyone from a small seller to a wholesaler to a
+        brand, can
+        easily connect with us and sell their products.</p>
+      <p>Shop for medicines, wellness products, and health supplements online from top brands like Dr. Reckeweg, Dr.
+        Willmar
+        Schwabe, Adel Pekana, SBL, Haslab, Bakson etc. Customers can shop from a wide range of Ayurvedic products
+        available
+        online like Bhasma & Pishti, Bati, Gutika & Guggulu Ras, Sindoor, Asava Arishtha etc. at attractive prices.
+        For organic
+        food items, Herbal Juices, Green Teas, etc. from popular brands like Dabur, Baidyanath, Zandu, Himalaya,
+        Organic India,
+        Unjha, Basic Ayurveda and counting, customers can shop online and buy these products at attractive prices
+        and
+        offers.
+        Customers can now enjoy the benefit of shopping online for Allopathic medicines and getting them delivered
+        right at
+        their doorsteps. Shop from our online pharmacy for Allopathic medicines and drugs at great prices. Shop
+        online
+        from the
+        widest range of products listed across on our website, across a wide range of categories and give yourself
+        and
+        your
+        loved ones a gift of wellbeing. Come, join us and start living a healthy life and be a part of the Healthmug
+        family.</p>
+      <div id="copyRight">
+        <p>Copyright© 2019. All rights reserved.</p>
+        <h6>In compliance with Drug and Cosmetic Act and Rules, we dont sell schedule H, H1, X or any habit forming
+          drugs.</h6>
+        <h3>Healthmug.com</h3>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
