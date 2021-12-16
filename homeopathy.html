@@ -496,17 +496,20 @@
     grid-gap: 10px;
     justify-content: space-around;
     grid-template-areas:
-      /* "a a a a a a a a a a a a a a a a a a a a" */
+      "a a a a a a a a a a a a a a a a a a a a"
       "b b b b c c c c c c c c c c c c c c c c"
     ;
 
   }
 
   /* container chileds */
-  /* .container>div:nth-child(1){ */
-  /* grid-area: a; */
+  .container>div:nth-child(1){
+  grid-area: a;
   /* border: 1px solid; */
-  /* } */
+  color: gray;
+  margin-left: 20px;
+  font-size: 12px;
+  }
   .container>div:nth-child(2) {
     margin-left: 20px;
     grid-area: b;
@@ -1018,7 +1021,7 @@
   <!-- main container -->
   <div class="container">
 
-    <div class="head"></div>
+    <div class="head">Home > homeopathy</div>
 
     <!-- filter left side portion -->
     <div class="filters">
