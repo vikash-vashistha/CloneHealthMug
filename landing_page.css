@@ -1,7 +1,7 @@
 /* frame */
 #main {
-  height: 5520px;
-  border: 1px solid black;
+  height: 5840px;
+  /* border: 1px solid black; */
   display: grid;
   grid-template-areas:
     "z z z z z z z z"
@@ -51,12 +51,14 @@
     "p p p p p p p p"
     "p p p p p p p p";
 
-  grid-gap: 15px;
+  grid-gap: 30px;
 }
 
 #main > div {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   font-family: sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  cursor: pointer;
 }
 
 #main > div:nth-child(1) {
@@ -128,10 +130,9 @@
 }
 
 #main > div > div {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   text-align: left;
   padding: 15px;
-  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 }
 
 #btm1 {
@@ -160,13 +161,13 @@
 }
 
 #btm2 > div {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   flex-wrap: wrap;
 }
 
 #btm2 > div > div {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin: auto;
   margin-top: 10px;
 }
@@ -240,7 +241,7 @@ img {
   flex-wrap: wrap;
 }
 .TC > div > div {
-  border: 1px dashed black;
+  /* border: 1px dashed black; */
   margin: 10px;
   height: 35%;
   width: 10%;
@@ -282,7 +283,7 @@ img {
   justify-content: space-between;
 }
 .HC > div {
-  border: 1px dashed black;
+  /* border: 1px dashed black; */
   margin: 10px;
   height: 35%;
   width: 13%;
@@ -310,7 +311,7 @@ img {
   justify-content: space-between;
 }
 .TB > div {
-  border: 1px dashed black;
+  /* border: 1px dashed black; */
   margin: 10px;
   height: 35%;
   width: 13%;
@@ -388,7 +389,7 @@ img {
 }
 
 .blog > div {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .blog > div:nth-child(1) {
@@ -464,7 +465,7 @@ img {
 }
 
 .A img {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 80%;
 }
 
@@ -476,14 +477,14 @@ img {
 .A1 div {
   height: 120px;
   width: 150px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   text-align: center;
 }
 
 .A1 h3 {
   margin: auto;
   width: 120px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   text-align: center;
 }
 
@@ -510,7 +511,7 @@ img {
 
 .A2 {
   /* margin: 5px; */
-  border: 1px solid green;
+  /* border: 1px solid green; */
   width: 70%;
   display: flex;
   justify-content: space-around;
@@ -520,14 +521,14 @@ img {
 .A2 i {
   border: 1px solid #dcdbdb;
   padding: 10px 10px;
-  margin: 100px 0px;
+  margin: 110px 0px;
   justify-content: center;
   color: #dcdbdb;
   background-color: rgb(250, 246, 246);
 }
 
 .A .span {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   height: 20%;
   margin-top: 10px;
 }
@@ -573,10 +574,9 @@ img {
   padding: 10px 0px;
   margin-left: 0%;
 }
-/* .navbar-brand > img {
-  margin: 0%;
-  padding: 0%;
-} */
+.navbar-brand > img {
+  width: 95%;
+}
 
 #search {
   float: left;
@@ -584,6 +584,13 @@ img {
   padding-left: 0%;
   /* padding-right: 0%; */
   /* margin-right: 0%; */
+}
+
+#search_bar {
+  padding-left: 10px;
+  padding-right: 0%;
+  margin-right: 0%;
+  border: 1px solid #dcdbdb;
 }
 
 .nav > img {
@@ -614,16 +621,18 @@ img {
   justify-content: center;
   background: #51c9a6;
   width: 100%;
-  height: 49px;
-  /* border: 1px solid #51c9a6; */
+  height: 30px;
+  border: 1px solid #51c9a6;
 }
 
 #nav-2 li {
-  margin-left: 20px;
+  margin-top: 9px;
+  margin-left: 30px;
   color: white;
   float: left;
-  padding: 0px 0px;
+  padding: 0px;
   list-style: none;
+  font-size: 13px;
 }
 
 li:hover {
@@ -638,7 +647,7 @@ input[type="text"] {
 }
 
 .icon {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   /* margin-left: 125px;
   padding-left: 200px;
   align-items: flex-end; */
