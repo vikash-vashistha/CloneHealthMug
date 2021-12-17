@@ -22,125 +22,127 @@
   }
 
   /* navbar */
-  .nav-bar {
-    /* background: cyan; */
-    height: 70px;
-    width: 100%;
-  }
 
-  .nav-bar a {
-    float: left;
-    margin-top: 20px;
-    margin: 10px 20px;
-  }
+.nav-bar {
+  /* background: cyan; */
+  height: 70px;
+}
 
-  .form {
-    height: 30px;
-    width: 255px;
-  }
+.nav-bar a {
+  float: left;
+  margin-top: 20px;
+  margin: 10px 50px;
+}
 
-  /* .navbar-brand {
-  padding-right: 30px;
-} */
-  #search {
-    float: left;
-    margin-top: 20px;
-    padding-left: 0px;
-  }
+.form {
+  height: 30px;
+  width: 255px;
+}
 
-  .nav>img {
-    width: 90%;
-    padding-top: 10px;
-  }
+.navbar-brand {
+  width: 230px;
+  padding: 10px 0px;
+  margin-left: 0%;
+}
 
-  .btn {
-    height: 36px;
-    width: 50px;
-    background-color: rgb(81, 201, 166);
-    /* background: rgb(81,201,166); */
-    color: white;
-    border: none;
-  }
+.navbar-brand > img {
+  width: 95%;
+}
 
-  .btn:hover {
-    background-color: rgb(11, 184, 126);
-  }
+#search {
+  float: left;
+  margin-top: 20px;
+  padding-left: 0%;
+  /* padding-right: 0%; */
+  /* margin-right: 0%; */
+}
 
-  .icon {
-    width: 32%;
-    height: 40px;
-    /* border: 1px solid red; */
-    display: flex;
-    justify-content: space-around;
-    float: right;
-    margin-top: 20px;
-  }
+#search_bar {
+  padding-left: 10px;
+  padding-right: 0%;
+  margin-right: 0%;
+  border: 1px solid #dcdbdb;
+}
 
-  #nav-2 {
-    display: flex;
-    justify-content: center;
-    background: #51c9a6;
-    width: 100%;
-    height: 40px;
-    /* border: 1px solid #51c9a6; */
-  }
+.nav > img {
+  width: 90%;
+  padding-top: 10px;
+}
 
-  #nav-2 li {
-    margin-left: 20px;
-    color: white;
-    font-size: 12px;
-    float: left;
-    padding: 0px 0px;
-    list-style: none;
-  }
+.btn {
+  border: transparent;
+  padding-left: 0%;
+  margin-left: 0%;
+  height: 36px;
+  width: 50px;
+  background: #51c9a6;
+  color: white;
+}
 
-  li:hover {
-    cursor: pointer;
-  }
+.icon {
+  width: 32%;
+  height: 40px;
+  /* border: 1px solid red; */
+  float: right;
+  margin-top: 20px;
+}
 
-  input[type="text"] {
-    width: 480px;
-    margin-left: 40px;
-    border: 0.5px solid #e5d6d6;
-    height: 30px;
-  }
+#nav-2 {
+  display: flex;
+  justify-content: center;
+  background: #51c9a6;
+  width: 100%;
+  height: 30px;
+  border: 1px solid #51c9a6;
+}
 
-  .icon {
-    /* border: 1px solid red; */
-    /* margin-left: 125px;
+#nav-2 li {
+  margin-top: 9px;
+  margin-left: 30px;
+  color: white;
+  float: left;
+  padding: 0px;
+  list-style: none;
+  font-size: 13px;
+}
+#nav-2 > li > a {
+  text-decoration: none;
+}
+
+#nav-2 > li:hover {
+  cursor: pointer;
+  background-color: whitesmoke;
+  color: rgb(112, 60, 60);
+}
+
+input[type="text"] {
+  width: 480px;
+  height: 30px;
+  padding-right: 0%;
+  margin-right: 0%;
+}
+
+.icon {
+  /* border: 1px solid red; */
+  /* margin-left: 125px;
   padding-left: 200px;
   align-items: flex-end; */
-    width: 340px;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    /* justify-content: end; */
-  }
+  width: 300px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 
-  .icon>div>p {
-    color: #898989;
-  }
+.icon > div > p {
+  color: #898989;
+}
 
-  .icon i {
-    font-size: 20px;
-    margin-left: 10%;
-    color: gray;
-    margin-right: 25px;
-  }
-
-  .icon i:hover {
-    color: rgb(17, 12, 12);
-    /* background-color: green; */
-  }
-
-  .icon i:nth-child(4) {
-    color: rgb(81, 201, 166);
-    font-size: 28px;
-  }
-
-  .icon i:nth-child(4):hover {
-    color: rgb(35, 161, 125);
-  }
+.icon i {
+  font-size: 20px;
+  margin: 0%;
+  margin-right: 25px;
+}
 
   /* Bubble Advertisment */
   .bbl {
@@ -981,40 +983,38 @@
 
         </a href="#">
         <form id="search">
-          <input id="" type="text" placeholder="Search Products">
+          <input id="search_bar" type="text" placeholder="Search Products">
           <button class="btn" type="button"><i class="fas fa-search"></i> </button>
         </form>
         <div class="icon">
           <div>
-            <i class="fa-regular fa-envelope"></i>
+            <i class="fa-regular fa-envelope" style="color: #898989;"></i>
             <p>contact us</p>
           </div>
           <div>
-            <i class="fa-solid fa-wallet"></i>
+            <i class=" fa-solid fa-wallet" style="color: #898989;"></i>
             <p>Sell With Us</p>
           </div>
           <div>
-            <i class="fa-solid fa-user"></i>
+            <i class=" fa-solid fa-user" style="color: #898989;"></i>
             <p>Sign In</p>
           </div>
-          <i class="fa-solid fa-cart-shopping"></i></a>
+          <i class="fa-solid fa-cart-shopping" style="color: aquamarine; "></i></a>
         </div>
       </nav>
 
       <nav id="nav-2">
-        <ul>
-          <li>Disease</li>
-          <li>Allopathy</li>
-          <li>Homeopathy</li>
-          <li>Ayurveda</li>
-          <li>Unani</li>
-          <li>Nutrtion</li>
-          <li>Personal Care</li>
-          <li>Baby Care</li>
-          <li>Sexual Wellness</li>
-          <li>Fitness</li>
-          <li>Consultation</li>
-        </ul>
+        <li>Disease</li>
+        <li> Allopathy</li>
+        <li> Homeopathy</li>
+        <li> Ayurveda</li>
+        <li> Unani</li>
+        <li> Nutrtion</li>
+        <li> Personal Care</li>
+        <li> Baby Care</li>
+        <li> Sexual Wellness</li>
+        <li> Fitness</li>
+        <li> Consultation</li>
       </nav>
 
     </header>
