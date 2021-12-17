@@ -1,7 +1,7 @@
 /* frame */
 #main {
   height: 5840px;
-  /* border: 1px solid black; */
+  border: 1px solid black;
   display: grid;
   grid-template-areas:
     "z z z z z z z z"
@@ -55,7 +55,7 @@
 }
 
 #main > div {
-  /* border: 1px solid red; */
+  border: 1px solid red;
   font-family: sans-serif;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
   cursor: pointer;
@@ -161,13 +161,13 @@
 }
 
 #btm2 > div {
-  /* border: 1px solid red; */
+  border: 1px solid red;
   display: flex;
   flex-wrap: wrap;
 }
 
 #btm2 > div > div {
-  /* border: 1px solid red; */
+  border: 1px solid red;
   margin: auto;
   margin-top: 10px;
 }
@@ -241,7 +241,7 @@ img {
   flex-wrap: wrap;
 }
 .TC > div > div {
-  /* border: 1px dashed black; */
+  border: 1px dashed black;
   margin: 10px;
   height: 35%;
   width: 10%;
@@ -265,17 +265,41 @@ img {
   color: #adaaab;
 }
 
+.TC > div > div > div:nth-child(2):hover {
+  color: #51c9a6;
+}
+
 /* Bubble Advertisment */
 .bbl {
   display: flex;
 }
 
-.bbl > img {
+.bbl > div {
+  border: 1px solid black;
   margin: auto;
-  height: 90%;
-  width: 32%;
+  max-height: 84%;
+  max-width: 30%;
+  overflow: hidden;
 }
 
+.bbl > div > img {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.bbl > div > img:hover {
+  transform: scale(1.2);
+}
+
+/* .bubble:hover {
+  font-size: 1000px;
+}
+#v:hover {
+  font-size: 50px;
+} */
 /* shop by health concern */
 .HC {
   color: #525d5d;
@@ -283,7 +307,7 @@ img {
   justify-content: space-between;
 }
 .HC > div {
-  /* border: 1px dashed black; */
+  border: 1px dashed black;
   margin: 10px;
   height: 35%;
   width: 13%;
@@ -304,6 +328,10 @@ img {
   font-size: 13px;
 }
 
+.HC > div > div:nth-child(2):hover {
+  color: #51c9a6;
+}
+
 /* SHOP BY TOP BRANDS */
 .TB {
   color: #525d5d;
@@ -311,7 +339,7 @@ img {
   justify-content: space-between;
 }
 .TB > div {
-  /* border: 1px dashed black; */
+  border: 1px dashed black;
   margin: 10px;
   height: 35%;
   width: 13%;
@@ -328,6 +356,9 @@ img {
   font-size: 13px;
 }
 
+.TB > div > div:nth-child(2):hover {
+  color: #51c9a6;
+}
 /* Static advertisment */
 
 .SA {
@@ -375,6 +406,14 @@ img {
   height: 40px;
 }
 
+.SC > div > div > div > button:hover {
+  border: 1px solid #51c9a6;
+
+  border: 1px solid #51c9a6;
+  background-color: #51c9a6;
+  color: white;
+}
+
 /* Blogs */
 .blog {
   margin: auto;
@@ -389,7 +428,7 @@ img {
 }
 
 .blog > div {
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 .blog > div:nth-child(1) {
@@ -436,7 +475,7 @@ img {
 }
 
 .blog > div > div > div {
-  /* border: 1px solid red; */
+  border: 1px solid red;
   margin: auto;
   margin-top: 15px;
   font-size: 12px;
@@ -465,7 +504,7 @@ img {
 }
 
 .A img {
-  /* border: 1px solid red; */
+  border: 1px solid red;
   height: 80%;
 }
 
@@ -477,14 +516,14 @@ img {
 .A1 div {
   height: 120px;
   width: 150px;
-  /* border: 1px solid black; */
+  border: 1px solid black;
   text-align: center;
 }
 
 .A1 h3 {
   margin: auto;
   width: 120px;
-  /* border: 1px solid red; */
+  border: 1px solid red;
   text-align: center;
 }
 
@@ -500,6 +539,10 @@ img {
   color: #525d5d;
 }
 
+.img p:hover {
+  color: #51c9a6;
+}
+
 .A1 div button {
   border: transparent;
   width: 100px;
@@ -511,7 +554,7 @@ img {
 
 .A2 {
   /* margin: 5px; */
-  /* border: 1px solid green; */
+  border: 1px solid green;
   width: 70%;
   display: flex;
   justify-content: space-around;
@@ -528,7 +571,7 @@ img {
 }
 
 .A .span {
-  /* border: 1px solid green; */
+  border: 1px solid green;
   height: 20%;
   margin-top: 10px;
 }
@@ -611,7 +654,7 @@ img {
 .icon {
   width: 32%;
   height: 40px;
-  /* border: 1px solid red; */
+  border: 1px solid red;
   float: right;
   margin-top: 20px;
 }
@@ -647,7 +690,7 @@ input[type="text"] {
 }
 
 .icon {
-  /* border: 1px solid red; */
+  border: 1px solid red;
   /* margin-left: 125px;
   padding-left: 200px;
   align-items: flex-end; */

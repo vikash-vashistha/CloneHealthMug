@@ -105,13 +105,14 @@ input[type="text"] {
 }
 
 .container {
-  width: 65%;
-  height: 400px;
+  width: 50%;
+  height: 450px;
   /* border: 1px solid red; */
   /* margin-top: 5%; */
-  margin-left: 20%;
+  margin-left: 30%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  margin-top: 0px;
 }
 #top {
   width: 100%;
@@ -128,10 +129,13 @@ input[type="text"] {
   margin-top: 15px;
   font-family: Roboto, sans-serif;
 }
+#top > div > p {
+  font-size: 13px;
+}
 
 #image {
   /* margin-left: 100%; */
-  padding-left: 40%;
+  padding-left: 50%;
 }
 #bottom {
   width: 100%;
@@ -142,48 +146,49 @@ input[type="text"] {
 #sign {
   margin: 20px;
 }
-label {
-  display: block;
-  color: #898989;
-  font-size: 18px;
-  margin-top: 5px;
-}
+
 #sign > input {
   display: block;
-  width: 50%;
+  width: 80%;
   background: transparent;
   outline: none;
   border: none;
   border-bottom: 1px solid skyblue;
+  margin-left: 20px;
+}
+p1 {
+  font-size: 11px;
+  font-family: Roboto, sans-serif;
+  color: #898989;
+  margin-left: 20px;
 }
 
-#sign input:nth-child(5) {
+#sign > input:nth-child(9) {
   display: block;
-  width: 50%;
-  margin-top: 3%;
-  margin-left: 25%;
+  width: 80%;
+  margin-top: 5%;
+  margin-left: 4%;
   height: 40px;
   outline: none;
   border: none;
   background-color: rgb(240, 157, 41);
   color: white;
   cursor: pointer;
+  font-size: 19px;
 }
+
 #sign > button:hover {
   background-color: rgb(218, 138, 28);
   color: white;
 }
 
-.forget > a {
-  margin-left: 45%;
+p2 {
+  margin-left: 67%;
   color: rgb(81, 201, 166);
+  cursor: pointer;
 }
-.email > input {
-  outline: none;
-  border: none;
-}
-.email > a {
-  color: rgb(81, 201, 166);
+p2:hover {
+  text-decoration: underline;
 }
 
 #fotter {
