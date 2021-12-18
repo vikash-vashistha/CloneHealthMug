@@ -22,12 +22,28 @@ function carousel() {
 var btn = document.querySelectorAll(".SC_H_btn");
 for (var i = 0; i < btn.length; i++) {
   btn[i].addEventListener("click", function () {
-    window.location.href = "SC_H.html";
+    window.location.href = "startConsultation.html";
   });
 }
 // Blog
 document.querySelector("#blog1").addEventListener("click", function () {
   window.location.href = "blog1.html";
+});
+
+document.querySelector("#blog2").addEventListener("click", function () {
+  window.location.href = "blog2.html";
+});
+
+document.querySelector("#blog3").addEventListener("click", function () {
+  window.location.href = "blog3.html";
+});
+
+document.querySelector("#blog4").addEventListener("click", function () {
+  window.location.href = "blog4.html";
+});
+
+document.querySelector("#blog5").addEventListener("click", function () {
+  window.location.href = "blog5.html";
 });
 
 // SignIn
@@ -69,15 +85,26 @@ for (var i = 0; i < ayurveda.length; i++) {
   });
 }
 
-// Bubble image
+// Homeopathy
+var homeopathy = document.querySelectorAll(".homeopathy");
+for (var i = 0; i < homeopathy.length; i++) {
+  homeopathy[i].addEventListener("click", function () {
+    window.location.href = "homeopathy.html";
+  });
+}
 
-// var bubble = document.querySelectorAll(".bubble");
-// for (var i = 0; i < bubble.length; i++) {
-//   var event1 = bubble[i];
-//   bubble[i].addEventListener("mouseenter", function () {
-//     event1.style.width = "150%";
-//   });
-//   bubble[i].addEventListener("mouseleave", function () {
-//     event1.style.width = "100%";
-//   });
-// }
+// Unani
+var unani = document.querySelectorAll(".unani");
+for (var i = 0; i < unani.length; i++) {
+  unani[i].addEventListener("click", function () {
+    window.location.href = "unani.html";
+  });
+}
+
+// SHOP BY HEALTH CONCERN
+document.querySelector("#arthritis").addEventListener("click", function () {
+  window.location.href = "arthritis.html";
+});
+document.querySelector("#diabetes").addEventListener("click", function () {
+  window.location.href = "diabetes.html";
+});

@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #firstbox>img{
+            width: 100%;
+            height: 500px;
+            cursor: pointer;
+        }
+        #secondbox{
+            width: 100%;
+            height: 90px;
+            border: 1px solid transparent;
+            text-align: center;
+            background-color: rgb(244,244,244);
+            color: gray;
+            
+        }
+        #secondbox>h2{
+            font-family: sans-serif;
+        }
+        #secondbox>p{
+            font-family: sans-serif;
+            font-size: 16px;
+        }
+        #thirdbox{
+            display: flex;
+            justify-content: center;
+            border: 1px solid transparent;
+            text-align: center;
+            font-family: sans-serif;
+            background-color: rgb(244,244,244);
+        }
+       .smbox{
+            width: 10%;
+            height: 200px;
+            border: 1px solid transparent;
+            margin-left: 100px;
+            color: gray;
+            
+
+        }
+        .smbox>img{
+            width: 100%;
+            height: 70%;
+        }
+        #fourthbox{
+            width: 100%;
+            height: 450px;
+            border: 1px solid transparent;
+            display: grid;
+            grid-template-rows: 50px 200px 200px;
+            grid-template-columns: repeat(3, 1fr);
+            /* grid-gap:50px; */
+            
+        }
+        
+   
+        .first{
+            grid-area: 1/1/2/-1;
+            text-align: center;
+            font-family: sans-serif;
+            color: grey;
+        }
+        .second>div{
+            /* width: 20%; */
+            margin: auto;
+            border: 1px solid transparent;
+            width: 20%;
+            height: 40%;
+            margin-top: 5px;
+        }
+        .second>div>img{
+            width: 100%;
+            height: 100%;
+        }
+        .second>div:nth-child(2){
+            border: 1px solid transparent;
+            width: 40%;
+            height: 50%;
+            margin-top: none;
+            text-align: center;
+            font-family: sans-serif;
+        }
+        .second>div:nth-child(2)>h3{
+            line-height: 0;
+            /* color: gray; */
+        }
+        .second>div:nth-child(2)>p{
+            font-size: 12px;
+            color: gray;
+        }
+
+        #fifthbox>img{
+            width: 100%;
+            height: 500px;
+            cursor: pointer;
+        }
+        #sixbox{
+            width: 100%;
+            height: 800px;
+            border: 1px solid transparent;
+            background-color: rgb(231,251,244);
+            display: grid;
+            grid-template-rows: 30px 50px 40px 670px;
+            grid-template-columns: repeat(4, 1fr);
+            /* grid-gap:50px; */
+        }
+      
+        .sfirst{
+            grid-area: 1/1/2/-1;
+            
+        }
+        .ssecond{
+            grid-area: 2/1/3/-1;
+            text-align: center;
+            font-family: sans-serif;
+            color: rgb(80, 59, 59);
+
+        }
+        .sthird{
+            grid-area: 3/1/4/-1;
+            text-align: center;
+            font-family: sans-serif;
+            color: grey;
+        }
+        .minibox{
+            border: 1px solid transparent;
+            width: 10%;
+            height: 6%;
+            margin-top: 10%;
+            margin-left: 45%;
+            text-align: center;
+            background-color: #51c9a6;
+            border-radius: 80%;
+            font-size: 12px;
+            font-family: sans-serif;
+            color: white;
+        }
+        .sfour{
+            text-align: center;
+            background-color: rgb(231,251,244);
+        }
+        .mini2{
+            width: 80%;
+            height: 100px;
+            border: 1px solid transparent;
+            margin-left: 10%;
+            font-family: sans-serif;
+            color: #51c9a6;
+        }
+        .mini2>h3{
+            line-height: 0;
+        }
+        .sfour>img{
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+        .mini3{
+            width: 100%;
+            height: 100px;
+            border: 1px solid transparent;
+            /* margin-left: 1%; */
+            font-family: sans-serif;
+            color: #51c9a6;
+        }
+        .mini3>h3{
+            line-height: 0;
+        }
+        #sevenbox>img{
+            width: 100%;
+            height: 500px;
+        }
+        #eightbox{
+            width: 60%;
+            height: 300px;
+            border: 1px solid transparent;
+            margin: auto;
+            text-align: center;
+            font-family: sans-serif;
+        }
+        #eightbox>div>h2{
+          color: #505050;
+        }
+        #eightbox>div>hr{
+            width: 15%;
+            height: 5px;
+            background-color: gray;
+        }
+        #ebox{
+            width: 60%;
+            /* height: 100%; */
+            border: 1px solid transparent;
+            margin: auto;
+        }
+        #ebox2{
+            margin: auto;
+            border: 1px solid transparent;
+            width: 20%;
+
+        }
+        #ninebox{
+            width: 100%;
+            height: 400px;
+            border: 1px solid transparent;
+            background-color: #f4f4f4;
+
+            
+        }
+        #ninesmall{
+            width: 70%;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(7, 1fr);
+            margin: auto;
+            font-family: sans-serif;
+        }
+        #ninesmall>div{
+            border: 1px solid transparent;
+        }
+        .ninemini{
+            cursor: pointer;
+        }
+        #btm2 {
+      /* height: 20%; */
+      background-color: #0b7670;
+      font: 12px;
+      font-family: Roboto, sans-serif;
+      color: #51c9a6;
+    }
+
+    #btm3 {
+      /* height: 70%; */
+      background-color: #51c9a6;
+      color: #e7fbfd;
+    }
+
+    #copyRight {
+      text-align: center;
+      color: #117150;
+      margin-top: 20px;
+    }
+
+    #btm2>div {
+      /* border: 1px solid red; */
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    #btm2>div>div {
+      /* border: 1px solid red; */
+      margin: auto;
+      margin-top: 10px;
+    }
+
+    #btm2>div>div>p:nth-child(1) {
+      color: white;
+    }
+
+    #btm1 {
+      display: flex;
+    }
+
+    #btm1>div {
+      margin: auto;
+      text-align: center;
+    }
+
+    #btm1>div>p {
+      color: #c9cacc;
+    }
+
+    h6,
+    h2 {
+      margin: 10px 15px;
+    }
+
+    #btm>div>h3 {
+      margin: 0px 15px;
+      font-weight: lighter;
+    }
+
+    #btm2>div>div>p {
+      font-size: 11px;
+      margin: 0px 15px;
+      font-weight: lighter;
+    }
+    .nav-bar {
+      /* background: cyan; */
+      height: 70px;
+    }
+
+    .nav-bar a {
+      float: left;
+      margin-top: 20px;
+      margin: 10px 50px;
+    }
+
+    .form {
+      height: 30px;
+      width: 255px;
+    }
+
+    .navbar-brand {
+      width: 230px;
+      padding: 10px 0px;
+      margin-left: 0%;
+    }
+
+    .navbar-brand>img {
+      width: 95%;
+    }
+
+    #search {
+      float: left;
+      margin-top: 20px;
+      padding-left: 0%;
+      /* padding-right: 0%; */
+      /* margin-right: 0%; */
+    }
+
+    #search_bar {
+      padding-left: 10px;
+      padding-right: 0%;
+      margin-right: 0%;
+      border: 1px solid #dcdbdb;
+    }
+
+    .nav>img {
+      width: 90%;
+      padding-top: 10px;
+    }
+
+    .btn {
+      border: transparent;
+      padding-left: 0%;
+      margin-left: 0%;
+      height: 36px;
+      width: 50px;
+      background: #51c9a6;
+      color: white;
+    }
+
+    .icon {
+      width: 32%;
+      height: 10px;
+      border: 1px solid transparent;
+      float: right;
+      margin-top: 10px;
+    }
+
+    #nav-2 {
+      display: flex;
+      justify-content: center;
+      background: #51c9a6;
+      width: 100%;
+      height: 30px;
+      border: 1px solid #51c9a6;
+    }
+
+    #nav-2 li {
+      margin-top: 9px;
+      margin-left: 30px;
+      color: white;
+      float: left;
+      padding: 0px;
+      list-style: none;
+      font-size: 13px;
+    }
+
+    li:hover {
+      cursor: pointer;
+    }
+
+    input[type="text"] {
+      width: 480px;
+      height: 30px;
+      padding-right: 0%;
+      margin-right: 0%;
+    }
+
+    .icon {
+      /* border: 1px solid red; */
+      /* margin-left: 125px;
+  padding-left: 200px;
+  align-items: flex-end; */
+      width: 300px;
+      height: 50px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    .icon>div>p {
+      color: #898989;
+      cursor: pointer;
+    }
+
+    .icon i {
+      font-size: 20px;
+      margin: 0%;
+      margin-right: 25px;
+    }
+    .icon>div>p:hover {
+      color: #898989;
+    }
+
+    </style>
+</head>
+<body>
+  <div class="nav">
+    <header>
+      <nav class="nav-bar">
+        <a class="navbar-brand" href="#">
+          <img src="https://static.oxinis.com/healthmug/image/healthmug/healthmug-logo.png">
+
+        </a href="#">
+        <form id="search">
+          <input id="search_bar" type="text" placeholder="Search Products">
+          <button class="btn" type="button"><i class="fas fa-search"></i> </button>
+        </form>
+        <div class="icon">
+          <div>
+            <i class="fa-regular fa-envelope" style="color: #898989;"></i>
+            <p>contact us</p>
+          </div>
+          <div>
+            <i class=" fa-solid fa-wallet" style="color: #898989;"></i>
+            <p>Sell With Us</p>
+          </div>
+          <div>
+            <i class=" fa-solid fa-user" style="color: #898989;"></i>
+            <p>Sign In</p>
+          </div>
+          <i class="fa-solid fa-cart-shopping" style="color: aquamarine; "></i></a>
+        </div>
+      </nav>
+
+      <nav id="nav-2">
+        <li>Disease</li>
+        <li> Allopathy</li>
+        <li> Homeopathy</li>
+        <li> Ayurveda</li>
+        <li> Unani</li>
+        <li> Nutrtion</li>
+        <li> Personal Care</li>
+        <li> Baby Care</li>
+        <li> Sexual Wellness</li>
+        <li> Fitness</li>
+        <li> Consultation</li>
+      </nav>
+
+    </header>
+
+  </div>
+    
+      </div>
+    <div id="firstbox">
+        <img src="https://static.oxinis.com/healthmug/image/consultation/consultation-top-banner.png"/>
+    </div>
+    <div id="secondbox">
+        <h2>Key Specialities</h2>
+        <p>Consult with experienced doctors in various field</p>
+    </div>
+    <div id="thirdbox">
+       
+        <div class="smbox">
+            <img src="https://static.oxinis.com/consultation/image/stream/2.png"/>
+            <p> Homeopathy</p>
+        </div>
+        <div class="smbox">
+            <img src="https://static.oxinis.com/consultation/image/stream/3.png"/>
+            <p>Ayurveda</p>
+        </div>
+        <div class="smbox">
+            <img src="https://static.oxinis.com/consultation/image/stream/4.png"/>
+            <P>Unani</P>
+        </div>
+        <div class="smbox">
+            <img src="https://static.oxinis.com/consultation/image/stream/7.png"/>
+            <P>Diet/Nutrition</P>
+        </div>
+    </div>
+
+    <div id="fourthbox">
+        <dix class="first"><h2>Why Healthmug?</h2>
+        </dix>
+        <div class="second">
+            <div>
+                <img src="https://static.oxinis.com/healthmug/image/consultation/confidential.png"/>
+            </div>
+            <div>
+                <h3>Complete Privacy</h3>
+                <P>Your privacy is our priority hence we have encrypted all our chats.</P>
+            </div>
+        </div>
+        <div class="second">
+            <div>
+                <img src="https://static.oxinis.com/healthmug/image/consultation/second-opinion.png"/>
+            </div>
+            <div>
+                <h3>Second Opinion</h3>
+                <P>With a free consultation, you can also vouch for a second opinion from our doctors.</P>
+            </div>
+        </div>
+        <div class="second">
+            <div>
+                <img src="https://static.oxinis.com/healthmug/image/consultation/convenience.png"/>
+            </div>
+            <div>
+                <h3>Always Available</h3>
+                <p>Forget long queues, seek expert opinion anytime anywhere.</p>
+            </div>
+        </div>
+        <div class="second">
+            <div>
+                <img src="https://static.oxinis.com/healthmug/image/consultation/cost-effective.png"/>
+            </div>
+            <div>
+                <h3>Cost Effective
+                </h3>
+                <p>Get expert opinion online at a price that does not hurt your pocket anymore.</p>
+            </div>
+        </div>
+        <div class="second">
+            <div>
+                <img src="https://static.oxinis.com/healthmug/image/consultation/certified.png"/>
+            </div>
+            <div>
+                <h3>Certified Doctors</h3>
+                <p>All your health queries answered by experienced professionals.</p>
+            </div>
+        </div>
+        <div class="second">
+            <div>
+                <img src="https://static.oxinis.com/healthmug/image/consultation/e-commerce-support.png" />
+            </div>
+            <div>
+                <h3>E-commerce</h3>
+                <p>Get the prescribed medicines delivered to your doorstep with our online pharmacy.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="fifthbox">
+        <img src="https://static.oxinis.com/healthmug/image/consultation/ai-swasthi.jpg"/>
+    </div>
+
+    <div id="sixbox">
+        <div class="sfirst"></div>
+        <div class="ssecond">
+            <h2>How online consultation works?</h2>
+        </div>
+        <div class="sthird">
+            <P>Start consultation in 4 easy steps</P>
+        </div>
+        <div class="sfour">
+            <div class="minibox">
+                <P><B>1</B></P>
+            </div>
+           
+            <div class="mini2">
+                <h3>Start a Session</h3>
+                <p>Choose the category you would like to consult in, then enter the basic details of the patient.</p>
+
+            </div>
+            <img src="https://static.oxinis.com/healthmug/image/consultation/consult-screen-1.png"/>
+        </div>
+        <div class="sfour">
+            <div class="minibox">
+                <P><B>2</B></P>
+            </div>
+           
+            <div class="mini3">
+                <h3>Briefly describe your problem</h3>
+                <p>Choose the category you would like to consult in, then enter the basic details of the patient.</p>
+
+            </div>
+            <img src="https://static.oxinis.com/healthmug/image/consultation/consult-screen-2.png" />
+        </div>
+        <div class="sfour">
+            <div class="minibox">
+                <P><B>3</B></P>
+            </div>
+           
+            <div class="mini3">
+                <h3>Consult with doctor</h3>
+                <P>Dr. Swasthi will help you find the relevant symptoms, assisting the doctor for a better understanding of the problem.</P>
+            </div>
+            <img src="https://static.oxinis.com/healthmug/image/consultation/consult-screen-3.png" />
+        </div>
+        <div class="sfour">
+            <div class="minibox">
+                <P><B>4</B></P>
+            </div>
+           
+            <div class="mini2">
+                <h3>Still, having problems?</h3>
+                <p>If you have any other problem or query, you can follow up with your doctor on the same chat.</p>
+            </div>
+            <img src="https://static.oxinis.com/healthmug/image/consultation/consult-screen-4.png" />
+        </div>
+    </div>
+
+    <div id="sevenbox">
+        <img src="https://static.oxinis.com/healthmug/image/consultation/download-app.jpg"
+         alt="">
+    </div>
+
+    <div id="eightbox">
+        <div>
+            <h2>What users have to say about us</h2>
+        <hr>
+        </div>
+        <div id="ebox">
+            <p>Healthmug has a very simple user interface.I am not savvy person yet i was ablw to take consultant and get my preccribed medicine.   </p>
+        </div>
+       <div id="ebox2">
+        <p>Kamal arora</p>
+        <p>Indore</p>
+       </div>
+        
+    </div>
+
+    <div id="ninebox">
+        <div id="ninesmall">
+        <div> <h2 style="text-align: center; color: rgb(155, 138, 138);">FAQs</h2></div>
+        <div class="ninemini"> <p>Who are the consulting doctors?</p>
+        <hr></div>
+        <div class="ninemini"><P>Can I take a free online consultation on Healthmug?</P><hr></div>
+        <div class="ninemini"><P>Will I get a valid prescription?</P><hr></div>
+        <div class="ninemini"><P>Can I upload reports and pictures for reference?</P><hr></div>
+        <div class="ninemini"><p>Can I consult the same doctor again?</p><hr></div>
+    </div>
+    </div>
+    
+ <!--  Title Bar  -->
+ <div>
+  <div id="btm1">
+    <div>
+      <i class="fas fa-shield-alt" style="color: #0b7670;"></i>
+      <h3>100% SECURE</h3>
+      <p>100% Payments Protection</p>
+    </div>
+    <div>
+      <i class="fas fa-wallet" style="color: #0b7670;"></i>
+      <h3>CASH ON DELIVERY</h3>
+      <p>Get First Pay Later</p>
+    </div>
+    <div>
+      <i class="fas fa-undo-alt" style="color: #0b7670;"></i>
+      <h3>EASY RETURN</h3>
+      <p>Easy Return & Refund</p>
+    </div>
+    <div>
+      <i class="fas fa-hands-helping" style="color: #0b7670;"></i>
+      <h3>HELP CENTER</h3>
+      <p>Call: 7838389846 Or Read FAQs</p>
+    </div>
+  </div>
+  <div id="btm2">
+    <div>
+      <div>
+        <p>Policies</p>
+        <p>Privacy Policy</p>
+        <p>Terms of Use</p>
+        <p>Returns and Cancellations</p>
+      </div>
+      <div>
+        <p>HealthMug</p>
+        <p>Contact Us</p>
+        <p>About Us</p>
+        <p>Blogs</p>
+      </div>
+      <div>
+        <p>May we help you</p>
+        <p>Track Your Order</p>
+        <p>Change / Cancel</p>
+        <p>Order</p>
+        <p>Report Abouse/</p>
+        <p>Infringement</p>
+        <p>FAQ</p>
+      </div>
+      <div>
+        <p>Stay Connected</p>
+        <p>
+          <i class="fab fa-facebook-f"></i>
+        <p>facebook</p>
+        </p>
+        <p>
+          <i class="fab fa-twitter"></i>
+        <p>Twitter</p>
+        </p>
+      </div>
+      <div>
+        <p>Payment Methods</p>
+        <p>
+          <i class="far fa-credit-card"></i>
+        <p>Debit/Credit Cards</p>
+        </p>
+        <p>
+          <i class="fas fa-desktop"></i>
+        <p>Net Banking</p>
+        </p>
+        <p>
+          <i class="fas fa-money-check-alt"></i>
+        <p>Cash On Delivery</p>
+        </p>
+        <p>
+          <i class="fas fa-wallet"></i>
+        <p>E-Wallet</p>
+        </p>
+      </div>
+      <div>
+        <p>Download App</p>
+        <div style="display: flex;">
+          <i class="fab fa-google-play"></i>
+          <div>
+            <p>GET IT ON</p>
+            <H3>Google Play</H3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <i class="fas fa-shield-alt" style="color: white;"></i>
+        <span>100% Secured & Trusted</span>
+        <div style="color: white; font-size: 12px; padding-left: 25px;">Secure payment by Razorpay</di>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="btm3">
+    <p><strong>Homeopathy:</strong> Dr. Reckeweg/ Dr. Willmar Schwabe/ Adel Pekana/ SBL/ Bakson’s/ Wheezal/ New
+      Life/ R S Bhargava/
+      Adven/
+      Bhandari/ Hapdco/ Medisynth/ Allen/ B.Jain/ Bioforce/ Dr.Wellmans/ Bios Lab/ HL/ Haslab/ Lords/ Jhactions/
+      Indo
+      German/
+      REPL/ Ralson</p>
+    <p><strong>Homeopathic Dilutions:</strong> Allium Cepa/ Alumina/ Antim Crud/ Antim Tart/ Apis Mel/ Arnica/
+      Arsenic Album/ Baryta Carb/ Belladonna/ Bryonia/
+      Calcarea Carb/ Carvo Veg/ Causticum/ Cina/ China/ Colocynthis/ Conium/ Eupatorium Perf/ Gelsemium/
+      Graphites/
+      Hepar
+      Sulph/ Ignatia/ Ipecac/ Kali Bichrom/ Ledum Pal/ Lycopodium/ Merc sol/ Nitric Acid/ Nux Vomica/ Ocimum Can/
+      Petroleum/
+      Phosphoric Acid/ Phosphorus/ Pulsatilla/ Rhus tox/ Ruta/ Sepia/ Sulphur/ Thuja</p>
+    <p>
+      <strong>Homeopathic Mother Tinctures :</strong>
+      Aesculus/ Agnus Castus/ Alfalfa/ Aspidosperma/ Avena Sativa/ Berberis Vulgaris/ Blatta/ Calendula/
+      Cantharis/
+      Carduus
+      Marianus/ Chelidonium/ Chimaphilla/ Crateagus/ Damina/ Drosera/ Echinacea/ Euphrasia/ Ginseng/ Hamamelis/
+      Hydrastis/
+      Hypericum/ Justicea/ Kalmegh/ Kreosote/ Lemna Minor/ Millefolium/ Phytolacca/ Plantago/ Sabadilla/ Sabal
+      Serrulata/
+      Senega/ Spongia/ Symphytum/ Teucrium Marum Verum/ Thlaspi Bursa Pestoris/ Uva Ursi
+    </p>
+    <p>
+      <strong>Bio-Chemic :</strong>
+      Calcarea Flour/ Calcarea Phos/ Calcarea Sulph/ Ferrum Phos/ Kali Mur/ Kali Phos/ Kali Sulph/ Mag Phos/ Nat
+      Mur/ Nat Phos/ Nat Sulph/ Silicea
+      Ayurveda and Unani : Patanjali/ Baidyanath/ Dabur/ Himalaya/ Charak/ Zandu/ Aimil/ Vyas/ Organic India/
+      Alarsin/
+      Dhootapapeshwar/ Hamdard/ Gurukul/ Maharishi Ayurved/ Multani/ Nagarjuna/ Kudos/ Unjha/ Aroma Magic/ Basic
+      Ayurveda/
+      Vicco
+    </p>
+    <p><strong>Bio-Chemic:</strong>Calcarea Flour/ Calcarea Phos/ Calcarea Sulph/ Ferrum Phos/ Kali Mur/ Kali
+      Phos/
+      Kali Sulph/ Mag Phos/ Nat Mur/ Nat
+      Phos/ Nat Sulph/ Silicea</p>
+    <p><strong>Ayurveda and Unani:</strong> Patanjali/ Baidyanath/ Dabur/ Himalaya/ Charak/ Zandu/ Aimil/ Vyas/
+      Organic India/ Alarsin/
+      Dhootapapeshwar/ Hamdard/ Gurukul/ Maharishi Ayurved/ Multani/ Nagarjuna/ Kudos/ Unjha/ Aroma Magic/ Basic
+      Ayurveda/
+      Vicco</p>
+    <p><strong>Ayurvedic Medicines:</strong> Ras and Sindoor/ Bhasm and Pishti/ Bati, Gutika and Guggulu/ Asava
+      Arishta and Kadha/ Loha and
+      Mandur/ Churan, Avleha and Pak/ Tailam and Ghrita/ Chyawanprash/ Honey/ Digestives/ Green Tea</p>
+    <p><strong>Herbal and Vegetable Juice:</strong> AloeVera Juice/ Amla Juice/ Apple Cider Vinegar/ Lauki Juice/
+      Jamun Juice/ Karela (Bitter
+      Guard) Juice/ Triphala Juice/ Panch Tulsi Juice/ Grass Meal Juice/ Neem Leaf Juice/ Brahmi Juice/ Giloy
+      Juice/
+      Noni
+      Juice</p>
+    <p><strong>Aroma Oils (Essential Oils):</strong> Beautiful Skin Oil/ Fairy Oil/ Stimulate Oil/ Dry Skin Oil/
+      Tea Tree Oil/ Jasmine Oil/
+      Sandalwood Oil/ Patchouli Oil/ Fennel Seed Oil/ Petitgrain Oil/ Exotica Oil/ Cedarwood Oil/ Cinnamom Oil/
+      Oily
+      Skin Oil/
+      Vertiver Oil/ Cypress Oil/ Rose Oil/ Rosemary Oil/ Frankincense Oil/ Ginger Oil/ Geranium Oil/ Flaky Oil/
+      Ylang Ylang
+      Oil/ Peppermint Oil/ Juniper Berry Oil/ Clarysage Oil/ Dreams Oil/ Bergamot Oil/ Lemongrass Oil/ Sensitive
+      Skin Oil/
+      Orange Oil/ Carrot Seed Oil/ Peace Oil/ Rosewood Oil/ Basil Oil/ Neroli Oil/ Lavender Oil/ Clove Oil/ Pine
+      Oil/
+      Eucaplytus Oil/ Happiness Oil/ Palmarosa Oil/ Lemon Oil/ Thyme Oil/ Morning Due Oil/ Nutmeg Oil</p>
+    <p><strong>Beauty and Personal Care:</strong> Natural and Organic Cosmetics/ Creams/ Shampoo/ Hair Oils/
+      Mehandi/ Hair Color/ Talcs/ Soaps/
+      Tooth Paste and Mouth Wash</p>
+    <h2>About Healthmug</h2>
+    <p>With a vision of bridging the gap between a pharmacy and the consumers, Healthmug came into its existence
+      in
+      2016. A
+      vision that quickly broadened up and helped it in becoming more than just a mere online portal, to an online
+      marketplace
+      for shopping Ayurvedic to Homeopathy to Unani medicines to Health Supplements and much more. Since its
+      inception,
+      Healthmug has grown into a world-class e-platform for everything related to health & fitness. What draws a
+      major
+      distinction between us and our contemporaries is the way we promote a harmonious relationship between the
+      sellers and
+      the buyers for the greater good.</p>
+    <p>Healthmug is the brainchild of Dr. Mohit Agarwal & Mr. Anubhav Bansal. They started this online platform
+      with
+      an idea of
+      supporting the local manufacturers & sellers through building a platform for Ayurvedic, Homeopathy & Unani
+      medicines and
+      to improve the health of the consumers in a holistic way. With an ever-expanding range of products and
+      services,
+      Healthmug is growing rapidly and seeks to become a one-stop portal for all healthcare needs.</p>
+    <p>While Healthmug brings medicines at your fingertips and at affordable prices, it also makes shopping online
+      an easy
+      task. Not just for the consumers, even for the sellers & the brands, this platform makes selling products
+      easy
+      and
+      hassle-free. Since day one, we have supported many small & medium local brands to sell their products and
+      have
+      helped
+      them in sharpening their entrepreneurial skills. Along with these, we have also given numerous big brands a
+      platform to
+      expand their customer base. We believe in the philosophy of growing together and thus we motivate the
+      sellers
+      to do
+      their best. All thanks to our comprehendible policies, everyone from a small seller to a wholesaler to a
+      brand, can
+      easily connect with us and sell their products.</p>
+    <p>Shop for medicines, wellness products, and health supplements online from top brands like Dr. Reckeweg, Dr.
+      Willmar
+      Schwabe, Adel Pekana, SBL, Haslab, Bakson etc. Customers can shop from a wide range of Ayurvedic products
+      available
+      online like Bhasma & Pishti, Bati, Gutika & Guggulu Ras, Sindoor, Asava Arishtha etc. at attractive prices.
+      For organic
+      food items, Herbal Juices, Green Teas, etc. from popular brands like Dabur, Baidyanath, Zandu, Himalaya,
+      Organic India,
+      Unjha, Basic Ayurveda and counting, customers can shop online and buy these products at attractive prices
+      and
+      offers.
+      Customers can now enjoy the benefit of shopping online for Allopathic medicines and getting them delivered
+      right at
+      their doorsteps. Shop from our online pharmacy for Allopathic medicines and drugs at great prices. Shop
+      online
+      from the
+      widest range of products listed across on our website, across a wide range of categories and give yourself
+      and
+      your
+      loved ones a gift of wellbeing. Come, join us and start living a healthy life and be a part of the Healthmug
+      family.</p>
+    <div id="copyRight">
+      <p>Copyright© 2019. All rights reserved.</p>
+      <h6>In compliance with Drug and Cosmetic Act and Rules, we dont sell schedule H, H1, X or any habit forming
+        drugs.</h6>
+      <h3>Healthmug.com</h3>
+    </div>
+  </div>
+</div>
+</body>
+</html>

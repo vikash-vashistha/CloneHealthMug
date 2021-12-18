@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #firstbox{
+            width: 100%;
+            display: flex;
+            border-bottom: solid #51c9a6;
+            font-family: sans-serif;
+            display: flex;
+            /* cursor: pointer; */
+        }
+        #firstbox>div>p{
+            padding-left: 50px;
+            font-size: medium;
+            cursor: pointer;
+            /* border: 1px solid red; */
+        }
+        #secondbox{
+            width: 100%;
+            display: flex;
+        }
+        #mini1s{
+            width: 50%;
+            border: 1px solid transparent;
+            margin-top: 150px;
+            margin-left: 50px;
+            font-family: sans-serif;
+        }
+        #mini1s>img{
+            width: 100%;
+        }
+        #mini1s>P{
+            color: gray;
+            line-height: 25px;
+        }
+        #minibox{
+            display: flex;
+        }
+        #minibox>div{
+            border: 1px solid transparent;
+            margin-left: 60px;
+        }
+        #red{
+            margin-left: 35%  ;
+            
+        }
+        #blue{
+            width: 100%;
+            height: 200px;
+            border: 1px solid transparent;
+            display: flex;
+        }
+        #blue>div>img{
+            height: 200px;
+            margin-left: 50px;
+            border-radius: 50%;
+        }
+        #blue>div:nth-child(2){
+            margin-left: 20px;
+        }
+        #h2{
+            border-left: 5px solid red;
+            
+        }
+        #h2>h2{
+            padding-left: 5px;
+        }
+        #new{
+            width: 100%;
+            height: 500px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 150px 150px 150px;
+            grid-gap: 10px;
+        }
+        #new>div{
+            border: 1px solid transparent;
+            display: flex;
+            cursor: pointer;
+        }
+        #new>div>div{
+            width: 45%;
+            height: 100%;
+        }
+        #new>div>div>img{
+            height: 100%;
+            width: 100%;
+        }
+        #new>div>div>h3{
+            margin-left: 10px;
+            font-family: sans-serif;
+            color: gray;
+        }
+        #new>div>div>p{
+            margin-left: 10px;
+            font-family: sans-serif;
+            color: rgb(35, 160, 209);
+        }
+        #mini2s{
+            border: 1px solid transparent;
+            width: 40%;
+            margin-left: 20px;
+            margin-top: 150px;
+        }
+        #new1{
+            /* display: ; */
+            width: 100%;
+            height: 500px;
+            display: grid;
+            /* grid-template-columns: repeat(2, 1fr); */
+            grid-template-rows: 100px 100px 100px 100px 100px;
+            grid-gap: 10px;
+        }
+        #new1>div{
+            border: 1px solid transparent;
+            display: flex;
+            cursor: pointer;
+        }
+        #new1>div>div{
+            width: 45%;
+            height: 100%;
+            border: 1px solid transparent;
+        }
+        #new1>div>div>img{
+            height: 100%;
+            width: 100%;
+        }
+        #new1>div>div>h3{
+            margin-left: 10px;
+            font-family: sans-serif;
+            color: gray;
+            cursor: pointer;
+        }
+        #new1>div>div>p{
+            margin-left: 10px;
+            font-family: sans-serif;
+            color: rgb(35, 160, 209);
+        }
+        #share1{
+            border-left: 5px solid red;
+            
+        }
+        #share>div>h2{
+            padding-left: 5px;
+        }
+        #share2{
+            width: 60%;
+           height: 70px;
+           border: 1px solid transparent;
+           display: flex;
+        }
+        #share2>div{
+            width: 60%;
+            height: 100%;
+            border: 1px solid transparent;
+            margin-left: 10px;
+        }
+        #share2>div>a>img{
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+        
+    /* Title Bar */
+    #btm2 {
+      /* height: 20%; */
+      background-color: #0b7670;
+      font: 12px;
+      font-family: Roboto, sans-serif;
+      color: #51c9a6;
+    }
+
+    #btm3 {
+      /* height: 70%; */
+      background-color: #51c9a6;
+      color: #e7fbfd;
+    }
+
+    #copyRight {
+      text-align: center;
+      color: #117150;
+      margin-top: 20px;
+    }
+
+    #btm2>div {
+      /* border: 1px solid red; */
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    #btm2>div>div {
+      /* border: 1px solid red; */
+      margin: auto;
+      margin-top: 10px;
+    }
+
+    #btm2>div>div>p:nth-child(1) {
+      color: white;
+    }
+
+    #btm1 {
+      display: flex;
+    }
+
+    #btm1>div {
+      margin: auto;
+      text-align: center;
+    }
+
+    #btm1>div>p {
+      color: #c9cacc;
+    }
+
+    h6 {
+      margin: 10px;
+    }
+
+    #btml>div>h3 {
+      margin: 0%;
+      font-weight: lighter;
+    }
+
+    #btm>div>div>p {
+      font-size: 11px;
+      margin: 0%;
+      font-weight: lighter;
+    }
+    
+    </style>
+</head>
+<body style="font-family: sans-serif;">
+    
+    <div id="firstbox">
+        <div>
+            <img style="cursor: pointer;" src="https://static.oxinis.com/healthmug/image/blog/healthmug-logo.png"/>
+        </div>
+        <div><p>OILS</p></div>
+        <div><p>BEAUTY</p></div>
+        <div><p>HEALTH CARE</p></div>
+
+        <!-- <hr> -->
+    </div>
+    <div id="secondbox">
+        <div id="mini1s">
+            <h1>Fruit & Vegetable Juices You Need To Know About</h1>
+            <div id="minibox">
+                <div> Sohini Hazra</div>
+                <div> July 18, 2019</div>
+                <div> Views : 2739</div>
+                <div> 1 Comment</div>
+            </div>
+            <br>
+            <br>
+            <img 
+            src="https://static.oxinis.com/healthmug/image/blog/article/3-banner-700.jpg" alt="">
+            <p>Korean beauty has always been a bit of mystery for all of us. We all long for that hourglass clear skin and glossy glow.</p>
+            <p>There are various products that claim to treat and make your skin flawless just like those Glowing Korean Women. But here’s the thing, Koreans are naturally blessed with beautiful and clear skin from their ancestors. Koreans have always been known for their beauty. But can you achieve such a glow on your skin? The answer is Yes!</p>
+            <p>Body image is the perception that a person has of their physical self and the thoughts and feelings that result from that perception.</p>
+            <p>According to the definition, these feelings can be positive (that the person feels extremely confident under his/her own skin) negative (that the person doesn't feel confident under his/ her own skin) or both, and are influenced by individual and environmental factors. But in accordance to research studies, chances are that the latter part is more predominant i.e That feeling that you don't look like a supermodel, that you do not confer to the conventional beauty standards of having a zero to negative figure, beautiful hair and flawless skin, proper height and booty etc. This leads to the changing eating patterns. Because after all! Where will all those carbs go?</p>
+            <P>The MINDS Foundation recognises that both social stigma and economic burden keeps many of the Indians from seeking help for mental health issues. India, a refuge for billions but refuge only physically and I don't think so the same goes for mental health as well! Is the same even taken into consideration?</P>
+            <P>Well! I could vouch on the fact that half of the population (and some of the readers of this blog as well) don't even know what mental health is all about! A place where people visit temples and address cynical religious Guru Ji's when any sign of abnormal behaviour is displayed.</P>
+            <P>According, to an NGO which works in the sector of mental wellness, 86% of the suicides occur in the low and middle class in developing countries like India. This even defies the well-known idiom that riches cause sleepless nights. Thus, the entire burden falls on the energy that we derive from, i.e. our food! The result is disturbed eating patterns.</P>
+            <p>Binge watching some YouTube diet videos, listening to the advice of some diet consultant and deciding upon a diet which doesn't even take your body type or blood group into account, ends up with people falling prey into one of the following eating disorders:</p>
+            <p>Eating Disorders describe illnesses that are characterized by irregular eating habits and severe distress or concern about body weight or shape.</p>
+            <p>Eating disturbances may include inadequate or excessive food intake which can ultimately damage an individual's well-being. The most common forms of eating disorders include Anorexia Nervosa, Bulimia Nervosa, and Binge Eating Disorder and affect both females and males.</p>
+            <h2>Fruit and vegetable juices for great hair</h2>
+            <img 
+            src="https://static.oxinis.com/healthmug/image/blog/article/3-1.jpg" alt="">
+            <h3>Aloe Vera</h3>
+<p>Aloe Vera juice helps to get rid of itchy scalp and dandruff. It prevents the loss of hair. The rich vitamins which are present in Aloe Vera juice help in making your hair stronger and less prone to damage due to breakage. Aloe Vera juice is also beneficial in moisturizing and nourishing the scalp. It is one of the best juices for hair growth.</p>    
+            <h3>Spinach</h3>
+            <p>Spinach is loaded with various kinds of vitamin and minerals; it is also rich in iron. Itchy scalp and thin mane can be cured by drinking spinach juice. It is abundantly concentrated with vitamin B which helps in restoration of dry hair by bringing back the lustrous shine. Vitamin B also promotes hair growth. Magnesium is an important mineral present in spinach, deficiency of magnesium often leads to hair loss. Drinking spinach juice will maintain your magnesium levels reducing the threat of hair loss</p>
+            <h3>Amla</h3>
+            <p>The huge amount of antioxidants present in amla (or Gooseberry) helps in getting rid of the damaged cells that cause hair fall and also reduces the premature graying of hair. Amla juice also helps in regenerating pigmentation in hair making them thicker and darker. Amla also possesses anti-inflammatory, antibacterial, astringent and anti-microbial properties that help in preventing inflammatory scalp condition and keeps dandruff away.</p>
+            <h3>Strawberries
+            </h3>
+            <p>Do you really need a reason to have yummy strawberry juice? Well if you do, then here are the reasons. Strawberries are loaded with Vitamin C. This acts as an antioxidant and supports the immune system. It helps to protect your hair follicles. Vitamin C encourages iron absorption and accelerates hair growth. Strawberries contain Silica which helps in preventing hair loss and promote hair growth.</p>
+
+        <h2>Fruit and vegetable juices for Glowing Skin</h2>
+            <img src="https://static.oxinis.com/healthmug/image/blog/article/3-2.jpg" alt="">
+            <h3>Carrot</h3>
+            <p>Carrot juice can do wonders for your skin it is abundantly rich in Vitamin A and Vitamin C, potassium, antibacterial substances, caroteniods and antioxidants. They help in the prevention of early wrinkles; it evens the skin tone and hydrates the skin.</p>
+            <p>The presence of important minerals in carrots contributes in the prevention of cell degeneration. It is rich in antioxidants which help in keeping your skin healthy and glowing. Potassium and antioxidants also make the skin resistant to dryness, reduces blemishes and scars.</p>
+            <h3>Aloe Vera</h3>
+            <p>Everyone knows that Aloe Vera is beneficial for skin, but who has the time and patience to apply it regularly on the face and sit still for a couple of minutes? It's easier to drink Aloe Vera juice and achieve the same skin glow. Aloe Vera is packed with Vitamin C and Vitamin E, it also has Beta Carotene these altogether give Aloe Vera its amazing anti- aging qualities. It can be used by people with dry skin as well as oily skin. Aloe Vera juice is easily available in concentrated form in markets and online stores.</p>
+
+            <p>This eating disorder is characterized by repeated binge eating followed by behaviours that compensate for the overeating, such as forced vomiting, excessive exercise, or extreme use of laxatives or diuretics. Men and women who suffer from Bulimia may fear weight gain and feel severely unhappy with their body size and shape. The binge-eating and purging cycle is typically done in secret, creating feelings of shame, guilt, and lack of control. Bulimia can have injuring effects, such as gastrointestinal problems, severe dehydration, and heart difficulties resulting from an electrolyte imbalance. Combating this mental condition requires mental strength and above all will power. Still some medicines can provide you with a tranquil sensation so as to aid the process of recovery. Ayurvedic medicines can go a long way in the healing process of the mind like Dr. Reckeweg's sedative drops. You can buy the medicine here by directly clicking on the link.</p>
+            <a href="https://www.healthmug.com/product/dr-reckeweg-r15-vita-c15-250ml/1842571711">https://www.healthmug.com/product/dr-reckeweg-r15-vita-c15-250ml/1842571711</a>
+            <h2>Fruits and Vegetable Juices for Detoxification</h2>
+            <img src="https://static.oxinis.com/healthmug/image/blog/article/3-3.jpg" alt="">
+            <p>This eating disorder is characterized by repeated binge eating followed by behaviours that compensate for the overeating, such as forced vomiting, excessive exercise, or extreme use of laxatives or diuretics. Men and women who suffer from Bulimia may fear weight gain and feel severely unhappy with their body size and shape. The binge-eating and purging cycle is typically done in secret, creating feelings of shame, guilt, and lack of control. Bulimia can have injuring effects, such as gastrointestinal problems, severe dehydration, and heart difficulties resulting from an electrolyte imbalance. Combating this mental condition requires mental strength and above all will power. Still some medicines can provide you with a tranquil sensation so as to aid the process of recovery. Ayurvedic medicines can go a long way in the healing process of the mind like Dr. Reckeweg's sedative drops. You can buy the medicine here by directly clicking on the link.</p>
+            <a href="https://www.healthmug.com/product/dr-reckeweg-r15-vita-c15-250ml/1842571711">https://www.healthmug.com/product/dr-reckeweg-r15-vita-c15-250ml/1842571711</a>
+            <p>Although there are a lot more different classes and categories of eating disorders which have cropped up recently due to the increasing social stigma and peer pressure, yet to summarize these were the common few types.</p>
+            <p>If you land upon identifying with one of these eating disorders or struggle everyday with your body image, I would like to say that always remember that you are not alone. Nobody is perfect and there are millions out there who feel the same. Always seek medical help if the burden feels cumbersome. Coming out is pretty difficult but then help is always available. If my blog impacts even a single person, I would deem myself as successful.</p>
+            <p>In the end I would like to end by quoting a few lines from Maya Angelou:</p>
+            <strong>"Pretty women wonder where my secret lies.
+
+            </strong><br><br>
+            <strong>I'm not cute or built to suit a fashion model's size</strong><br><br>
+            <strong>But when I start to tell them,</strong><br><br>
+            <strong>They think I'm telling lies..."</strong><br><br>
+            <p>Folks, this is the confidence one should inculcate within oneself. Maya Angelou is as an inspiration for many and continues to be my idol.</p>
+
+            <div id="red">
+                <p>- SHARE THIS POST -</p>
+                <img src="https://th.bing.com/th?q=Blue+Facebook+Icon&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.05&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247" alt="">
+
+            </div>
+            <hr>
+            <div id="blue">
+                <!-- <hr> -->
+                <div>
+                    <img src="https://static.oxinis.com/healthmug/image/blog/author/12.jpg"
+                    />
+                </div>
+                <div>
+                    <h3>Jahanvi Gupta</h3>
+                    <p>Just a couple of lines which I think are enough to define who, what and how I am! I am an independent lady, With my spine straight. No matter how much you twist it It would NOT break..</p>
+                </div>
+                <!-- <hr> -->
+            </div>
+            <hr>
+            <div id="h2">
+                <h2>Related post</h2>
+            </div>
+            <div id="new">
+                <div>
+                    <div>
+                        <img src="https://static.oxinis.com/healthmug/image/blog/article/203-banner-120.jpg" alt="">
+                    </div>
+                    <div>
+                        <h3>The Insomniac Couch/Coach!!!</h3>
+                        <p>Healthmug Writer</p>
+                    </div>
+
+                </div>
+                <div>
+                    <div>
+                        <img src=https://static.oxinis.com/healthmug/image/blog/article/2-banner-120.jpg alt="">
+                    </div>
+                    <div>
+                        <h3>Dwayne “The Rock” Johnson’s healthy lifestyle and motivation</h3>
+                        <!-- <p>Healthmug Writer</p> -->
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src=https://static.oxinis.com/healthmug/image/blog/article/14-banner-120.jpg alt="">
+                    </div>
+                    <div>
+                        <h3>Quick and easy tips to bid farewell to those irritating PMS symptoms</h3>
+                        <!-- <p>Healthmug Writer</p> -->
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://static.oxinis.com/healthmug/image/blog/article/5-banner-120.jpg" alt="">
+                    </div>
+                    <div>
+                        <h3>2020 Health Resolutions</h3>
+                        <p>Healthmug Writer</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://static.oxinis.com/healthmug/image/blog/article/1-banner-120.jpg" alt="">
+                    </div>
+                    <div>
+                        <h3>3 Steps Everyday Skin Care Guide for Healthy Looking Skin</h3>
+                        <!-- <p>Healthmug Writer</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mini2s">
+
+            <div id="share">
+                <div id="share1"><h2>Share</h2></div>
+                <div id="share2">
+                    <div>
+                        <a href="https://www.facebook.com/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR76V7w3SQDNkzWGlAJ6J7e43N1IOIAi5P9Zg&usqp=CAU" alt=""
+                        ></a>
+                    </div>
+                    <div></div>
+                </div>
+                
+
+            </div>
+
+            <div id="h2">
+                <h2>Tranding post</h2>
+            </div>
+            <div id="new1">
+                <div>
+                    <div>
+                        <img src="https://static.oxinis.com/healthmug/image/blog/article/216-banner-120.jpg" alt="">
+                    </div>
+                    <div>
+                        <h3>The Insomniac Couch/Coach!!!</h3>
+                        <p>Healthmug Writer</p>
+                    </div>
+
+                </div>
+                <div>
+                    <div>
+                        <img src=https://static.oxinis.com/healthmug/image/blog/article/215-banner-120.jpg alt="">
+                    </div>
+                    <div>
+                        <h3>Dwayne “The Rock” Johnson’s healthy lifestyle and motivation</h3>
+                        <!-- <p>Healthmug Writer</p> -->
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src=https://static.oxinis.com/healthmug/image/blog/article/214-banner-120.jpg alt="">
+                    </div>
+                    <div>
+                        <h3>Quick and easy tips to bid farewell to those irritating PMS symptoms</h3>
+                        <!-- <p>Healthmug Writer</p> -->
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://static.oxinis.com/healthmug/image/blog/article/213-banner-120.jpg" alt="">
+                    </div>
+                    <div>
+                        <h3>2020 Health Resolutions</h3>
+                        <p>Healthmug Writer</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://static.oxinis.com/healthmug/image/blog/article/212-banner-120.jpg" alt="">
+                    </div>
+                    <div>
+                        <h3>3 Steps Everyday Skin Care Guide for Healthy Looking Skin</h3>
+                        <!-- <p>Healthmug Writer</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  <div>
+    <div id="btm1">
+      <div>
+        <i class="fas fa-shield-alt" style="color: #0b7670;"></i>
+        <h3>100% SECURE</h3>
+        <p>100% Payments Protection</p>
+      </div>
+      <div>
+        <i class="fas fa-wallet" style="color: #0b7670;"></i>
+        <h3>CASH ON DELIVERY</h3>
+        <p>Get First Pay Later</p>
+      </div>
+      <div>
+        <i class="fas fa-undo-alt" style="color: #0b7670;"></i>
+        <h3>EASY RETURN</h3>
+        <p>Easy Return & Refund</p>
+      </div>
+      <div>
+        <i class="fas fa-hands-helping" style="color: #0b7670;"></i>
+        <h3>HELP CENTER</h3>
+        <p>Call: 7838389846 Or Read FAQs</p>
+      </div>
+    </div>
+    <div id="btm2">
+      <div>
+        <div>
+          <p>Policies</p>
+          <p>Privacy Policy</p>
+          <p>Terms of Use</p>
+          <p>Returns and Cancellations</p>
+        </div>
+        <div>
+          <p>HealthMug</p>
+          <p>Contact Us</p>
+          <p>About Us</p>
+          <p>Blogs</p>
+        </div>
+        <div>
+          <p>May we help you</p>
+          <p>Track Your Order</p>
+          <p>Change / Cancel</p>
+          <p>Order</p>
+          <p>Report Abouse/</p>
+          <p>Infringement</p>
+          <p>FAQ</p>
+        </div>
+        <div>
+          <p>Stay Connected</p>
+          <p>
+            <i class="fab fa-facebook-f"></i>
+          <p>facebook</p>
+          </p>
+          <p>
+            <i class="fab fa-twitter"></i>
+          <p>Twitter</p>
+          </p>
+        </div>
+        <div>
+          <p>Payment Methods</p>
+          <p>
+            <i class="far fa-credit-card"></i>
+          <p>Debit/Credit Cards</p>
+          </p>
+          <p>
+            <i class="fas fa-desktop"></i>
+          <p>Net Banking</p>
+          </p>
+          <p>
+            <i class="fas fa-money-check-alt"></i>
+          <p>Cash On Delivery</p>
+          </p>
+          <p>
+            <i class="fas fa-wallet"></i>
+          <p>E-Wallet</p>
+          </p>
+        </div>
+        <div>
+          <p>Download App</p>
+          <div style="display: flex;">
+            <i class="fab fa-google-play"></i>
+            <div>
+              <p>GET IT ON</p>
+              <H3>Google Play</H3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <i class="fas fa-shield-alt" style="color: white;"></i>
+          <span>100% Secured & Trusted</span>
+          <div style="color: white; font-size: 12px; padding-left: 25px;">Secure payment by Razorpay</di>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="btm3">
+      <p><strong>Homeopathy:</strong> Dr. Reckeweg/ Dr. Willmar Schwabe/ Adel Pekana/ SBL/ Bakson’s/ Wheezal/ New
+        Life/ R S Bhargava/
+        Adven/
+        Bhandari/ Hapdco/ Medisynth/ Allen/ B.Jain/ Bioforce/ Dr.Wellmans/ Bios Lab/ HL/ Haslab/ Lords/ Jhactions/
+        Indo
+        German/
+        REPL/ Ralson</p>
+      <p><strong>Homeopathic Dilutions:</strong> Allium Cepa/ Alumina/ Antim Crud/ Antim Tart/ Apis Mel/ Arnica/
+        Arsenic Album/ Baryta Carb/ Belladonna/ Bryonia/
+        Calcarea Carb/ Carvo Veg/ Causticum/ Cina/ China/ Colocynthis/ Conium/ Eupatorium Perf/ Gelsemium/
+        Graphites/
+        Hepar
+        Sulph/ Ignatia/ Ipecac/ Kali Bichrom/ Ledum Pal/ Lycopodium/ Merc sol/ Nitric Acid/ Nux Vomica/ Ocimum Can/
+        Petroleum/
+        Phosphoric Acid/ Phosphorus/ Pulsatilla/ Rhus tox/ Ruta/ Sepia/ Sulphur/ Thuja</p>
+      <p>
+        <strong>Homeopathic Mother Tinctures :</strong>
+        Aesculus/ Agnus Castus/ Alfalfa/ Aspidosperma/ Avena Sativa/ Berberis Vulgaris/ Blatta/ Calendula/
+        Cantharis/
+        Carduus
+        Marianus/ Chelidonium/ Chimaphilla/ Crateagus/ Damina/ Drosera/ Echinacea/ Euphrasia/ Ginseng/ Hamamelis/
+        Hydrastis/
+        Hypericum/ Justicea/ Kalmegh/ Kreosote/ Lemna Minor/ Millefolium/ Phytolacca/ Plantago/ Sabadilla/ Sabal
+        Serrulata/
+        Senega/ Spongia/ Symphytum/ Teucrium Marum Verum/ Thlaspi Bursa Pestoris/ Uva Ursi
+      </p>
+      <p>
+        <strong>Bio-Chemic :</strong>
+        Calcarea Flour/ Calcarea Phos/ Calcarea Sulph/ Ferrum Phos/ Kali Mur/ Kali Phos/ Kali Sulph/ Mag Phos/ Nat
+        Mur/ Nat Phos/ Nat Sulph/ Silicea
+        Ayurveda and Unani : Patanjali/ Baidyanath/ Dabur/ Himalaya/ Charak/ Zandu/ Aimil/ Vyas/ Organic India/
+        Alarsin/
+        Dhootapapeshwar/ Hamdard/ Gurukul/ Maharishi Ayurved/ Multani/ Nagarjuna/ Kudos/ Unjha/ Aroma Magic/ Basic
+        Ayurveda/
+        Vicco
+      </p>
+      <p><strong>Bio-Chemic:</strong>Calcarea Flour/ Calcarea Phos/ Calcarea Sulph/ Ferrum Phos/ Kali Mur/ Kali
+        Phos/
+        Kali Sulph/ Mag Phos/ Nat Mur/ Nat
+        Phos/ Nat Sulph/ Silicea</p>
+      <p><strong>Ayurveda and Unani:</strong> Patanjali/ Baidyanath/ Dabur/ Himalaya/ Charak/ Zandu/ Aimil/ Vyas/
+        Organic India/ Alarsin/
+        Dhootapapeshwar/ Hamdard/ Gurukul/ Maharishi Ayurved/ Multani/ Nagarjuna/ Kudos/ Unjha/ Aroma Magic/ Basic
+        Ayurveda/
+        Vicco</p>
+      <p><strong>Ayurvedic Medicines:</strong> Ras and Sindoor/ Bhasm and Pishti/ Bati, Gutika and Guggulu/ Asava
+        Arishta and Kadha/ Loha and
+        Mandur/ Churan, Avleha and Pak/ Tailam and Ghrita/ Chyawanprash/ Honey/ Digestives/ Green Tea</p>
+      <p><strong>Herbal and Vegetable Juice:</strong> AloeVera Juice/ Amla Juice/ Apple Cider Vinegar/ Lauki Juice/
+        Jamun Juice/ Karela (Bitter
+        Guard) Juice/ Triphala Juice/ Panch Tulsi Juice/ Grass Meal Juice/ Neem Leaf Juice/ Brahmi Juice/ Giloy
+        Juice/
+        Noni
+        Juice</p>
+      <p><strong>Aroma Oils (Essential Oils):</strong> Beautiful Skin Oil/ Fairy Oil/ Stimulate Oil/ Dry Skin Oil/
+        Tea Tree Oil/ Jasmine Oil/
+        Sandalwood Oil/ Patchouli Oil/ Fennel Seed Oil/ Petitgrain Oil/ Exotica Oil/ Cedarwood Oil/ Cinnamom Oil/
+        Oily
+        Skin Oil/
+        Vertiver Oil/ Cypress Oil/ Rose Oil/ Rosemary Oil/ Frankincense Oil/ Ginger Oil/ Geranium Oil/ Flaky Oil/
+        Ylang Ylang
+        Oil/ Peppermint Oil/ Juniper Berry Oil/ Clarysage Oil/ Dreams Oil/ Bergamot Oil/ Lemongrass Oil/ Sensitive
+        Skin Oil/
+        Orange Oil/ Carrot Seed Oil/ Peace Oil/ Rosewood Oil/ Basil Oil/ Neroli Oil/ Lavender Oil/ Clove Oil/ Pine
+        Oil/
+        Eucaplytus Oil/ Happiness Oil/ Palmarosa Oil/ Lemon Oil/ Thyme Oil/ Morning Due Oil/ Nutmeg Oil</p>
+      <p><strong>Beauty and Personal Care:</strong> Natural and Organic Cosmetics/ Creams/ Shampoo/ Hair Oils/
+        Mehandi/ Hair Color/ Talcs/ Soaps/
+        Tooth Paste and Mouth Wash</p>
+      <h2>About Healthmug</h2>
+      <p>With a vision of bridging the gap between a pharmacy and the consumers, Healthmug came into its existence
+        in
+        2016. A
+        vision that quickly broadened up and helped it in becoming more than just a mere online portal, to an online
+        marketplace
+        for shopping Ayurvedic to Homeopathy to Unani medicines to Health Supplements and much more. Since its
+        inception,
+        Healthmug has grown into a world-class e-platform for everything related to health & fitness. What draws a
+        major
+        distinction between us and our contemporaries is the way we promote a harmonious relationship between the
+        sellers and
+        the buyers for the greater good.</p>
+      <p>Healthmug is the brainchild of Dr. Mohit Agarwal & Mr. Anubhav Bansal. They started this online platform
+        with
+        an idea of
+        supporting the local manufacturers & sellers through building a platform for Ayurvedic, Homeopathy & Unani
+        medicines and
+        to improve the health of the consumers in a holistic way. With an ever-expanding range of products and
+        services,
+        Healthmug is growing rapidly and seeks to become a one-stop portal for all healthcare needs.</p>
+      <p>While Healthmug brings medicines at your fingertips and at affordable prices, it also makes shopping online
+        an easy
+        task. Not just for the consumers, even for the sellers & the brands, this platform makes selling products
+        easy
+        and
+        hassle-free. Since day one, we have supported many small & medium local brands to sell their products and
+        have
+        helped
+        them in sharpening their entrepreneurial skills. Along with these, we have also given numerous big brands a
+        platform to
+        expand their customer base. We believe in the philosophy of growing together and thus we motivate the
+        sellers
+        to do
+        their best. All thanks to our comprehendible policies, everyone from a small seller to a wholesaler to a
+        brand, can
+        easily connect with us and sell their products.</p>
+      <p>Shop for medicines, wellness products, and health supplements online from top brands like Dr. Reckeweg, Dr.
+        Willmar
+        Schwabe, Adel Pekana, SBL, Haslab, Bakson etc. Customers can shop from a wide range of Ayurvedic products
+        available
+        online like Bhasma & Pishti, Bati, Gutika & Guggulu Ras, Sindoor, Asava Arishtha etc. at attractive prices.
+        For organic
+        food items, Herbal Juices, Green Teas, etc. from popular brands like Dabur, Baidyanath, Zandu, Himalaya,
+        Organic India,
+        Unjha, Basic Ayurveda and counting, customers can shop online and buy these products at attractive prices
+        and
+        offers.
+        Customers can now enjoy the benefit of shopping online for Allopathic medicines and getting them delivered
+        right at
+        their doorsteps. Shop from our online pharmacy for Allopathic medicines and drugs at great prices. Shop
+        online
+        from the
+        widest range of products listed across on our website, across a wide range of categories and give yourself
+        and
+        your
+        loved ones a gift of wellbeing. Come, join us and start living a healthy life and be a part of the Healthmug
+        family.</p>
+      <div id="copyRight">
+        <p>Copyright© 2019. All rights reserved.</p>
+        <h6>In compliance with Drug and Cosmetic Act and Rules, we dont sell schedule H, H1, X or any habit forming
+          drugs.</h6>
+        <h3>Healthmug.com</h3>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -37,108 +37,129 @@
     width: 255px;
   }
 
-  /* .navbar-brand {
-  padding-right: 30px;
-} */
-  #search {
-    float: left;
-    margin-top: 20px;
-    padding-left: 0px;
-  }
+  /* navbar */
 
-  .nav>img {
-    width: 90%;
-    padding-top: 10px;
-  }
+.nav-bar {
+  /* background: cyan; */
+  height: 70px;
+}
 
-  .btn {
-    height: 36px;
-    width: 50px;
-    background-color: rgb(81, 201, 166);
-    /* background: rgb(81,201,166); */
-    color: white;
-    border: none;
-  }
+.nav-bar a {
+  float: left;
+  margin-top: 20px;
+  margin: 10px 50px;
+}
 
-  .btn:hover {
-    background-color: rgb(11, 184, 126);
-  }
+.form {
+  height: 30px;
+  width: 255px;
+}
 
-  .icon {
-    width: 32%;
-    height: 40px;
-    /* border: 1px solid red; */
-    display: flex;
-    justify-content: space-around;
-    float: right;
-    margin-top: 20px;
-  }
+.navbar-brand {
+  width: 230px;
+  padding: 10px 0px;
+  margin-left: 0%;
+}
 
-  #nav-2 {
-    display: flex;
-    justify-content: center;
-    background: #51c9a6;
-    width: 100%;
-    height: 40px;
-    /* border: 1px solid #51c9a6; */
-  }
+.navbar-brand > img {
+  width: 95%;
+}
 
-  #nav-2 li {
-    margin-left: 20px;
-    color: white;
-    font-size: 12px;
-    float: left;
-    padding: 0px 0px;
-    list-style: none;
-  }
+#search {
+  float: left;
+  margin-top: 20px;
+  padding-left: 0%;
+  /* padding-right: 0%; */
+  /* margin-right: 0%; */
+}
 
-  li:hover {
-    cursor: pointer;
-  }
+#search_bar {
+  padding-left: 10px;
+  padding-right: 0%;
+  margin-right: 0%;
+  border: 1px solid #dcdbdb;
+}
 
-  input[type="text"] {
-    width: 480px;
-    margin-left: 40px;
-    border: 0.5px solid #e5d6d6;
-    height: 30px;
-  }
+.nav > img {
+  width: 90%;
+  padding-top: 10px;
+}
 
-  .icon {
-    /* border: 1px solid red; */
-    /* margin-left: 125px;
+.btn {
+  border: transparent;
+  padding-left: 0%;
+  margin-left: 0%;
+  height: 36px;
+  width: 50px;
+  background: #51c9a6;
+  color: white;
+}
+
+.icon {
+  width: 32%;
+  height: 40px;
+  /* border: 1px solid red; */
+  float: right;
+  margin-top: 20px;
+}
+
+#nav-2 {
+  display: flex;
+  justify-content: center;
+  background: #51c9a6;
+  width: 100%;
+  height: 30px;
+  border: 1px solid #51c9a6;
+}
+
+#nav-2 li {
+  margin-top: 9px;
+  margin-left: 30px;
+  color: white;
+  float: left;
+  padding: 0px;
+  list-style: none;
+  font-size: 13px;
+}
+#nav-2 > li > a {
+  text-decoration: none;
+}
+
+#nav-2 > li:hover {
+  cursor: pointer;
+  background-color: whitesmoke;
+  color: rgb(112, 60, 60);
+}
+
+input[type="text"] {
+  width: 480px;
+  height: 30px;
+  padding-right: 0%;
+  margin-right: 0%;
+}
+
+.icon {
+  /* border: 1px solid red; */
+  /* margin-left: 125px;
   padding-left: 200px;
   align-items: flex-end; */
-    width: 370px;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    /* justify-content: end; */
-  }
+  width: 300px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 
-  .icon>div>p {
-    color: #898989;
-  }
+.icon > div > p {
+  color: #898989;
+}
 
-  .icon i {
-    font-size: 20px;
-    margin-left: 10%;
-    color: gray;
-    margin-right: 25px;
-  }
+.icon i {
+  font-size: 20px;
+  margin: 0%;
+  margin-right: 25px;
+}
 
-  .icon i:hover {
-    color: rgb(17, 12, 12);
-    /* background-color: green; */
-  }
-
-  .icon i:nth-child(4) {
-    color: rgb(81, 201, 166);
-    font-size: 28px;
-  }
-
-  .icon i:nth-child(4):hover {
-    color: rgb(35, 161, 125);
-  }
 
   /* Bubble Advertisment */
   .bbl {
@@ -269,7 +290,7 @@
   }
 
   .blog>div {
-    border: 1px solid red;
+    border: 1px solid transparent;
   }
 
   .blog>div:nth-child(1) {
@@ -316,7 +337,7 @@
   }
 
   .blog>div>div>div {
-    /* border: 1px solid red; */
+    border: 1px solid transparent;
     margin: auto;
     margin-top: 15px;
     font-size: 12px;
@@ -355,13 +376,13 @@
   }
 
   #btm2>div {
-    /* border: 1px solid red; */
+    border: 1px solid transparent;
     display: flex;
     flex-wrap: wrap;
   }
 
   #btm2>div>div {
-    /* border: 1px solid red; */
+    border: 1px solid transparent;
     margin: auto;
     font-size: 14px;
     margin-top: 10px;
@@ -374,6 +395,7 @@
   #btm1 {
     display: flex;
     /* font-size: 30px; */
+    margin-top: 10px;
     background-color: white;
     height: 160px;
   }
@@ -495,17 +517,20 @@
     grid-gap: 10px;
     justify-content: space-around;
     grid-template-areas:
-      /* "a a a a a a a a a a a a a a a a a a a a" */
+      "a a a a a a a a a a a a a a a a a a a a"
       "b b b b c c c c c c c c c c c c c c c c"
     ;
 
   }
 
   /* container chileds */
-  /* .container>div:nth-child(1){ */
-  /* grid-area: a; */
+  .container>div:nth-child(1){
+  grid-area: a;
+  color: gray;
+  font-size: 12px;
+  margin-left: 20px;
   /* border: 1px solid; */
-  /* } */
+  }
   .container>div:nth-child(2) {
     margin-left: 20px;
     grid-area: b;
@@ -975,40 +1000,38 @@
 
         </a href="#">
         <form id="search">
-          <input id="" type="text" placeholder="Search Products">
+          <input id="search_bar" type="text" placeholder="Search Products">
           <button class="btn" type="button"><i class="fas fa-search"></i> </button>
         </form>
         <div class="icon">
           <div>
-            <i class="fa-regular fa-envelope"></i>
+            <i class="fa-regular fa-envelope" style="color: #898989;"></i>
             <p>contact us</p>
           </div>
           <div>
-            <i class="fa-solid fa-wallet"></i>
+            <i class=" fa-solid fa-wallet" style="color: #898989;"></i>
             <p>Sell With Us</p>
           </div>
           <div>
-            <i class="fa-solid fa-user"></i>
+            <i class=" fa-solid fa-user" style="color: #898989;"></i>
             <p>Sign In</p>
           </div>
-          <i class="fa-solid fa-cart-shopping"></i></a>
+          <i class="fa-solid fa-cart-shopping" style="color: aquamarine; "></i></a>
         </div>
       </nav>
 
       <nav id="nav-2">
-        <ul>
-          <li>Disease</li>
-          <li>Allopathy</li>
-          <li>Homeopathy</li>
-          <li>Ayurveda</li>
-          <li>Unani</li>
-          <li>Nutrtion</li>
-          <li>Personal Care</li>
-          <li>Baby Care</li>
-          <li>Sexual Wellness</li>
-          <li>Fitness</li>
-          <li>Consultation</li>
-        </ul>
+        <li>Disease</li>
+        <li> Allopathy</li>
+        <li> Homeopathy</li>
+        <li> Ayurveda</li>
+        <li> Unani</li>
+        <li> Nutrtion</li>
+        <li> Personal Care</li>
+        <li> Baby Care</li>
+        <li> Sexual Wellness</li>
+        <li> Fitness</li>
+        <li> Consultation</li>
       </nav>
 
     </header>
@@ -1017,7 +1040,7 @@
   <!-- main container -->
   <div class="container">
 
-    <div class="head"></div>
+    <div class="head" style="font-size: 12px;">Home > Allopathy </div>
 
     <!-- filter left side portion -->
     <div class="filters">
@@ -1109,7 +1132,7 @@
       <div class="searchBar">
         <!-- search bar  -->
         <div class="categories">Allopathy</div>
-        <div><input type="text" placeholder="Search here">
+        <div><input type="text" placeholder="Search allopathy">
           <div><i class="fas fa-search"></i></div>
         </div>
         <div>sort by:</div>

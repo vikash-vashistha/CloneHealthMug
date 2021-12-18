@@ -1,6 +1,6 @@
 /* frame */
 #main {
-  height: 5840px;
+  height: 5740px;
   border: 1px solid black;
   display: grid;
   grid-template-areas:
@@ -130,7 +130,7 @@
 }
 
 #main > div > div {
-  /* border: 1px solid green; */
+  border: 1px solid green;
   text-align: left;
   padding: 15px;
 }
@@ -226,7 +226,7 @@ img {
 }
 
 .adv_r > img {
-  height: 33.33%;
+  height: 32%;
   width: 100%;
 }
 
@@ -275,7 +275,7 @@ img {
 }
 
 .bbl > div {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin: auto;
   max-height: 84%;
   max-width: 30%;
@@ -307,7 +307,7 @@ img {
   justify-content: space-between;
 }
 .HC > div {
-  border: 1px dashed black;
+  /* border: 1px dashed black; */
   margin: 10px;
   height: 35%;
   width: 13%;
