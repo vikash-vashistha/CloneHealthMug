@@ -1,0 +1,1391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nutrition & Supplements </title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<!-- <link rel="ayurveda.css" href=""> -->
+
+<style>
+  body {
+    cursor: pointer;
+    background-color: rgb(244, 244, 244);
+    font-family: 'Roboto', sans-serif;
+  }
+
+  /* navbar */
+  .nav-bar {
+    /* background: cyan; */
+    height: 70px;
+  }
+
+  .nav-bar a {
+    float: left;
+    margin-top: 20px;
+    margin: 10px 20px;
+  }
+
+  .form {
+    height: 30px;
+    width: 255px;
+  }
+
+  /* navbar */
+
+.nav-bar {
+  /* background: cyan; */
+  height: 70px;
+}
+
+.nav-bar a {
+  float: left;
+  margin-top: 20px;
+  margin: 10px 50px;
+}
+
+.form {
+  height: 30px;
+  width: 255px;
+}
+
+.navbar-brand {
+  width: 230px;
+  padding: 10px 0px;
+  margin-left: 0%;
+}
+
+.navbar-brand > img {
+  width: 95%;
+}
+
+#search {
+  float: left;
+  margin-top: 20px;
+  padding-left: 0%;
+  /* padding-right: 0%; */
+  /* margin-right: 0%; */
+}
+
+#search_bar {
+  padding-left: 10px;
+  padding-right: 0%;
+  margin-right: 0%;
+  border: 1px solid #dcdbdb;
+}
+
+.nav > img {
+  width: 90%;
+  padding-top: 10px;
+}
+
+.btn {
+  border: transparent;
+  padding-left: 0%;
+  margin-left: 0%;
+  height: 36px;
+  width: 50px;
+  background: #51c9a6;
+  color: white;
+}
+
+.icon {
+  width: 32%;
+  height: 40px;
+  /* border: 1px solid red; */
+  float: right;
+  margin-top: 20px;
+}
+
+#nav-2 {
+  display: flex;
+  justify-content: center;
+  background: #51c9a6;
+  width: 100%;
+  height: 30px;
+  border: 1px solid #51c9a6;
+}
+
+#nav-2 li {
+  margin-top: 9px;
+  margin-left: 30px;
+  color: white;
+  float: left;
+  padding: 0px;
+  list-style: none;
+  font-size: 13px;
+}
+#nav-2 > li > a {
+  text-decoration: none;
+}
+
+#nav-2 > li:hover {
+  cursor: pointer;
+  background-color: whitesmoke;
+  color: rgb(112, 60, 60);
+}
+
+input[type="text"] {
+  width: 480px;
+  height: 30px;
+  padding-right: 0%;
+  margin-right: 0%;
+}
+
+.icon {
+  /* border: 1px solid red; */
+  /* margin-left: 125px;
+  padding-left: 200px;
+  align-items: flex-end; */
+  width: 300px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.icon > div > p {
+  color: #898989;
+}
+
+.icon i {
+  font-size: 20px;
+  margin: 0%;
+  margin-right: 25px;
+}
+
+
+  /* Bubble Advertisment */
+  .bbl {
+    display: flex;
+  }
+
+  .bbl>img {
+    margin: auto;
+    height: 90%;
+    width: 32%;
+  }
+
+  /* shop by health concern */
+  .HC {
+    color: #525d5d;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .HC>div {
+    border: 1px dashed black;
+    margin: 10px;
+    height: 35%;
+    width: 13%;
+  }
+
+  .HC>div>div:nth-child(1) {
+    height: 80%;
+  }
+
+  .HC>div>div>img {
+    border-radius: 100%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+
+  .HC>div>div:nth-child(2) {
+    height: 10%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+  }
+
+  /* SHOP BY TOP BRANDS */
+  .TB {
+    color: #525d5d;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .TB>div {
+    border: 1px dashed black;
+    margin: 10px;
+    height: 35%;
+    width: 13%;
+  }
+
+  .TB>div>div:nth-child(1) {
+    height: 80%;
+  }
+
+  .TB>div>div:nth-child(2) {
+    height: 10%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+  }
+
+  /* Static advertisment */
+  .SA {
+    display: flex;
+  }
+
+  .SA>img {
+    margin: auto;
+    height: 90%;
+    width: 32%;
+  }
+
+  /* START CONSULTATION */
+  .SC>div {
+    display: flex;
+    justify-content: space-between;
+    color: #525d5d;
+  }
+
+  .SC>div:nth-child(1) {
+    font-weight: 550;
+    /* color: #525d5d; */
+  }
+
+  .SC>div>div {
+    display: flex;
+    /* flex-direction: row; */
+  }
+
+  .SC>div>div>div>p {
+    font-size: 13px;
+    margin: 10px 0px;
+  }
+
+  .SC>div>div>div>img {
+    border: 1px solid #898989;
+    border-radius: 100%;
+    height: 60%;
+    width: 80%;
+  }
+
+  .SC>div>div>div>button {
+    border: 1px solid #51c9a6;
+    background-color: white;
+    color: #51c9a6;
+    border-radius: 20px;
+    width: 120px;
+    height: 40px;
+  }
+
+  /* Blogs */
+  .blog {
+    margin: auto;
+    display: grid;
+    grid-template-areas:
+      ". . a a a a . ."
+      "b b b b c c d d"
+      "b b b b c c d d"
+      "b b b b e e f f"
+      "b b b b e e f f";
+    grid-gap: 5px;
+  }
+
+  .blog>div {
+    border: 1px solid transparent;
+  }
+
+  .blog>div:nth-child(1) {
+    grid-area: a;
+  }
+
+  .blog>div:nth-child(2) {
+    grid-area: b;
+  }
+
+  .blog>div:nth-child(3) {
+    grid-area: c;
+  }
+
+  .blog>div:nth-child(4) {
+    grid-area: d;
+  }
+
+  .blog>div:nth-child(5) {
+    grid-area: e;
+  }
+
+  .blog>div:nth-child(6) {
+    grid-area: f;
+  }
+
+  .blog>div>div:nth-child(1) {
+    height: 70%;
+  }
+
+  .blog>div>p {
+    font-size: 13px;
+    margin-top: 15px;
+    color: #51c9a6;
+  }
+
+  .blog>div>div>h4 {
+    margin: auto;
+    margin-top: 15px;
+    width: 80%;
+    text-align: center;
+    color: #51c9a6;
+    font-weight: lighter;
+  }
+
+  .blog>div>div>div {
+    border: 1px solid transparent;
+    margin: auto;
+    margin-top: 15px;
+    font-size: 12px;
+    width: 90%;
+    text-align: center;
+    color: #898989;
+  }
+
+  #blog_head {
+    margin: auto;
+    color: #fb8903;
+    font-size: 25px;
+  }
+
+
+  /* Title Bar */
+  #btm2 {
+    /* height: 20%; */
+    background-color: #0b7670;
+    font: 12px;
+    font-family: Roboto, sans-serif;
+    color: #51c9a6;
+  }
+
+  #btm3 {
+    /* height: 70%; */
+    background-color: #51c9a6;
+    color: #e7fbfd;
+    font-size: 12px;
+  }
+
+  #copyRight {
+    text-align: center;
+    color: #117150;
+    margin-top: 20px;
+  }
+
+  #btm2>div {
+    border: 1px solid transparent;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #btm2>div>div {
+    border: 1px solid transparent;
+    margin: auto;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  #btm2>div>div>p:nth-child(1) {
+    color: white;
+  }
+
+  #btm1 {
+    display: flex;
+    /* font-size: 30px; */
+    margin-top: 10px;
+    background-color: white;
+    height: 160px;
+  }
+
+  #btm1>div {
+    margin: auto;
+    text-align: center;
+  }
+
+  #btm1>div>p {
+    color: #c9cacc;
+  }
+
+  #btm1>div i {
+    font-size: 40px;
+    color: rgb(81,201,166);
+  }
+
+  h6 {
+    margin: 10px;
+  }
+
+  h3 {
+    margin: 0%;
+    font-weight: lighter;
+  }
+
+  .icon>div>p {
+    font-size: 11px;
+    margin: 0%;
+    font-weight: lighter;
+  }
+
+  .icon>div>p:nth-child(1):hover {
+    color: black;
+  }
+
+  .icon>div>p:nth-child(3):hover {
+    color: black;
+  }
+
+  .icon>div>p:nth-child(2):hover {
+    color: black;
+  }
+
+  /* Advertisement */
+  .adv_l>div:nth-child(1) {
+    height: 80%;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .adv_l>div:nth-child(2) {
+    display: flex;
+    height: 10%;
+  }
+
+  .adv_l>div:nth-child(2)>p {
+    margin: 0% 5%;
+  }
+
+  .adv_r>img {
+    height: 33.33%;
+    width: 100%;
+  }
+
+  /* Top Categories */
+  .TC>div:nth-child(1) {
+    font-weight: 550;
+    color: #525d5d;
+  }
+
+  .TC>div:nth-child(2) {
+    color: #525d5d;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .TC>div>div {
+    border: 1px dashed black;
+    margin: 10px;
+    height: 35%;
+    width: 10%;
+  }
+
+  .TC>div>div>div:nth-child(1) {
+    margin-left: 5px;
+    height: 80%;
+  }
+
+  .TC>div>div>div>img {
+    padding: 5px;
+    width: 100px;
+    border-radius: 100%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+
+  .TC>div>div>div:nth-child(2) {
+    height: 10%;
+    text-align: center;
+    margin-top: 20px;
+    color: #adaaab;
+  }
+
+
+
+
+  /* main container */
+  .container {
+    margin-top: 10px;
+    display: grid;
+    width: 100%;
+    /* border: 1px solid red; */
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(1, auto);
+    grid-gap: 10px;
+    justify-content: space-around;
+    grid-template-areas:
+      "a a a a a a a a a a a a a a a a a a a a"
+      "b b b b c c c c c c c c c c c c c c c c"
+    ;
+
+  }
+
+  /* container chileds */
+  .container>div:nth-child(1){
+  grid-area: a;
+  color: gray;
+  font-size: 12px;
+  margin-left: 20px;
+  /* border: 1px solid; */
+  }
+  .container>div:nth-child(2) {
+    margin-left: 20px;
+    grid-area: b;
+    /* border: 1px solid; */
+    padding-left: 10px;
+  }
+
+  .container>div:nth-child(3) {
+    grid-area: c;
+    /* border: 1px solid; */
+  }
+
+  /* product div style bellow */
+  /* offers */
+
+  .products {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 70px 100px auto;
+    grid-column-gap: 7px;
+    grid-template-areas:
+      "a a a a b b b b c c c c"
+      "d d d d d d d d d d d d"
+      "e e e e e e e e e e e e"
+    ;
+  }
+
+  /* product chileds */
+  .products>div:nth-child(1) {
+    grid-area: a;
+    /* border: 1px solid; */
+  }
+
+  .products>div:nth-child(1) img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .products>div:nth-child(2) {
+    grid-area: b;
+    /* border: 1px solid; */
+  }
+
+  .products>div:nth-child(2) img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .products>div:nth-child(3) {
+    grid-area: c;
+    /* border: 1px solid; */
+  }
+
+  .products>div:nth-child(3) img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* search bar*/
+  .products>div:nth-child(4) {
+    margin-top: 16px;
+    background-color: white;
+    grid-area: d;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 65% 35%;
+    grid-template-areas:
+      "a a a a a a a a b b b b"
+      "c c d d d d d d d d d d"
+    ;
+    /* border: 1px solid; */
+  }
+
+  .products>div:nth-child(4)>div:nth-child(1) {
+    display: flex;
+    padding-left: 1%;
+    grid-area: a;
+    font-size: 30px;
+    align-items: center;
+    /* border: 1px solid red; */
+  }
+
+  .products>div:nth-child(4)>div:nth-child(2) {
+    grid-area: b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+  }
+
+  .products>div:nth-child(4)>div:nth-child(2) input {
+    width: 80%;
+    height: 50%;
+    border: 0.5px solid rgb(228, 223, 223);
+  }
+
+  .products>div:nth-child(4)>div:nth-child(2) div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 57%;
+    /* border: 2px solid blue; */
+    color: white;
+    background-color: rgb(81, 201, 166);
+  }
+
+  .products>div:nth-child(4)>div:nth-child(3) {
+    grid-area: c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(240, 239, 239);
+  }
+
+  .products>div:nth-child(4)>div:nth-child(4) {
+    grid-area: d;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(240, 239, 239);
+  }
+
+  .sortby>span {
+    margin-left: 18px;
+    font-size: 12px;
+  }
+
+  .sortby>span:hover {
+    color: rgb(81, 201, 166);
+  }
+
+  .products>div:nth-child(5) {
+    display: flex;
+    flex-flow: wrap;
+    background-color: white;
+    /* justify-content:left;      */
+    grid-area: e;
+    /* border: 1px solid; */
+    justify-content: space-between;
+    /*the gap comming in btw product because of that */
+  }
+
+
+  /* css for item present in class items */
+  .items>.itm {
+    width: 24%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    height: 350px;
+    display: grid;
+    background-color: white;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 58% 22% 10% 10%;
+    grid-template-areas:
+      "a a a a a a a a a a a a"
+      "b b b b b b b b b b b b"
+      "c c c c c c d d d d d d"
+      "e e e e e e f f f f f f"
+    ;
+  }
+
+  .items>.itm:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .itm>div:nth-child(1) {
+    grid-area: a;
+    /* border: 1px solid; */
+
+  }
+
+  .itm>div:nth-child(2) {
+    grid-area: b;
+    /* border: 1px solid; */
+
+  }
+
+  .itm>div:nth-child(3) {
+    display: flex;
+    align-items: center;
+    grid-area: c;
+    /* star portion for riview*/
+    padding-left: 5%;
+    /* border: 1px solid; */
+  }
+
+  .itm>div:nth-child(3) i {
+    color: gold;
+  }
+
+  .itm>div:nth-child(4) {
+    grid-area: d;
+    display: flex;
+    justify-content: end;
+    /* border: 1px solid; */
+  }
+
+  .itm>div:nth-child(4) img {
+    width: 60%;
+    height: 60%;
+  }
+
+  .itm>div:nth-child(5) {
+    grid-area: e;
+    /* price */
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+  }
+
+  .itm>div:nth-child(6) {
+    grid-area: f;
+    display: flex;
+    justify-content: center;
+    /*cart logo*/
+    align-items: center;
+    border-radius: 100px;
+
+  }
+
+  .itm>div:nth-child(6) i {
+    color: gray;
+  }
+
+  .itm>div:nth-child(6) i:hover {
+    color: rgb(81, 201, 166);
+  }
+
+
+  .itm>div>img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .itm>div>p {
+    line-height: 12px;
+    margin-left: 5px;
+    font-size: 12px;
+  }
+
+  .itm>div {
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  #iname {
+    font-size: 15px;
+  }
+
+  #price {
+    font-size: 22px;
+    line-height: 0px;
+  }
+
+
+
+  /* filter portion  */
+  .filters {
+    display: grid;
+    background-color: white;
+    grid-template-columns: 100%;
+    grid-template-rows: 50px 350px 200px 350px 370px;
+    grid-template-areas:
+      "a"
+      "b""c""d""e"
+    ;
+  }
+
+  .filters>div:nth-child(1) {
+    grid-area: a;
+    border-bottom: 1px solid;
+  }
+
+  .filters>.byayurveda>div {
+    font-size: 12px;
+    margin-left: 25px;
+    margin-top: 10px;
+    color: gray;
+  }
+
+  .filters>.byayurveda>div:hover {
+    color: black;
+  }
+
+  .filters>.byprice>div {
+    margin-top: 10px;
+    font-size: 12px;
+    margin-left: 20px;
+    color: gray;
+  }
+
+  .filters>.byprice>div:hover {
+    color: black;
+  }
+
+  .filters>.bybrand>div {
+    font-size: 12px;
+    margin-left: 25px;
+    margin-top: 10px;
+    color: gray;
+  }
+
+  .filters>.bybrand>div:hover {
+    color: black;
+  }
+
+  .filters>.bytreatment>div {
+    font-size: 12px;
+    margin-left: 25px;
+    margin-top: 10px;
+    color: gray;
+  }
+
+  .filters>.bytreatment>div:hover {
+    color: black;
+  }
+
+  .filters>div:nth-child(2) {
+    grid-area: b;
+    border-bottom: 1px solid;
+  }
+
+  .filters>div:nth-child(3) {
+    grid-area: c;
+    border-bottom: 1px solid;
+  }
+
+  .filters>div:nth-child(4) {
+    grid-area: d;
+    border-bottom: 1px solid;
+  }
+
+  .filters>div:nth-child(5) {
+    grid-area: e;
+    /* border-bottom: 1px solid; */
+  }
+
+
+
+
+  /* ALL MEDIA QUERRY HERE */
+
+  @media only screen and (min-width:376px) and (max-width:768px) {
+    .products {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: 70px 70px 90px auto;
+      grid-gap: 7px;
+      grid-template-areas:
+        "a a a a b b b b"
+        "c c c c . . . ."
+        "d d d d d d d d"
+        "e e e e e e e e"
+      ;
+    }
+
+    .products>div:nth-child(5) {
+      display: flex;
+      flex-flow: wrap;
+      justify-content: space-between;
+      /*the gap comming in btw product because of that */
+    }
+
+    .items>.itm {
+      width: 33%;
+    }
+
+    .products>div:nth-child(4) {
+      margin-top: 16px;
+      grid-area: d;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: 65% 35%;
+      grid-template-areas:
+        "b b b b b b b b b b b b"
+        "c c d d d d d d d d d d"
+      ;
+      /* border: 1px solid; */
+    }
+
+    .products>div:nth-child(4)>div:nth-child(1) {
+      display: none;
+    }
+  }
+
+  @media only screen and (min-width:0px) and (max-width:375px) {
+    .container {
+      /* display: grid; */
+      /* width: 100%; */
+      /* border: 1px solid red; */
+      /* grid-template-columns: repeat(20,1fr); */
+      grid-template-rows: 40px repeat(1, auto);
+      /* grid-gap: 10px; */
+      /* justify-content: space-around; */
+      grid-template-areas:
+        "a a a a a a a a a a a a a a a a a a a a"
+        "c c c c c c c c c c c c c c c c c c c c"
+      ;
+
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 60px 60px 60px 60px auto;
+      grid-gap: 7px;
+      grid-template-areas:
+        "a a a a"
+        "b b b b"
+        "c c c c"
+        "d d d d"
+        "e e e e"
+      ;
+    }
+
+    .products>div:nth-child(4) {
+      margin-top: 16px;
+      grid-area: d;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: 100%;
+      grid-template-areas:
+        "b b b b b b b b b b b b"
+        /* "c c d d d d d d d d d d" */
+      ;
+      /* border: 1px solid; */
+    }
+
+    .products>div:nth-child(4)>div:nth-child(3) {
+      display: none;
+    }
+
+    .products>div:nth-child(4)>div:nth-child(4) {
+      display: none;
+    }
+
+    .products>div:nth-child(4)>div:nth-child(1) {
+      display: none;
+    }
+
+
+
+    .filters {
+      display: none;
+    }
+
+    .products>div:nth-child(5) {
+      display: flex;
+      flex-flow: wrap;
+      justify-content: space-between;
+      /*the gap comming in btw product because of that */
+    }
+
+    .items>.itm {
+      width: 100%;
+    }
+  }
+</style>
+
+<body>
+  <!-- Nav Bar -->
+  <div class="nav">
+    <header>
+      <nav class="nav-bar">
+        <a class="navbar-brand" href="#">
+          <img src="https://static.oxinis.com/healthmug/image/healthmug/healthmug-logo.png">
+
+        </a href="#">
+        <form id="search">
+          <input id="search_bar" type="text" placeholder="Search Products">
+          <button class="btn" type="button"><i class="fas fa-search"></i> </button>
+        </form>
+        <div class="icon">
+          <div>
+            <i class="fa-regular fa-envelope" style="color: #898989;"></i>
+            <p>contact us</p>
+          </div>
+          <div>
+            <i class=" fa-solid fa-wallet" style="color: #898989;"></i>
+            <p>Sell With Us</p>
+          </div>
+          <div>
+            <i class=" fa-solid fa-user" style="color: #898989;"></i>
+            <p>Sign In</p>
+          </div>
+          <i class="fa-solid fa-cart-shopping" style="color: aquamarine; "></i></a>
+        </div>
+      </nav>
+
+      <nav id="nav-2">
+        <li>Disease</li>
+        <li> Allopathy</li>
+        <li> Homeopathy</li>
+        <li> Ayurveda</li>
+        <li> Unani</li>
+        <li> Nutrtion</li>
+        <li> Personal Care</li>
+        <li> Baby Care</li>
+        <li> Sexual Wellness</li>
+        <li> Fitness</li>
+        <li> Consultation</li>
+      </nav>
+
+    </header>
+
+  </div>
+  <!-- main container -->
+  <div class="container">
+
+    <div class="head" style="font-size: 12px;">Home > Nutrition & Supplements </div>
+
+    <!-- filter left side portion -->
+    <div class="filters">
+      <div>
+        <h3>Filter by</h3>
+      </div>
+      <div class="byayurveda">
+        <p>Nutrition & Supplements</p>
+        <div class="bayurveda1">Sports Nutrition</div>
+        <div  class="bayurveda2">Nutritional Supplements</div>
+        <div class="bayurveda3">Organic Products</div>
+        <div class="bayurveda4">Health Food & Drinks</div>
+        <div>Sugar Substitutes</div>
+        <div>Coffee & Tea</div>
+        <div>Digestives</div>
+        
+      </div>
+      <div class="byprice">
+        <p>PRICE</p>
+        <div><input type="checkbox">
+          <spann class="b200">BELOW 200</spann>
+        </div>
+        <div><input type="checkbox">
+          <spann class="b500">201 - 500</spann>
+        </div>
+        <div><input type="checkbox">
+          <spann>501 - 1000</spann>
+        </div>
+        <div><input type="checkbox">
+          <spann>ABOVE 1000</spann>
+        </div>
+      </div>
+      <div class="bybrand">
+        <p>BRAND</p>
+        <div>Baidyanath</div>
+        <div>Dabur</div>
+        <div>Unjha</div>
+        <div>Himalaya</div>
+        <div>Nagarjun</div>
+        <div>Dhootapapeshwar</div>
+        <div>Baidyanath (Nagpur)</div>
+        <div>Basic Ayurveda</div>
+        <div>Vyas</div>
+        <div>Sri Sri Tattva</div>
+      </div>
+      <div class="bytreatment">
+        <p>TREATMENT</p>
+        <div><input type="checkbox">
+          <spann>Acne & Pimples</spann>
+        </div>
+        <div><input type="checkbox">
+          <spann>Addiction</spann>
+        </div>
+        <div><input type="checkbox">
+          <spann>Allergic Rhinitis</spann>
+        </div>
+        <div><input type="checkbox">
+          <spann>Alopecia & Bald Patches</spann>
+        </div>
+        <div><input type="checkbox">
+          <spann>Alzheimer's</spann>
+        </div>
+        <div><input type="checkbox">
+          <spann>Anaemia</spann>
+        </div>
+        <div><input type="checkbox">
+          <spann>Anxiety & Depression</spann>
+        </div>
+        <div><input type="checkbox">
+          <spann>Appendicitis</spann>
+        </div>
+        <div><input type="checkbox">
+          <spann>Arthritis & Rheumatism</spann>
+        </div>
+        <div><input type="checkbox">
+          <spann>Asthma</spann>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="products">
+      <!-- right side of filter  -->
+      <div class="cupancode1"><img src="https://static.oxinis.com/healthmug/image/asset/597-qt-480.png" alt=""></div>
+      <div class="cupancode2"><img src="https://static.oxinis.com/healthmug/image/asset/21-lu-480.png" alt=""></div>
+      <div class="cupancode3"><img src="https://static.oxinis.com/healthmug/image/asset/19-bh-480.png" alt=""></div>
+
+      <div class="searchBar">
+        <!-- search bar  -->
+        <div class="categories">Nutrition & Supplements</div>
+        <div><input type="text" placeholder="Search allopathy">
+          <div><i class="fas fa-search"></i></div>
+        </div>
+        <div>sort by:</div>
+        <div class="sortby"><span class="sbyPopularity">Popularity</span><span class="sbyName">Name</span><span
+            class="LtoH">Price Low to High</span><span class="HtoL">Price High To Low</span> <span
+            class="bydiscount">Discount</span><span class="by arrival">New Arival</span></div>
+      </div>
+
+      <div class="items">
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!--  Title Bar  -->
+  <div>
+    <div id="btm1">
+      <div>
+        <i class="fas fa-shield-alt" style="color: #0b7670;"></i>
+        <h3>100% SECURE</h3>
+        <p>100% Payments Protection</p>
+      </div>
+      <div>
+        <i class="fas fa-wallet" style="color: #0b7670;"></i>
+        <h3>CASH ON DELIVERY</h3>
+        <p>Get First Pay Later</p>
+      </div>
+      <div>
+        <i class="fas fa-undo-alt" style="color: #0b7670;"></i>
+        <h3>EASY RETURN</h3>
+        <p>Easy Return & Refund</p>
+      </div>
+      <div>
+        <i class="fas fa-hands-helping" style="color: #0b7670;"></i>
+        <h3>HELP CENTER</h3>
+        <p>Call: 7838389846 Or Read FAQs</p>
+      </div>
+    </div>
+    <div id="btm2">
+      <div>
+        <div>
+          <p>Policies</p>
+          <p>Privacy Policy</p>
+          <p>Terms of Use</p>
+          <p>Returns and Cancellations</p>
+        </div>
+        <div>
+          <p>HealthMug</p>
+          <p>Contact Us</p>
+          <p>About Us</p>
+          <p>Blogs</p>
+        </div>
+        <div>
+          <p>May we help you</p>
+          <p>Track Your Order</p>
+          <p>Change / Cancel</p>
+          <p>Order</p>
+          <p>Report Abouse/</p>
+          <p>Infringement</p>
+          <p>FAQ</p>
+        </div>
+        <div>
+          <p>Stay Connected</p>
+          <p>
+            <i class="fab fa-facebook-f"></i>
+          <p>facebook</p>
+          </p>
+          <p>
+            <i class="fab fa-twitter"></i>
+          <p>Twitter</p>
+          </p>
+        </div>
+        <div>
+          <p>Payment Methods</p>
+          <p>
+            <i class="far fa-credit-card"></i>
+          <p>Debit/Credit Cards</p>
+          </p>
+          <p>
+            <i class="fas fa-desktop"></i>
+          <p>Net Banking</p>
+          </p>
+          <p>
+            <i class="fas fa-money-check-alt"></i>
+          <p>Cash On Delivery</p>
+          </p>
+          <p>
+            <i class="fas fa-wallet"></i>
+          <p>E-Wallet</p>
+          </p>
+        </div>
+        <div>
+          <p>Download App</p>
+          <div style="display: flex;">
+            <i class="fab fa-google-play"></i>
+            <div>
+              <p>GET IT ON</p>
+              <H3>Google Play</H3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <i class="fas fa-shield-alt" style="color: white;"></i>
+          <span>100% Secured & Trusted</span>
+          <div style="color: white; font-size: 12px; padding-left: 25px;">Secure payment by Razorpay</di>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="btm3">
+      <p><strong>Homeopathy:</strong> Dr. Reckeweg/ Dr. Willmar Schwabe/ Adel Pekana/ SBL/ Bakson’s/ Wheezal/ New
+        Life/ R S Bhargava/
+        Adven/
+        Bhandari/ Hapdco/ Medisynth/ Allen/ B.Jain/ Bioforce/ Dr.Wellmans/ Bios Lab/ HL/ Haslab/ Lords/ Jhactions/
+        Indo
+        German/
+        REPL/ Ralson</p>
+      <p><strong>Homeopathic Dilutions:</strong> Allium Cepa/ Alumina/ Antim Crud/ Antim Tart/ Apis Mel/ Arnica/
+        Arsenic Album/ Baryta Carb/ Belladonna/ Bryonia/
+        Calcarea Carb/ Carvo Veg/ Causticum/ Cina/ China/ Colocynthis/ Conium/ Eupatorium Perf/ Gelsemium/
+        Graphites/
+        Hepar
+        Sulph/ Ignatia/ Ipecac/ Kali Bichrom/ Ledum Pal/ Lycopodium/ Merc sol/ Nitric Acid/ Nux Vomica/ Ocimum Can/
+        Petroleum/
+        Phosphoric Acid/ Phosphorus/ Pulsatilla/ Rhus tox/ Ruta/ Sepia/ Sulphur/ Thuja</p>
+      <p>
+        <strong>Homeopathic Mother Tinctures :</strong>
+        Aesculus/ Agnus Castus/ Alfalfa/ Aspidosperma/ Avena Sativa/ Berberis Vulgaris/ Blatta/ Calendula/
+        Cantharis/
+        Carduus
+        Marianus/ Chelidonium/ Chimaphilla/ Crateagus/ Damina/ Drosera/ Echinacea/ Euphrasia/ Ginseng/ Hamamelis/
+        Hydrastis/
+        Hypericum/ Justicea/ Kalmegh/ Kreosote/ Lemna Minor/ Millefolium/ Phytolacca/ Plantago/ Sabadilla/ Sabal
+        Serrulata/
+        Senega/ Spongia/ Symphytum/ Teucrium Marum Verum/ Thlaspi Bursa Pestoris/ Uva Ursi
+      </p>
+      <p>
+        <strong>Bio-Chemic :</strong>
+        Calcarea Flour/ Calcarea Phos/ Calcarea Sulph/ Ferrum Phos/ Kali Mur/ Kali Phos/ Kali Sulph/ Mag Phos/ Nat
+        Mur/ Nat Phos/ Nat Sulph/ Silicea
+        Ayurveda and Unani : Patanjali/ Baidyanath/ Dabur/ Himalaya/ Charak/ Zandu/ Aimil/ Vyas/ Organic India/
+        Alarsin/
+        Dhootapapeshwar/ Hamdard/ Gurukul/ Maharishi Ayurved/ Multani/ Nagarjuna/ Kudos/ Unjha/ Aroma Magic/ Basic
+        Ayurveda/
+        Vicco
+      </p>
+      <p><strong>Bio-Chemic:</strong>Calcarea Flour/ Calcarea Phos/ Calcarea Sulph/ Ferrum Phos/ Kali Mur/ Kali
+        Phos/
+        Kali Sulph/ Mag Phos/ Nat Mur/ Nat
+        Phos/ Nat Sulph/ Silicea</p>
+      <p><strong>Ayurveda and Unani:</strong> Patanjali/ Baidyanath/ Dabur/ Himalaya/ Charak/ Zandu/ Aimil/ Vyas/
+        Organic India/ Alarsin/
+        Dhootapapeshwar/ Hamdard/ Gurukul/ Maharishi Ayurved/ Multani/ Nagarjuna/ Kudos/ Unjha/ Aroma Magic/ Basic
+        Ayurveda/
+        Vicco</p>
+      <p><strong>Ayurvedic Medicines:</strong> Ras and Sindoor/ Bhasm and Pishti/ Bati, Gutika and Guggulu/ Asava
+        Arishta and Kadha/ Loha and
+        Mandur/ Churan, Avleha and Pak/ Tailam and Ghrita/ Chyawanprash/ Honey/ Digestives/ Green Tea</p>
+      <p><strong>Herbal and Vegetable Juice:</strong> AloeVera Juice/ Amla Juice/ Apple Cider Vinegar/ Lauki Juice/
+        Jamun Juice/ Karela (Bitter
+        Guard) Juice/ Triphala Juice/ Panch Tulsi Juice/ Grass Meal Juice/ Neem Leaf Juice/ Brahmi Juice/ Giloy
+        Juice/
+        Noni
+        Juice</p>
+      <p><strong>Aroma Oils (Essential Oils):</strong> Beautiful Skin Oil/ Fairy Oil/ Stimulate Oil/ Dry Skin Oil/
+        Tea Tree Oil/ Jasmine Oil/
+        Sandalwood Oil/ Patchouli Oil/ Fennel Seed Oil/ Petitgrain Oil/ Exotica Oil/ Cedarwood Oil/ Cinnamom Oil/
+        Oily
+        Skin Oil/
+        Vertiver Oil/ Cypress Oil/ Rose Oil/ Rosemary Oil/ Frankincense Oil/ Ginger Oil/ Geranium Oil/ Flaky Oil/
+        Ylang Ylang
+        Oil/ Peppermint Oil/ Juniper Berry Oil/ Clarysage Oil/ Dreams Oil/ Bergamot Oil/ Lemongrass Oil/ Sensitive
+        Skin Oil/
+        Orange Oil/ Carrot Seed Oil/ Peace Oil/ Rosewood Oil/ Basil Oil/ Neroli Oil/ Lavender Oil/ Clove Oil/ Pine
+        Oil/
+        Eucaplytus Oil/ Happiness Oil/ Palmarosa Oil/ Lemon Oil/ Thyme Oil/ Morning Due Oil/ Nutmeg Oil</p>
+      <p><strong>Beauty and Personal Care:</strong> Natural and Organic Cosmetics/ Creams/ Shampoo/ Hair Oils/
+        Mehandi/ Hair Color/ Talcs/ Soaps/
+        Tooth Paste and Mouth Wash</p>
+      <h2>About Healthmug</h2>
+      <p>With a vision of bridging the gap between a pharmacy and the consumers, Healthmug came into its existence
+        in
+        2016. A
+        vision that quickly broadened up and helped it in becoming more than just a mere online portal, to an online
+        marketplace
+        for shopping Ayurvedic to Homeopathy to Unani medicines to Health Supplements and much more. Since its
+        inception,
+        Healthmug has grown into a world-class e-platform for everything related to health & fitness. What draws a
+        major
+        distinction between us and our contemporaries is the way we promote a harmonious relationship between the
+        sellers and
+        the buyers for the greater good.</p>
+      <p>Healthmug is the brainchild of Dr. Mohit Agarwal & Mr. Anubhav Bansal. They started this online platform
+        with
+        an idea of
+        supporting the local manufacturers & sellers through building a platform for Ayurvedic, Homeopathy & Unani
+        medicines and
+        to improve the health of the consumers in a holistic way. With an ever-expanding range of products and
+        services,
+        Healthmug is growing rapidly and seeks to become a one-stop portal for all healthcare needs.</p>
+      <p>While Healthmug brings medicines at your fingertips and at affordable prices, it also makes shopping online
+        an easy
+        task. Not just for the consumers, even for the sellers & the brands, this platform makes selling products
+        easy
+        and
+        hassle-free. Since day one, we have supported many small & medium local brands to sell their products and
+        have
+        helped
+        them in sharpening their entrepreneurial skills. Along with these, we have also given numerous big brands a
+        platform to
+        expand their customer base. We believe in the philosophy of growing together and thus we motivate the
+        sellers
+        to do
+        their best. All thanks to our comprehendible policies, everyone from a small seller to a wholesaler to a
+        brand, can
+        easily connect with us and sell their products.</p>
+      <p>Shop for medicines, wellness products, and health supplements online from top brands like Dr. Reckeweg, Dr.
+        Willmar
+        Schwabe, Adel Pekana, SBL, Haslab, Bakson etc. Customers can shop from a wide range of Ayurvedic products
+        available
+        online like Bhasma & Pishti, Bati, Gutika & Guggulu Ras, Sindoor, Asava Arishtha etc. at attractive prices.
+        For organic
+        food items, Herbal Juices, Green Teas, etc. from popular brands like Dabur, Baidyanath, Zandu, Himalaya,
+        Organic India,
+        Unjha, Basic Ayurveda and counting, customers can shop online and buy these products at attractive prices
+        and
+        offers.
+        Customers can now enjoy the benefit of shopping online for Allopathic medicines and getting them delivered
+        right at
+        their doorsteps. Shop from our online pharmacy for Allopathic medicines and drugs at great prices. Shop
+        online
+        from the
+        widest range of products listed across on our website, across a wide range of categories and give yourself
+        and
+        your
+        loved ones a gift of wellbeing. Come, join us and start living a healthy life and be a part of the Healthmug
+        family.</p>
+      <div id="copyRight">
+        <p>Copyright© 2019. All rights reserved.</p>
+        <h6>In compliance with Drug and Cosmetic Act and Rules, we dont sell schedule H, H1, X or any habit forming
+          drugs.</h6>
+        <h3>Healthmug.com</h3>
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+
+</html>
+<script src="nutrition.js"></script>

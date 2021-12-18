@@ -1,0 +1,396 @@
+#maincontainer{
+    width: 100%;
+    /* border: 1px solid red; */
+    height: 150px;
+
+}
+      /* navbar */
+      .nav-bar {
+        /* background: cyan; */
+        height: 70px;
+      }
+      .nav-bar a {
+        float: left;
+        margin-top: 20px;
+        margin: 10px 50px;
+      }
+      .form {
+        height: 30px;
+        width: 255px;
+      }
+      .navbar-brand {
+        width: 230px;
+        padding: 10px 0px;
+        margin-left: 0%;
+      }
+      .navbar-brand>img {
+        width: 95%;
+      }
+          #search {
+        float: left;
+        margin-top: 20px;
+        padding-left: 0%;
+        /* padding-right: 0%; */
+        /* margin-right: 0%; */
+      }
+      #search_bar {
+        padding-left: 10px;
+        padding-right: 0%;
+        margin-right: 0%;
+        border: 1px solid #DCDBDB;
+      }
+      .nav>img {
+        width: 90%;
+        padding-top: 10px;
+      }
+      .btn {
+        border: transparent;
+        padding-left: 0%;
+        margin-left: 0%;
+        height: 36px;
+        width: 50px;
+        background: #51C9A6;
+        color: white;
+      }
+      .icon {
+        width: 32%;
+        height: 40px;
+        /* border: 1px solid red; */
+        float: right;
+        margin-top: 20px;
+      }
+      #nav-2 {
+        display: flex;
+        justify-content: center;
+        background: #51C9A6;
+        width: 100%;
+        height: 30px;
+        border: 1px solid #51C9A6;
+      }
+      #nav-2 li {
+        margin-top: 9px;
+        margin-left: 30px;
+        color: white;
+        float: left;
+        padding: 0px;
+        list-style: none;
+        font-size: 13px;
+      }
+      li:hover {
+        cursor: pointer;
+      }
+      input[type="text"] {
+        width: 480px;
+        height: 30px;
+        padding-right: 0%;
+        margin-right: 0%;
+      }
+      .icon {
+        /* border: 1px solid red; */
+        /* margin-left: 125px;
+    padding-left: 200px;
+    align-items: flex-end; */
+        width: 300px;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      .icon>div>p {
+        color: #898989;
+      }
+      .icon i {
+        font-size: 20px;
+        margin: 0%;
+        margin-right: 25px;
+      }
+
+
+ 
+
+      #container{
+        width: 100%;
+        /* border: 1px solid red; */
+    height:1200px;
+    background-color: rgb(244,244,244);
+    display: flex;
+    margin-top: 0;
+    }
+    
+    #right{
+        width: 30%;
+        /* border: 1px solid blue; */
+    height:1200px;  
+    }
+    #left{
+        width: 60%;
+        /* border: 1px solid blue; */
+    height:800px;   
+    margin-left: 40px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+     
+     
+    /* .top>div>div{
+        border-radius: 100%;
+        border:2px solid green
+     
+    } */
+    
+    .box1{
+        width: 90%;
+        border: 1px solid blue;
+        height: 100px;
+        margin-left:10px ;
+        background-color: white;
+        cursor: pointer;
+       
+    }
+    h3{
+      color: rgb(51, 50, 50);
+      font-size: 12px;
+    font-style: inherit;
+      margin-left:20px ;
+    }
+
+    
+    
+    .box2{
+        width: 90%;
+        /* border: 1px solid blue; */
+        height: 130px;
+        margin-left:10px ;
+        margin-top:5% ;
+        background-color: white;
+        cursor: pointer;
+        
+    }
+    
+    .box3{
+        width: 90%;
+        /* border: 1px solid blue; */
+        height: 230px;
+        margin-left:10px ;
+        margin-top:5% ;
+        background-color: white;
+        cursor: pointer;
+    }
+    
+    .box4{
+        width: 90%;
+        /* border: 1px solid blue; */
+        height: 75px;
+        margin-left:10px ;
+        margin-top:5% ;
+        background-color: white;
+        cursor: pointer;
+    }
+    .box5{
+        width: 90%;
+        /* border: 1px solid red; */
+        height: 295px;
+        margin-left:10px ;
+        margin-top:5% ;
+        background-color: white;
+        cursor: pointer;
+    }
+    
+     
+    
+     p1{
+        
+        margin-left: 24%;
+        padding-top: 12px;
+        font-size: 14px;
+        color: rgb(70,70,100);
+        font-family: Roboto, sans-serif;
+    }
+    p4{
+        
+        margin-left: 2px; 
+        font-size: 11px; 
+         color: rgb(119, 116, 116);
+         font-family: Roboto, sans-serif;
+         padding-left: 45px;
+         padding-top: 5px;
+    }
+    .small{
+       
+        /* border: 1px solid red; */
+        width: 100%;
+        height: 70px;
+        /* margin-left: 25px; */
+        /* display: flex; */
+        font-family: Roboto, sans-serif;
+         
+    }
+    #pbox{
+      /* border: 1px solid yellow; */
+      width: 100%;
+      display: flex;
+      font-family: Roboto, sans-serif;
+     
+    }
+    
+    #pbox1{
+      /* border: 1px solid yellow; */
+      width: 100%;
+      display: flex;
+      height:40px;
+      font-family: Roboto, sans-serif;
+     
+    }
+    
+    #img{
+      /* border: 1px solid blue; */
+      width: 10%;
+      padding-left: 5px;
+      color: #898989;
+      height: 10px;
+    }
+    #img1{
+      /* border: 1px solid blue; */
+      width: 5%;
+      padding-left: 10px;
+      color: #898989;
+      height: 7px;
+      
+    }
+    #head{
+       padding-top: 25px;
+       /* border: 1px solid red; */
+       margin-top: 20%;
+       font-family: Roboto, sans-serif;
+    
+    }
+    #head1{
+      padding-top: 20px;
+      /* border: 1px solid red; */
+      margin-top: 10%;
+      font-family: Roboto, sans-serif;
+      padding-left: 5px;
+    
+    }
+    
+    .small1{
+        
+        /* border: 1px solid rgb(0, 255, 106); */
+        width: 105%;
+        height: 60px;
+        
+        /* margin-left: 25px; */
+        font-family: Roboto, sans-serif;
+    
+    }
+    .small2{
+    /*    
+        border: 1px solid blue; */
+        width: 100%;
+        height: 55px;
+        padding-top:5px ;
+        /* margin-left: 25px; */
+        font-family: Roboto, sans-serif;
+    }
+    
+    .small3{
+       
+      /* border: 1px solid blue; */
+      width: 100%;
+      height: 55px;
+      padding-top:5px ;
+      margin-top: 15px;
+      font-family: Roboto, sans-serif;
+    }
+    
+    #btn>button{
+       background-color: white;
+       color: rgb(81,201,166);
+       margin-top: 10%;
+       margin-left: 10%;
+       width: 80%;
+       height: 30px;
+       cursor: pointer;
+       border: 1px solid rgb(81,201,166);
+    }
+    #btn>button:hover{
+        background-color:rgb(176, 180, 179);
+        color:  rgb(81,201,166);
+    }
+    
+
+
+
+
+
+.pro{
+    width:90%;
+    border: 1px solid red; 
+    height:500px; 
+     margin-top:  5%;
+     margin-left: 5%;
+}
+.top
+{
+    width:50%;
+    border: 1px solid blue; 
+    margin-left: 20%;
+    height:210px;
+    /* margin-top: 10%;  */
+    
+}
+
+.top>div{
+    border-radius: 100%;
+    /* border:2px solid rgb(81,201,166) ; */
+ /* margin-bottom: 5px; */
+ 
+ padding-left: 20%;
+ 
+}
+
+     h2{
+        color:rgb(81,201,166)  ;
+        font-size: 15px;
+        padding: 10px;
+        font-family: Roboto, sans-serif;
+     background-color: white;
+    }
+    h2:hover{
+        background-color:rgb(238,238,238) ;
+        color: gray;
+    }
+    .para{
+        width:100%;
+    border: 1px solid blue; 
+    margin: auto;
+    height:150px;
+    margin-top: 10%;  
+    text-align: center;
+    }
+    h3{
+        font-family: Roboto, sans-serif;
+         /* padding-left: 10%; */
+    }
+    p2{
+        font-family: Roboto, sans-serif;
+        /* padding: 5%; */
+        text-align: center;
+        color:rgb(119, 116, 116);
+        font-size: 12px;
+    }
+    #shoping>button{
+            background-color:  rgb(81,201,166);
+            color: white;
+            margin-top: 5px;
+            margin-left: 10%;
+            width: 30%;
+            height: 40px;
+            cursor: pointer;
+            border: 1px solid rgb(81,201,166);
+    border-radius: 3px;
+          }
+    #shoping>button:hover{
+             background-color:rgb(33, 160, 124) ;
+             color:  white;
+    }
+         

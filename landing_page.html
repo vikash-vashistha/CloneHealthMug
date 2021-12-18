@@ -6,12 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Healthmug | Your Gateway to Health</title>
-
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <script src="https://kit.fontawesome.com/05dfa6a87b.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="landing_page.css">
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> -->
 </head>
 
 <body>
@@ -82,13 +86,13 @@
           <div>
             <img src="https://static.oxinis.com/healthmug/image/category/122.png" alt="">
           </div>
-          <div>Nutrition & Supplements</div>
+          <div class="nutrition">Nutrition & Supplements</div>
         </div>
         <div>
           <div>
             <img src="https://static.oxinis.com/healthmug/image/category/82.png" alt="">
           </div>
-          <div>Beauty & Personal Care</div>
+          <div class="beauty">Beauty & Personal Care</div>
         </div>
         <div>
           <div>
@@ -145,19 +149,19 @@
           <div>
             <img src="https://static.oxinis.com/healthmug/image/disease/49-icon.png" alt="">
           </div>
-          <div>Hair Fall</div>
+          <div id="hairFall">Hair Fall</div>
         </div>
         <div>
           <div>
             <img src="https://static.oxinis.com/healthmug/image/disease/72-icon.png" alt="">
           </div>
-          <div>Low Height</div>
+          <div id="lowHeight">Low Height</div>
         </div>
         <div>
           <div>
             <img src="https://static.oxinis.com/healthmug/image/disease/51-icon.png" alt="">
           </div>
-          <div>Headach & Migraine</div>
+          <div id="headache">Headach & Migraine</div>
         </div>
         <div>
           <div>
@@ -244,12 +248,68 @@
           <button class="allopathy">View All</button>
         </div>
       </div>
-      <div class="A2">
-        <i class="fas fa-angle-left"></i>
-        <div>
+      <div class="carousel" data-flickity='{ "groupCells": 5 }'>
+        <!-- <i class="fas fa-angle-left"></i> -->
+
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/127856-1-150.jpg" alt="">
+            <p>Salicylic Acid I.P. (20g)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/110693-1-150.jpg" alt="">
+            <p>Limcee Chewable Tablet Orange (15tab)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/109501-1-400.jpg" alt="">
+            <p>Derobin Ointment (30g)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/97147-1-150.jpg" alt="">
+            <p>Shelcal Tablet (15tab)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/112434-3-150.jpg" alt="">
+            <p>Refresh Tears Eye Drop (10ml)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
           <div class="img">
             <img src="https://static.oxinis.com/healthmug/image/product/79425-1-150.jpg" alt="">
-            <p>Calcirol Sachet 60k (1g)</p>
+            <p>Calcirol Sachet 60K (1g)</p>
           </div>
           <div class="span">
             <span>₹</span><span>56</span>
@@ -257,10 +317,10 @@
             <span>14%</span>
           </div>
         </div>
-        <div>
+        <div class="carousel-cell">
           <div class="img">
             <img src="https://static.oxinis.com/healthmug/image/product/132153-1-150.jpg" alt="">
-            <p>Calcirol Sachet 60k (1g)</p>
+            <p>Isotine eye deop (10ml)</p>
           </div>
           <div class="span">
             <span>₹</span><span>56</span>
@@ -268,10 +328,11 @@
             <span>14%</span>
           </div>
         </div>
-        <div>
+        <div class="carousel-cell">
           <div class="img">
             <img src="https://static.oxinis.com/healthmug/image/product/127819-1-150.jpg" alt="">
-            <p>Calcirol Sachet 60k (1g)</p>
+            <p>Hydrogen Peroxide Solution (100ml)
+            </p>
           </div>
           <div class="span">
             <span>₹</span><span>56</span>
@@ -279,10 +340,10 @@
             <span>14%</span>
           </div>
         </div>
-        <div>
+        <div class="carousel-cell">
           <div class="img">
             <img src="https://static.oxinis.com/healthmug/image/product/95137-1-150.jpg" alt="">
-            <p>Calcirol Sachet 60k (1g)</p>
+            <p>Silverex Ionic Gel (10g)</p>
           </div>
           <div class="span">
             <span>₹</span><span>56</span>
@@ -290,10 +351,10 @@
             <span>14%</span>
           </div>
         </div>
-        <div>
+        <div class="carousel-cell">
           <div class="img">
             <img src="https://static.oxinis.com/healthmug/image/product/75253-1-150.jpg" alt="">
-            <p>Calcirol Sachet 60k (1g)</p>
+            <p>Abbott Vitamin A Chewable Tablet (10tab)</p>
           </div>
           <div class="span">
             <span>₹</span><span>56</span>
@@ -301,17 +362,62 @@
             <span>14%</span>
           </div>
         </div>
-        <!-- <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div> -->
-        <i class="fas fa-angle-right"></i>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/117573-4-150.jpg" alt="">
+            <p>Evion Capsule (400mg) (10caps)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/132517-2-150.jpg" alt="">
+            <p>Skinlite cream (15g)
+            </p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/117616-4-150.jpg" alt="">
+            <p>Neurobion Forte Tablet (30tab)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/87220-1-150.jpg" alt="">
+            <p>Candid Cream (50g)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/115757-1-150.jpg" alt="">
+            <p>Clear Gel (20g)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
       </div>
     </div>
     <!-- Homeopathy -->
@@ -325,12 +431,13 @@
           <button class="homeopathy">View All</button>
         </div>
       </div>
-      <div class="A2">
-        <i class="fas fa-angle-left"></i>
-        <div>
+      <div class="carousel" data-flickity='{ "groupCells": 5 }'>
+        <!-- <i class="fas fa-angle-left"></i> -->
+
+        <div class="carousel-cell">
           <div class="img">
-            <img src="https://static.oxinis.com/healthmug/image/product/411-2-150.jpg" alt="">
-            <p>Calcirol Sachet 60k (1g)</p>
+            <img src="https://static.oxinis.com/healthmug/image/product/411-2-400.jpg" alt="">
+            <p>Dr. Reckeweg R89 (Lipocol) (30ml)</p>
           </div>
           <div class="span">
             <span>₹</span><span>56</span>
@@ -338,10 +445,10 @@
             <span>14%</span>
           </div>
         </div>
-        <div>
+        <div class="carousel-cell">
           <div class="img">
-            <img src="https://static.oxinis.com/healthmug/image/product/1883-1-150.jpg" alt="">
-            <p>Calcirol Sachet 60k (1g)</p>
+            <img src="https://static.oxinis.com/healthmug/image/product/1365-1-400.jpg" alt="">
+            <p>SBL Nux Vomica 30 CH (30ml)</p>
           </div>
           <div class="span">
             <span>₹</span><span>56</span>
@@ -349,10 +456,10 @@
             <span>14%</span>
           </div>
         </div>
-        <div>
+        <div class="carousel-cell">
           <div class="img">
-            <img src="https://static.oxinis.com/healthmug/image/product/1883-1-150.jpg" alt="">
-            <p>Calcirol Sachet 60k (1g)</p>
+            <img src="https://static.oxinis.com/healthmug/image/product/1883-1-400.jpg" alt="">
+            <p>SBL Thuja Occidentalis 200 CH (30ml)</p>
           </div>
           <div class="span">
             <span>₹</span><span>56</span>
@@ -360,10 +467,10 @@
             <span>14%</span>
           </div>
         </div>
-        <div>
+        <div class="carousel-cell">
           <div class="img">
-            <img src="https://static.oxinis.com/healthmug/image/product/61158-1-150.jpg" alt="">
-            <p>Calcirol Sachet 60k (1g)</p>
+            <img src="https://static.oxinis.com/healthmug/image/product/61158-1-400.jpg" alt="">
+            <p>German Homeo Care & Cure No Piles Drops (30ml)</p>
           </div>
           <div class="span">
             <span>₹</span><span>56</span>
@@ -371,10 +478,10 @@
             <span>14%</span>
           </div>
         </div>
-        <div>
+        <div class="carousel-cell">
           <div class="img">
-            <img src="https://static.oxinis.com/healthmug/image/product/873-1-150.jpg" alt="">
-            <p>Calcirol Sachet 60k (1g)</p>
+            <img src="https://static.oxinis.com/healthmug/image/product/873-1-400.jpg" alt="">
+            <p>SBL Calcarea Fluoricum 6X (25g)</p>
           </div>
           <div class="span">
             <span>₹</span><span>56</span>
@@ -382,17 +489,118 @@
             <span>14%</span>
           </div>
         </div>
-        <!-- <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div> -->
-        <i class="fas fa-angle-right"></i>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/878-1-400.jpg" alt="">
+            <p>SBL Kali Phosphorica 6X (25g)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/227-1-400.jpg" alt="">
+            <p>Dr. Reckeweg Calcarea Fluoricum 6X (20g)
+            </p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/2860-5-400.jpg" alt="">
+            <p>Willmar Schwabe Germany Cineraria Maritima Eye Drops (Without Alcohol) (10ml)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/524-4-400.jpg" alt="">
+            <p>SBL Clearstone Drops (30ml)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/6308-1-400.jpg" alt="">
+            <p>Willmar Schwabe India Berberis Aquifolium 1X (Q) (30ml)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/1126-1-400.jpg" alt="">
+            <p>SBL Arsenic Album 30 CH (30ml)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/2869-1-400.jpg" alt="">
+            <p>Willmar Schwabe Germany Phytolacca Berry Tablets (20g)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/1183-1-400.jpg" alt="">
+            <p>SBL Carbo Vegetabilis 30 CH (30ml)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/1792-1-400.jpg" alt="">
+            <p>SBL Nux Vomica 200 CH (30ml)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/7693-1-400.jpg" alt="">
+            <p>Indo German Sinus Care Tablets (25g)
+            </p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
       </div>
     </div>
     <!-- Ayurveda -->
@@ -406,12 +614,13 @@
           <button class="ayurveda">View All</button>
         </div>
       </div>
-      <div class="A2">
-        <i class="fas fa-angle-left"></i>
-        <div>
+      <div class="carousel" data-flickity='{ "groupCells": 5 }'>
+        <!-- <i class="fas fa-angle-left"></i> -->
+
+        <div class="carousel-cell">
           <div class="img">
-            <img src="https://static.oxinis.com/healthmug/image/product/5317-2-150.jpg" alt="">
-            <p>Calcirol Sachet 60k (1g)</p>
+            <img src="https://static.oxinis.com/healthmug/image/product/5317-2-400.jpg" alt="">
+            <p>Dr. Loonawat Wartosin (3ml)</p>
           </div>
           <div class="span">
             <span>₹</span><span>56</span>
@@ -419,10 +628,10 @@
             <span>14%</span>
           </div>
         </div>
-        <div>
+        <div class="carousel-cell">
           <div class="img">
-            <img src="https://static.oxinis.com/healthmug/image/product/6125-1-150.jpg" alt="">
-            <p>Calcirol Sachet 60k (1g)</p>
+            <img src="https://static.oxinis.com/healthmug/image/product/6125-1-400.jpg" alt="">
+            <p>Baidyanath Bhringrajasava (450ml)</p>
           </div>
           <div class="span">
             <span>₹</span><span>56</span>
@@ -430,10 +639,10 @@
             <span>14%</span>
           </div>
         </div>
-        <div>
+        <div class="carousel-cell">
           <div class="img">
-            <img src="https://static.oxinis.com/healthmug/image/product/134473-1-150.jpg" alt="">
-            <p>Calcirol Sachet 60k (1g)</p>
+            <img src="https://static.oxinis.com/healthmug/image/product/134473-1-400.jpg" alt="">
+            <p>Keva Stone Crush (100ml)</p>
           </div>
           <div class="span">
             <span>₹</span><span>56</span>
@@ -441,10 +650,10 @@
             <span>14%</span>
           </div>
         </div>
-        <div>
+        <div class="carousel-cell">
           <div class="img">
-            <img src="https://static.oxinis.com/healthmug/image/product/130156-2-150.jpg" alt="">
-            <p>Calcirol Sachet 60k (1g)</p>
+            <img src="https://static.oxinis.com/healthmug/image/product/130156-2-400.jpg" alt="">
+            <p>Unjha Bilwasav (450ml)</p>
           </div>
           <div class="span">
             <span>₹</span><span>56</span>
@@ -452,10 +661,10 @@
             <span>14%</span>
           </div>
         </div>
-        <div>
+        <div class="carousel-cell">
           <div class="img">
-            <img src="https://static.oxinis.com/healthmug/image/product/3263-2-150.jpg" alt="">
-            <p>Calcirol Sachet 60k (1g)</p>
+            <img src="https://static.oxinis.com/healthmug/image/product/3263-2-400.jpg" alt="">
+            <p>Himalaya Ashwagandha Tablet (60tab)</p>
           </div>
           <div class="span">
             <span>₹</span><span>56</span>
@@ -463,17 +672,116 @@
             <span>14%</span>
           </div>
         </div>
-        <!-- <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div> -->
-        <i class="fas fa-angle-right"></i>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/132288-1-400.jpg" alt="">
+            <p>Health Up Weight Gainer Capsule (60caps)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/140397-1-400.jpg" alt="">
+            <p>Willmar Schwabe India Dizester Herbal (450ml, Pack of 2)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/136230-1-400.jpg" alt="">
+            <p>Baidyanath (Nagpur) Mahamanjisthadi Kadha (450ml)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/103791-1-400.jpg" alt="">
+            <p>Welonox Sleeping Pills - Sleeping Tablets For Men & Women - Non Habbit (30caps)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/5876-2-400.jpg" alt="">
+            <p>Baidyanath Purnachandra Ras (Ordinary) (40tab)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/5958-8-400.jpg" alt="">
+            <p>Baidyanath Chandraprabha Bati (80tab)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/131078-1-400.jpg" alt="">
+            <p>Willmar Schwabe India Dizester Herbal (200ml, Pack of 3)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/136035-1-400.jpg" alt="">
+            <p>Anmol Veerya Paushtic Churna Ideal Tonic For Men (100g)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/54580-1-400.jpg" alt="">
+            <p>Unjha Pushpadhanwa Ras (80tab)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/5718-2-400.jpg" alt="">
+            <p>Dabur Triphala Tablets (60tab)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
       </div>
     </div>
     <!-- Unani -->
@@ -487,12 +795,13 @@
           <button class="unani">View All</button>
         </div>
       </div>
-      <div class="A2">
-        <i class="fas fa-angle-left"></i>
-        <div>
+      <div class="carousel" data-flickity='{ "groupCells": 5 }'>
+        <!-- <i class="fas fa-angle-left"></i> -->
+
+        <div class="carousel-cell">
           <div class="img">
-            <img src="https://static.oxinis.com/healthmug/image/product/41873-1-150.jpg" alt="">
-            <p>Calcirol Sachet 60k (1g)</p>
+            <img src="https://static.oxinis.com/healthmug/image/product/41873-1-400.jpg" alt="">
+            <p>Hamdard Rogan Baiza Murgh (25ml)</p>
           </div>
           <div class="span">
             <span>₹</span><span>56</span>
@@ -500,10 +809,11 @@
             <span>14%</span>
           </div>
         </div>
-        <div>
+        <div class="carousel-cell">
           <div class="img">
-            <img src="https://static.oxinis.com/healthmug/image/product/6880-1-150.jpg" alt="">
-            <p>Calcirol Sachet 60k (1g)</p>
+            <img src="https://static.oxinis.com/healthmug/image/product/6880-1-400.jpg" alt="">
+            <p>Dawakhana Tibbiya Dimagheen (380g)
+            </p>
           </div>
           <div class="span">
             <span>₹</span><span>56</span>
@@ -511,10 +821,10 @@
             <span>14%</span>
           </div>
         </div>
-        <div>
+        <div class="carousel-cell">
           <div class="img">
-            <img src="https://static.oxinis.com/healthmug/image/product/41865-1-150.jpg" alt="">
-            <p>Calcirol Sachet 60k (1g)</p>
+            <img src="https://static.oxinis.com/healthmug/image/product/41865-1-400.jpg" alt="">
+            <p>Hamdard Rogan Zarareeh (10ml)</p>
           </div>
           <div class="span">
             <span>₹</span><span>56</span>
@@ -522,10 +832,10 @@
             <span>14%</span>
           </div>
         </div>
-        <div>
+        <div class="carousel-cell">
           <div class="img">
-            <img src="https://static.oxinis.com/healthmug/image/product/70815-1-150.jpg" alt="">
-            <p>Calcirol Sachet 60k (1g)</p>
+            <img src="https://static.oxinis.com/healthmug/image/product/70815-1-400.jpg" alt="">
+            <p>Hamdard Majun Arad Khurma (1kg)</p>
           </div>
           <div class="span">
             <span>₹</span><span>56</span>
@@ -533,10 +843,10 @@
             <span>14%</span>
           </div>
         </div>
-        <div>
+        <div class="carousel-cell">
           <div class="img">
-            <img src="https://static.oxinis.com/healthmug/image/product/41874-1-150.jpg" alt="">
-            <p>Calcirol Sachet 60k (1g)</p>
+            <img src="https://static.oxinis.com/healthmug/image/product/41874-1-400.jpg" alt="">
+            <p>Hamdard Rogan Beer Bahuti (10ml)</p>
           </div>
           <div class="span">
             <span>₹</span><span>56</span>
@@ -544,17 +854,116 @@
             <span>14%</span>
           </div>
         </div>
-        <!-- <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div> -->
-        <i class="fas fa-angle-right"></i>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/41819-1-400.jpg" alt="">
+            <p>Hamdard Matosine Capsule (60caps)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/41704-1-400.jpg" alt="">
+            <p>Hamdard Itrifal Ustukhuddus (150g)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/41866-1-400.jpg" alt="">
+            <p>Hamdard Rogan Kharateen (25ml)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/41854-1-400.jpg" alt="">
+            <p>Hamdard Qurs Kushta Qalai (60tab)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/41678-1-400.jpg" alt="">
+            <p>Hamdard Habbe Suranjan (100Pills)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/41867-1-400.jpg" alt="">
+            <p>Hamdard Roghan Amla Sada (200ml)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/41889-2-400.jpg" alt="">
+            <p>Hamdard Safoof Mohazzil (100g)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/41825-2-400.jpg" alt="">
+            <p>Hamdard Mumsik Benazir (15g)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/41658-1-400.jpg" alt="">
+            <p>Hamdard Habbe Jadwar (20tab)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/41833-1-400.jpg" alt="">
+            <p>Hamdard Qurs Jiryan (50tab)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
       </div>
     </div>
     <!-- Nutrition & Supplements -->
@@ -565,15 +974,16 @@
         </div>
         <div>
           <h3 style="margin: 20px;">Nutrition & Supplements</h3>
-          <button>View All</button>
+          <button class="nutrition">View All</button>
         </div>
       </div>
-      <div class="A2">
-        <i class="fas fa-angle-left"></i>
-        <div>
+      <div class="carousel" data-flickity='{ "groupCells": 5 }'>
+        <!-- <i class="fas fa-angle-left"></i> -->
+
+        <div class="carousel-cell">
           <div class="img">
-            <img src="https://static.oxinis.com/healthmug/image/product/137209-1-150.jpg" alt="">
-            <p>Calcirol Sachet 60k (1g)</p>
+            <img src="https://static.oxinis.com/healthmug/image/product/137209-1-400.jpg" alt="">
+            <p>Bigmuscles Nutrition Premium Gold Whey Protein Isolate & Concentrate Belgian Chocolate (1kg)</p>
           </div>
           <div class="span">
             <span>₹</span><span>56</span>
@@ -581,10 +991,10 @@
             <span>14%</span>
           </div>
         </div>
-        <div>
+        <div class="carousel-cell">
           <div class="img">
-            <img src="https://static.oxinis.com/healthmug/image/product/135348-1-150.jpg" alt="">
-            <p>Calcirol Sachet 60k (1g)</p>
+            <img src="https://static.oxinis.com/healthmug/image/product/135348-1-400.jpg" alt="">
+            <p>FDC Ltd Electral Powder Unflavoured (21.8g)</p>
           </div>
           <div class="span">
             <span>₹</span><span>56</span>
@@ -592,10 +1002,10 @@
             <span>14%</span>
           </div>
         </div>
-        <div>
+        <div class="carousel-cell">
           <div class="img">
-            <img src="https://static.oxinis.com/healthmug/image/product/152938-1-150.jpg" alt="">
-            <p>Calcirol Sachet 60k (1g)</p>
+            <img src="https://static.oxinis.com/healthmug/image/product/152938-1-400.jpg" alt="">
+            <p>Baidyanath Ayurved Ashwagandha Tablets (60tab)</p>
           </div>
           <div class="span">
             <span>₹</span><span>56</span>
@@ -603,10 +1013,10 @@
             <span>14%</span>
           </div>
         </div>
-        <div>
+        <div class="carousel-cell">
           <div class="img">
-            <img src="https://static.oxinis.com/healthmug/image/product/65818-1-150.jpg" alt="">
-            <p>Calcirol Sachet 60k (1g)</p>
+            <img src="https://static.oxinis.com/healthmug/image/product/65818-1-400.jpg" alt="">
+            <p>Kaahan Ayurvedas Sehat King Powder (160g)</p>
           </div>
           <div class="span">
             <span>₹</span><span>56</span>
@@ -614,10 +1024,11 @@
             <span>14%</span>
           </div>
         </div>
-        <div>
+        <div class="carousel-cell">
           <div class="img">
-            <img src="https://static.oxinis.com/healthmug/image/product/54952-1-150.jpg" alt="">
-            <p>Calcirol Sachet 60k (1g)</p>
+            <img src="https://static.oxinis.com/healthmug/image/product/54952-1-400.jpg" alt="">
+            <p>Bakson Vitamin D Plus Tablets (30tab)
+            </p>
           </div>
           <div class="span">
             <span>₹</span><span>56</span>
@@ -625,17 +1036,117 @@
             <span>14%</span>
           </div>
         </div>
-        <!-- <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div> -->
-        <i class="fas fa-angle-right"></i>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/53677-1-400.jpg" alt="">
+            <p>Sri Sri Tattva Karela - Jamun Juice (1000ml)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/56346-1-400.jpg" alt="">
+            <p>Axiom Karela Jamun Swaras (1000ml)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/61463-1-400.jpg" alt="">
+            <p>Preserva Wellness Platimore Juice (500ml)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/65520-2-400.jpg" alt="">
+            <p>Jiva Ayurveda Amla Chatpata Candy (450g)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/11521-2-400.jpg" alt="">
+            <p>Dr. Lal El Mecobin (30tab)
+            </p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/56372-1-400.jpg" alt="">
+            <p>Axiom Sheesham Juice (500ml)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/18987-2-400.jpg" alt="">
+            <p>Jiva Ayurveda Honey (500g)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/44239-4-400.jpg" alt="">
+            <p>Baidyanath Chyawan-Fit Suger Free Chawanprash (1kg)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/7823-1-400.jpg" alt="">
+            <p>Telephone Sat Isabgol (100g)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/135980-1-400.jpg" alt="">
+            <p>Nutrex Lipo 6 Intense Fat Burner Unflavored (60caps)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
       </div>
     </div>
     <!-- Beauty & Personal Care -->
@@ -646,15 +1157,16 @@
         </div>
         <div>
           <h3 style="margin: 20px;">Beauty & Personal Care</h3>
-          <button>View All</button>
+          <button class="beauty">View All</button>
         </div>
       </div>
-      <div class="A2">
-        <i class="fas fa-angle-left"></i>
-        <div>
+      <div class="carousel" data-flickity='{ "groupCells": 5 }'>
+        <!-- <i class="fas fa-angle-left"></i> -->
+
+        <div class="carousel-cell">
           <div class="img">
-            <img src="https://static.oxinis.com/healthmug/image/product/586-2-150.jpg" alt="">
-            <p>Calcirol Sachet 60k (1g)</p>
+            <img src="https://static.oxinis.com/healthmug/image/product/586-2-400.jpg" alt="">
+            <p>SBL Berberis Aquifolium Gel (25g)</p>
           </div>
           <div class="span">
             <span>₹</span><span>56</span>
@@ -662,10 +1174,10 @@
             <span>14%</span>
           </div>
         </div>
-        <div>
+        <div class="carousel-cell">
           <div class="img">
-            <img src="https://static.oxinis.com/healthmug/image/product/120507-2-150.jpg" alt="">
-            <p>Calcirol Sachet 60k (1g)</p>
+            <img src="https://static.oxinis.com/healthmug/image/product/120507-2-400.jpg" alt="">
+            <p>Salve Pharma Benxop Face Wash (4%w/w) (50g)</p>
           </div>
           <div class="span">
             <span>₹</span><span>56</span>
@@ -673,10 +1185,10 @@
             <span>14%</span>
           </div>
         </div>
-        <div>
+        <div class="carousel-cell">
           <div class="img">
-            <img src="https://static.oxinis.com/healthmug/image/product/5400-1-150.jpg" alt="">
-            <p>Calcirol Sachet 60k (1g)</p>
+            <img src="https://static.oxinis.com/healthmug/image/product/5400-1-400.jpg" alt="">
+            <p>Wheezal Jaborandi Hair Treatment Oil (110ml)</p>
           </div>
           <div class="span">
             <span>₹</span><span>56</span>
@@ -684,10 +1196,10 @@
             <span>14%</span>
           </div>
         </div>
-        <div>
+        <div class="carousel-cell">
           <div class="img">
-            <img src="https://static.oxinis.com/healthmug/image/product/12384-1-150.jpg" alt="">
-            <p>Calcirol Sachet 60k (1g)</p>
+            <img src="https://static.oxinis.com/healthmug/image/product/12384-1-400.jpg" alt="">
+            <p>Hapdco Marks Go Cream (25g)</p>
           </div>
           <div class="span">
             <span>₹</span><span>56</span>
@@ -695,10 +1207,10 @@
             <span>14%</span>
           </div>
         </div>
-        <div>
+        <div class="carousel-cell">
           <div class="img">
-            <img src="https://static.oxinis.com/healthmug/image/product/5596-1-150.jpg" alt="">
-            <p>Calcirol Sachet 60k (1g)</p>
+            <img src="https://static.oxinis.com/healthmug/image/product/5596-1-400.jpg" alt="">
+            <p>Hapdco Aqui Plus Cream (25g)</p>
           </div>
           <div class="span">
             <span>₹</span><span>56</span>
@@ -706,17 +1218,120 @@
             <span>14%</span>
           </div>
         </div>
-        <!-- <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div> -->
-        <i class="fas fa-angle-right"></i>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="
+https://static.oxinis.com/healthmug/image/product/17854-2-400.jpg" alt="">
+            <p>SBL Arnica Montana Herbal Shampoo With Conditioner (200ml)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/109537-2-400.jpg" alt="">
+            <p>USV Erytop Gel (1%w/w) (20g)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/2855-2-400.jpg" alt="">
+            <p>Willmar Schwabe India B&T Arnica Shampoo (250ml)
+            </p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/5318-2-400.jpg" alt="">
+            <p>Ganpati Dawa Khana Cream (10g)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/51411-1-400.jpg" alt="">
+            <p>Bangalore Bio-Plasgens Soundarya Complexion Cream (30g)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/484-1-400.jpg" alt="">
+            <p>SBL Glowing Beauty Fairness Cream (50g)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/5402-2-400.jpg" alt="">
+            <p>Wheezal Hekla Lava Dental Cream (Tooth Paste) (100g)
+            </p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/0-400.jpg" alt="">
+            <p>SBL Arnica Montana Hair Oil (200ml)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/39355-1-400.jpg" alt="">
+            <p>Hapdco Aqui Plus Face Wash (50ml)</p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="img">
+            <img src="https://static.oxinis.com/healthmug/image/product/74444-3-400.jpg" alt="">
+            <p>Abbott Melalite 15 Cream (30g)
+            </p>
+          </div>
+          <div class="span">
+            <span>₹</span><span>56</span>
+            <span>₹</span><span>48</span>
+            <span>14%</span>
+          </div>
+        </div>
       </div>
     </div>
     <!-- Static Advertisement -->
@@ -1067,11 +1682,20 @@
               <p id="sellWithUs">Sell With Us</p>
             </div>
             <div>
-              <i class=" fa-solid fa-user" style="color: #898989;"></i>
-              <p id="signin">Sign In</p>
+              <div class="top">
+                <i class=" fa-solid fa-user" style="color: #898989;"></i>
+                <p>Sign In</p>
+                <div class="top-cont">
+                  <div class="saniya" id="myOrder">My Order</div><br>
+                  <div class="saniya" id="myProfile">My Profile</div><br>
+                  <div class="saniya" id="myQuestion">My Question & Answer</div><br>
+                  <div class="saniya" id="myPreferences">My Preferences</div><br>
+                  <div class="saniya" class="signin">Sign Up</div><br>
+                  <div class="saniya"><button id="logIn">Log In</button></div>
+                </div>
+              </div>
+              <!-- <i class="fa-solid fa-cart-shopping" style="color: aquamarine; "></i></a> -->
             </div>
-            <i class="fa-solid fa-cart-shopping" style="color: aquamarine; "></i></a>
-          </div>
         </nav>
 
         <nav id="nav-2">
@@ -1092,6 +1716,8 @@
 
     </div>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 
 </html>

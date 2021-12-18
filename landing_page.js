@@ -47,8 +47,36 @@ document.querySelector("#blog5").addEventListener("click", function () {
 });
 
 // SignIn
-document.querySelector("#signin").addEventListener("click", function () {
-  window.location.href = "signin_signup.html";
+document.querySelector("#logIn").addEventListener("click", function () {
+  window.location.href = "signIn.html";
+});
+
+// SignIn_SignUp
+var signin = document.querySelectorAll(".signin");
+
+for (var i = 0; i < signin.length; i++) {
+  signin[i].addEventListener("click", function () {
+    window.location.href = "signin_signup.html";
+  });
+}
+// My Order
+document.querySelector("#myOrder").addEventListener("click", function () {
+  window.location.href = "myOrder.html";
+});
+
+// My Profile
+document.querySelector("#myProfile").addEventListener("click", function () {
+  window.location.href = "myProfile.html";
+});
+
+// My Question
+document.querySelector("#myQuestion").addEventListener("click", function () {
+  window.location.href = "myQuestion.html";
+});
+
+// My Preferences
+document.querySelector("#myPreferences").addEventListener("click", function () {
+  window.location.href = "myPreferences.html";
 });
 
 // Contact us
@@ -101,10 +129,34 @@ for (var i = 0; i < unani.length; i++) {
   });
 }
 
+// Nutrition
+var nutrition = document.querySelectorAll(".nutrition");
+for (var i = 0; i < unani.length; i++) {
+  nutrition[i].addEventListener("click", function () {
+    window.location.href = "nutrition.html";
+  });
+}
+
+// Beauty
+var beauty = document.querySelectorAll(".beauty");
+for (var i = 0; i < beauty.length; i++) {
+  beauty[i].addEventListener("click", function () {
+    window.location.href = "beauty.html";
+  });
+}
 // SHOP BY HEALTH CONCERN
 document.querySelector("#arthritis").addEventListener("click", function () {
   window.location.href = "arthritis.html";
 });
 document.querySelector("#diabetes").addEventListener("click", function () {
   window.location.href = "diabetes.html";
+});
+document.querySelector("#hairFall").addEventListener("click", function () {
+  window.location.href = "hairFall.html";
+});
+document.querySelector("#lowHeight").addEventListener("click", function () {
+  window.location.href = "lowHeight.html";
+});
+document.querySelector("#headache").addEventListener("click", function () {
+  window.location.href = "headache&Migraine.html";
 });

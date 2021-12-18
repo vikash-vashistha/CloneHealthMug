@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    .nav-bar {
+      /* background: cyan; */
+      height: 70px;
+    }
+
+    .nav-bar a {
+      float: left;
+      margin-top: 20px;
+      margin: 10px 50px;
+    }
+
+    .form {
+      height: 30px;
+      width: 255px;
+    }
+
+    .navbar-brand {
+      width: 230px;
+      padding: 10px 0px;
+      margin-left: 0%;
+    }
+
+    .navbar-brand>img {
+      width: 95%;
+    }
+
+    #search {
+      float: left;
+      margin-top: 20px;
+      padding-left: 0%;
+      /* padding-right: 0%; */
+      /* margin-right: 0%; */
+    }
+
+    #search_bar {
+      padding-left: 10px;
+      padding-right: 0%;
+      margin-right: 0%;
+      border: 1px solid #dcdbdb;
+    }
+
+    .nav>img {
+      width: 90%;
+      padding-top: 10px;
+    }
+
+    .btn {
+      border: transparent;
+      padding-left: 0%;
+      margin-left: 0%;
+      height: 36px;
+      width: 50px;
+      background: #51c9a6;
+      color: white;
+    }
+
+    .icon {
+      width: 32%;
+      height: 40px;
+      border: 1px solid transparent;
+      float: right;
+      margin-top: 10px;
+    }
+
+    #nav-2 {
+      display: flex;
+      justify-content: center;
+      background: #51c9a6;
+      width: 100%;
+      height: 30px;
+      border: 1px solid #51c9a6;
+    }
+
+    #nav-2 li {
+      margin-top: 9px;
+      margin-left: 30px;
+      color: white;
+      float: left;
+      padding: 0px;
+      list-style: none;
+      font-size: 13px;
+    }
+
+    li:hover {
+      cursor: pointer;
+    }
+
+    input[type="text"] {
+      width: 480px;
+      height: 30px;
+      padding-right: 0%;
+      margin-right: 0%;
+    }
+
+    .icon {
+      /* border: 1px solid red; */
+      /* margin-left: 125px;
+  padding-left: 200px;
+  align-items: flex-end; */
+      width: 300px;
+      height: 50px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    .icon>div>p {
+      color: #898989;
+    }
+
+    .icon i {
+      font-size: 20px;
+      margin: 0%;
+      margin-right: 25px;
+    }
+
+    #btm2 {
+      /* height: 20%; */
+      background-color: #0b7670;
+      font: 12px;
+      font-family: Roboto, sans-serif;
+      color: #51c9a6;
+    }
+
+    #btm3 {
+      /* height: 70%; */
+      background-color: #51c9a6;
+      color: #e7fbfd;
+    }
+
+    #copyRight {
+      text-align: center;
+      color: #117150;
+      margin-top: 20px;
+    }
+
+    #btm2>div {
+      /* border: 1px solid red; */
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    #btm2>div>div {
+      /* border: 1px solid red; */
+      margin: auto;
+      margin-top: 10px;
+    }
+
+    #btm2>div>div>p:nth-child(1) {
+      color: white;
+    }
+
+    #btm1 {
+      display: flex;
+      margin-top: 10px;
+    }
+
+    #btm1>div {
+      margin: auto;
+      text-align: center;
+    }
+
+    #btm1>div>p {
+      color: #c9cacc;
+    }
+
+    h6 {
+      margin: 10px;
+    }
+
+    #btml>div>h3 {
+      margin: 0%;
+      font-weight: lighter;
+    }
+
+    #btm>div>div>p {
+      font-size: 11px;
+      margin: 0%;
+      font-weight: lighter;
+    }
+
+    #text {
+      margin-left: 30px;
+    }
+
+    #maindiv {
+      width: 95%;
+      height: 450px;
+      border: 1px solid transparent;
+      margin: auto;
+      display: flex;
+      font-family: sans-serif;
+      /* background-color: ;
+             */
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+
+    #img {
+      height: 100%;
+      width: 35%;
+      border: 1px solid transparent;
+      background-color: white;
+    }
+
+    #img>img {
+      height: 80%;
+      width: 100%;
+    }
+
+    #detail {
+      width: 65%;
+      height: 100%;
+      margin-left: 20px;
+      border: 1px solid transparent;
+      background-color: white;
+    }
+
+    #minibox {
+      display: flex;
+      border: 1px solid transparent;
+      margin-top: 10px;
+      margin-left: 20px;
+    }
+
+    #minibox>div:nth-child(1) {
+      width: 70%;
+      height: 20%;
+      border: 1px solid transparent;
+    }
+
+    #minibox>div:nth-child(1)>h2 {
+      line-height: 0px;
+    }
+
+    #minibox>div:nth-child(1)>p {
+      color: grey;
+    }
+
+    #minibox>div:nth-child(2) {
+      width: 30%;
+    }
+
+    #minibox>div:nth-child(2)>a>img {
+      width: 40%;
+      height: 40%;
+      padding-left: 40%;
+    }
+
+    #minibox2 {
+      display: flex;
+      width: 100%;
+      height: 80px;
+      border: 1px solid transparent;
+    }
+
+    #minibox2>div:nth-child(1) {
+      width: 60%;
+      /* height: 20%; */
+      border: 1px solid transparent;
+    }
+
+    #mrp {
+      height: 20px;
+      padding-left: 20px;
+      color: gray;
+      line-height: 0;
+    }
+
+    #per {
+      /* background: cadetblue;
+            color: white; */
+      /* height: 20px; */
+      display: flex;
+      margin-left: 20px;
+    }
+
+    #per>h2 {
+      color: red;
+    }
+
+    #p {
+      background: cadetblue;
+      color: white;
+      padding-left: 5px;
+    }
+
+    #minibox2>div:nth-child(2) {
+      width: 50%;
+      /* height: 20%; */
+      border: 1px solid transparent;
+      font-family: sans-serif;
+    }
+
+    #minibox2>div:nth-child(2)>p:nth-child(1) {
+      line-height: 0;
+      color: orangered;
+    }
+
+    #minibox2>div:nth-child(2)>p:nth-child(2) {
+      /* line-height: 0; */
+      color: gray
+    }
+
+    .text {
+      border: 1px solid transparent;
+      height: 30px;
+      color: gray;
+      font-weight: bolder;
+      margin-left: 15px;
+      margin-bottom: 5px;
+      font-size: 12px;
+    }
+
+    #btn {
+      margin-left: 15px;
+    }
+
+    #btn>button {
+      padding: 0px 10px;
+      border: 1px solid grey;
+      background-color: transparent;
+      cursor: pointer;
+    }
+
+    #btn>button:hover {
+      border: 3px solid #51c9a6;
+    }
+
+    #btn>button>p {
+      line-height: 2px;
+      font-size: 12px;
+    }
+
+    /* #btn>button>p:nth-child(2){
+            line-height: 1;
+        } */
+    #bynow {
+      margin-left: 15px;
+      font-family: sans-serif;
+      margin-top: 10px;
+    }
+
+    #bynow>button {
+      background-color: transparent;
+      border: 1px solid #51c9a6;
+      /* padding:  */
+      cursor: pointer;
+      color: #51c9a6;
+      font-size: 17px;
+      padding: 1px 25px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+    }
+
+    #bynow>button>p {
+      line-height: 0px;
+    }
+
+    #bynow>button:hover {
+      background-color: #51c9a6;
+      color: white;
+    }
+
+    #num {
+      text-decoration: line-through;
+    }
+
+    #text1 {
+      border: 1px solid transparent;
+      height: 30px;
+      color: gray;
+      font-weight: bolder;
+      margin-left: 15px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+
+    #text1>input {
+      padding: 10px 0px;
+    }
+
+    #text1>button {
+      background-color: gray;
+      color: white;
+      padding: 10px 10px;
+      margin-right: 5px;
+      border: transparent;
+      cursor: pointer;
+    }
+
+    #text1>button:hover {
+      border: 3px solid black;
+    }
+
+    #add {
+      width: 28%;
+      height: 100%;
+      border: 1px solid transparent;
+      margin-left: 2%;
+      background-color: white;
+    }
+
+    #add>div:nth-child(1) {
+      height: 25%;
+      border: 1px solid transparent;
+    }
+
+    #minibox>div:nth-child(1)>p:nth-child(1) {
+      font-family: Roboto, sans-serif;
+      color: #505050;
+      font-size: 17px;
+      line-height: 0px;
+    }
+
+    #minibox>div:nth-child(1)>p:nth-child(2) {
+      font-family: Roboto, sans-serif;
+      color: #505050;
+      font-size: 13px;
+      line-height: 14px;
+    }
+
+    #minibox>div:nth-child(1)>p:nth-child(3) {
+      font-family: Roboto, sans-serif;
+      color: #505050;
+      font-size: 12px;
+      line-height: 0px;
+    }
+
+    #add>div:nth-child(1)>img {
+      margin-left: 26%;
+      height: 70%;
+    }
+
+    #add>div:nth-child(1)>a>p {
+      margin-left: 25%;
+    }
+
+    #add>div:nth-child(2) {
+      height: 25%;
+    }
+
+    #add>div:nth-child(2)>img {
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
+
+    #add>div:nth-child(3) {
+      height: 25%;
+      border: 1px solid transparent;
+    }
+
+    #add>div:nth-child(4) {
+      height: 25%;
+      border: 1px solid transparent;
+    }
+
+    #add>div:nth-child(4)>img {
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
+
+    #add>div:nth-child(3)>img {
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
+
+    #bigbox {
+      background-color: #ededed;
+      /* background-color: #505050; */
+      border: 1px solid transparent;
+
+    }
+
+    #H2 {
+      border: 1px solid transparent;
+      background-color: #ededed;
+      font-size: 22px;
+      color: #505050;
+      font-family: sans-serif;
+      padding-left: 20px;
+    }
+
+    #des {
+      width: 70%;
+      border: 1px solid transparent;
+      /* margin-left: 20px; */
+      background-color: #ededed;
+    }
+
+    #des1 {
+      width: 95%;
+      margin-left: 20px;
+      border: 1px solid transparent;
+      background-color: white;
+    }
+
+    #des1>h2 {
+      color: #505050;
+      font-family: sans-serif;
+      padding-left: 20px;
+    }
+
+    .pdetail {
+      display: flex;
+      color: #b7b7b7;
+      font-family: sans-serif;
+    }
+
+    .pdetail>div {
+      border: 1px solid transparent;
+      width: 40%;
+      height: 20px;
+      margin-bottom: 5px;
+      margin-left: 20px;
+    }
+
+    #des1>h3 {
+      color: #505050;
+      font-family: sans-serif;
+      padding-left: 20px;
+    }
+
+    .pdetail2 {
+      width: 70%;
+      /* height: ; */
+      margin-left: 50px;
+      border: 1px solid transparent;
+      color: #818181;
+      font-family: sans-seri
+    }
+
+    #des1>h4 {
+      color: #505050;
+      font-family: sans-serif;
+      padding-left: 20px;
+    }
+
+    #work {
+      border: 1px solid transparent;
+      color: #fb8903;
+    }
+
+    #work {
+      font-size: 12px;
+    }
+
+    #gen {
+      color: #818181;
+      font-size: 13px;
+      padding-left: 20px;
+    }
+
+    #check {
+      height: 10px;
+    }
+
+    #ent {
+      font-size: 12px;
+      line-height: 0;
+    }
+
+    #del {
+      color:
+        #b7b7b7;
+      font-size: 12px;
+      margin-right: 20px;
+    }
+
+    #rate {
+      color: #505050;
+      line-height: 0;
+      padding-right: 10px;
+      font-size: 28px;
+      font-family: sans-serif;
+    }
+
+    #in {
+      line-height: 0;
+      font-size: 11px;
+      padding-left: 20px;
+      color: #b7b7b7;
+    }
+
+    #evi {
+      color: #b7b7b7;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="nav">
+    <header>
+      <nav class="nav-bar">
+        <a class="navbar-brand" href="#">
+          <img src="https://static.oxinis.com/healthmug/image/healthmug/healthmug-logo.png">
+
+        </a href="#">
+        <form id="search">
+          <input id="search_bar" type="text" placeholder="Search Products">
+          <button class="btn" type="button"><i class="fas fa-search"></i> </button>
+        </form>
+        <div class="icon">
+          <div>
+            <i class="fa-regular fa-envelope" style="color: #898989;"></i>
+            <p>contact us</p>
+          </div>
+          <div>
+            <i class=" fa-solid fa-wallet" style="color: #898989;"></i>
+            <p>Sell With Us</p>
+          </div>
+          <div>
+            <i class=" fa-solid fa-user" style="color: #898989;"></i>
+            <p>Sign In</p>
+          </div>
+          <i class="fa-solid fa-cart-shopping" style="color: aquamarine; "></i></a>
+        </div>
+      </nav>
+
+      <nav id="nav-2">
+        <li>Disease</li>
+        <li>Allopathy</li>
+        <li>Homeopathy</li>
+        <li>Ayurveda</li>
+        <li>Unani</li>
+        <li>Nutrtion</li>
+        <li>Personal Care</li>
+        <li>Baby Care</li>
+        <li>Sexual Wellness</li>
+        <li>Fitness</li>
+        <li>Consultation</li>
+      </nav>
+
+    </header>
+
+  </div>
+  <div id="bigbox">
+    <div class="text">
+      <p style="color: #746a6a;">Home > Allopathy > Tablet & capsules ><span id="evi">Evion Capsule (400mg)
+          (10caps)</span></p>
+    </div>
+    <div id="maindiv">
+
+      <div id="img">
+        <img src="https://static.oxinis.com/healthmug/image/product/117573-4-400.jpg" alt="">
+      </div>
+      <div id="detail">
+        <div id="minibox">
+          <div>
+            <p>Evion Capsule (400mg) (10caps)</p>
+            <p>Assists in managing the levels of Vitamin E in the body, contains anti-oxidants</p>
+            <p>Vitamin E 400mg</p>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/"><img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR76V7w3SQDNkzWGlAJ6J7e43N1IOIAi5P9Zg&usqp=CAU"
+                alt=""></a>
+          </div>
+        </div>
+        <div id="minibox2">
+          <div>
+            <div id="mrp" style="border: 1px solid transparent;">
+              <p>MRP <span id="num">32</span></p>
+            </div>
+            <div style="display: flex;">
+
+              <div id="per"><span id="rate">
+                  <p id="price"> ₹ 27</p>
+                </span> <span>
+                  <p id="p">16% off</p>
+                </span><br></div>
+
+            </div>
+            <div id="in">(Inclusive of all taxes)</div>
+
+          </div>
+          <div id="work">
+            <p style="color: #fb8903;">Offers Applicable</p>
+            <P>Additional 5% off on orders with value greater than Rs. 1000*</P>
+          </div>
+        </div>
+        <div class="text">
+          <P>Available Strength :</P>
+        </div>
+        <div id="btn">
+          <button>
+            <p>(200mg)</p>
+            <P>₹ 14</P>
+          </button>
+          <button>
+            <p>(400mg)</p>
+            <P>₹ 27</P>
+          </button>
+          <button>
+            <p>(800mg)</p>
+            <P>₹ 40</P>
+          </button>
+        </div>
+        <div id="bynow">
+          <button>
+            <p>Buy now</p>
+          </button>
+          <button id="addToCart">
+            <p>Add to cart</p>
+          </button>
+        </div>
+        <div style="display: flex;">
+          <div class="text">
+            <p id="del">Delivery</p>
+          </div>
+          <div id="text1">
+
+            <input id="check" type="number" placeholder="Enter pincode" />
+            <button>check</button><span id="gen">Generally delivered in 3 - 7 days</span>
+            <p id="ent">Enter pincode to check estimated delivery time and COD availability</p>
+
+          </div>
+        </div>
+        <div class="text">
+
+        </div>
+      </div>
+      <div id="add">
+        <div>
+          <img src="https://static.oxinis.com/healthmug/image/brand/821-150.jpg" alt="">
+          <a href="https://www.healthmug.com/products/tablets-and-capsules/215?brand=821">
+            <p>More from Merck Ltd </p>
+          </a>
+        </div>
+        <div>
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="">
+        </div>
+        <div>
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="">
+        </div>
+        <div>
+          <img src="https://static.oxinis.com/healthmug/image/asset/391-ke-400.png" alt="">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="H2">
+    <p>DESCRIPTION</p>
+  </div>
+
+  <div id="des">
+    <div id="des1">
+      <h2>Properties</h2>
+      <div class="pdetail">
+        <div>
+          Weight
+
+        </div>
+        <div>15 (gms)</div>
+      </div>
+      <div class="pdetail">
+        <div>
+          Dimensions
+
+
+        </div>
+        <div>5.5 (cm) x 6.5 (cm) x 1 (cm)</div>
+      </div>
+
+      <h3>About Merck Ltd Evion Capsule </h3>
+      <div class="pdetail2">
+        <p>Evion Capsule is a medicine used in the management of vitamin E deficiency. It acts as an antioxidant and
+          helps to protect the cells from the damage caused by free radicals. Additionally, it aids in improving various
+          body functions</p>
+      </div>
+      <div class="pdetail2">
+        <p>Evion Capsule should be taken as directed by your doctor. This medicine may be only one part of a complete
+          program of the Vitamin E management that also includes making changes to your diet and taking some calcium and
+          vitamin supplements.</p>
+      </div>
+      <h4>Ingredients of Merck Ltd Evion Capsule </h4>
+      <div class="pdetail2">
+        <li>Vitamin E</li>
+        <li>Methylparaben </li>
+        <li>Propyl Paraben</li>
+      </div>
+      <h4>Uses/Benefits of Merck Ltd Evion Capsule </h4>
+      <div class="pdetail2">
+        <li>Helps in managing the levels of vitamin E in the body
+        </li>
+        <li>Assists in maintaining the balance of all the essential nutrients in the body</li>
+        <li>Tends to act as an antioxidant and helps protect the cells from the free radicals </li>
+      </div>
+      <h4>Possible Side-Effects of Merck Ltd Evion Capsule</h4>
+      <div class="pdetail2">
+        <li>Do not consume more than the given dosage</li>
+        <li>Read the directions carefully while using the product</li>
+        <li>Store in a cool, dry, and dark place away from moisture</li>
+        <li>Keep it somewhere out of the reach of children</li>
+        <li>Do not consume with alcohol </li>
+      </div>
+      <h4>Additional Information regarding Merck Ltd Evion Capsule</h4>
+      <div class="pdetail2">
+        <li>100% Genuine Product</li>
+        <li>Results may vary with the lifestyle and diet adopted</li>
+        <li>Pregnant & lactating women should consult their doctor before taking any medication or health supplement
+        </li>
+        <li>Depending upon the lighting and screen resolution, the color of the product slightly vary</li>
+
+      </div>
+      <h4>Terms and Conditions</h4>
+      <div class="pdetail2">
+        <p>We have assumed that you have consulted a physician before purchasing this medicine and are not self
+          medicating.</p>
+      </div>
+    </div>
+    <div class="pdetail">
+      <div>
+      </div>
+      <div> </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div class="main">
+    <div id="btm1">
+      <div>
+        <i class="fas fa-shield-alt" style="color: #0b7670;"></i>
+        <h3>100% SECURE</h3>
+        <p>100% Payments Protection</p>
+      </div>
+      <div>
+        <i class="fas fa-wallet" style="color: #0b7670;"></i>
+        <h3>CASH ON DELIVERY</h3>
+        <p>Get First Pay Later</p>
+      </div>
+      <div>
+        <i class="fas fa-undo-alt" style="color: #0b7670;"></i>
+        <h3>EASY RETURN</h3>
+        <p>Easy Return & Refund</p>
+      </div>
+      <div>
+        <i class="fas fa-hands-helping" style="color: #0b7670;"></i>
+        <h3>HELP CENTER</h3>
+        <p>Call: 7838389846 Or Read FAQs</p>
+      </div>
+    </div>
+    <div id="btm2">
+      <div>
+        <div>
+          <p>Policies</p>
+          <p>Privacy Policy</p>
+          <p>Terms of Use</p>
+          <p>Returns and Cancellations</p>
+        </div>
+        <div>
+          <p>HealthMug</p>
+          <p>Contact Us</p>
+          <p>About Us</p>
+          <p>Blogs</p>
+        </div>
+        <div>
+          <p>May we help you</p>
+          <p>Track Your Order</p>
+          <p>Change / Cancel</p>
+          <p>Order</p>
+          <p>Report Abouse/</p>
+          <p>Infringement</p>
+          <p>FAQ</p>
+        </div>
+        <div>
+          <p>Stay Connected</p>
+          <p>
+            <i class="fab fa-facebook-f"></i>
+          <p>facebook</p>
+          </p>
+          <p>
+            <i class="fab fa-twitter"></i>
+          <p>Twitter</p>
+          </p>
+        </div>
+        <div>
+          <p>Payment Methods</p>
+          <p>
+            <i class="far fa-credit-card"></i>
+          <p>Debit/Credit Cards</p>
+          </p>
+          <p>
+            <i class="fas fa-desktop"></i>
+          <p>Net Banking</p>
+          </p>
+          <p>
+            <i class="fas fa-money-check-alt"></i>
+          <p>Cash On Delivery</p>
+          </p>
+          <p>
+            <i class="fas fa-wallet"></i>
+          <p>E-Wallet</p>
+          </p>
+        </div>
+        <div>
+          <p>Download App</p>
+          <div style="display: flex;">
+            <i class="fab fa-google-play"></i>
+            <div>
+              <p>GET IT ON</p>
+              <H3>Google Play</H3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <i class="fas fa-shield-alt" style="color: white;"></i>
+          <span>100% Secured & Trusted</span>
+          <div style="color: white; font-size: 12px; padding-left: 25px;">Secure payment by Razorpay</di>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="btm3">
+      <p><strong>Homeopathy:</strong> Dr. Reckeweg/ Dr. Willmar Schwabe/ Adel Pekana/ SBL/ Bakson’s/ Wheezal/ New
+        Life/ R S Bhargava/
+        Adven/
+        Bhandari/ Hapdco/ Medisynth/ Allen/ B.Jain/ Bioforce/ Dr.Wellmans/ Bios Lab/ HL/ Haslab/ Lords/ Jhactions/
+        Indo
+        German/
+        REPL/ Ralson</p>
+      <p><strong>Homeopathic Dilutions:</strong> Allium Cepa/ Alumina/ Antim Crud/ Antim Tart/ Apis Mel/ Arnica/
+        Arsenic Album/ Baryta Carb/ Belladonna/ Bryonia/
+        Calcarea Carb/ Carvo Veg/ Causticum/ Cina/ China/ Colocynthis/ Conium/ Eupatorium Perf/ Gelsemium/
+        Graphites/
+        Hepar
+        Sulph/ Ignatia/ Ipecac/ Kali Bichrom/ Ledum Pal/ Lycopodium/ Merc sol/ Nitric Acid/ Nux Vomica/ Ocimum Can/
+        Petroleum/
+        Phosphoric Acid/ Phosphorus/ Pulsatilla/ Rhus tox/ Ruta/ Sepia/ Sulphur/ Thuja</p>
+      <p>
+        <strong>Homeopathic Mother Tinctures :</strong>
+        Aesculus/ Agnus Castus/ Alfalfa/ Aspidosperma/ Avena Sativa/ Berberis Vulgaris/ Blatta/ Calendula/
+        Cantharis/
+        Carduus
+        Marianus/ Chelidonium/ Chimaphilla/ Crateagus/ Damina/ Drosera/ Echinacea/ Euphrasia/ Ginseng/ Hamamelis/
+        Hydrastis/
+        Hypericum/ Justicea/ Kalmegh/ Kreosote/ Lemna Minor/ Millefolium/ Phytolacca/ Plantago/ Sabadilla/ Sabal
+        Serrulata/
+        Senega/ Spongia/ Symphytum/ Teucrium Marum Verum/ Thlaspi Bursa Pestoris/ Uva Ursi
+      </p>
+      <p>
+        <strong>Bio-Chemic :</strong>
+        Calcarea Flour/ Calcarea Phos/ Calcarea Sulph/ Ferrum Phos/ Kali Mur/ Kali Phos/ Kali Sulph/ Mag Phos/ Nat
+        Mur/ Nat Phos/ Nat Sulph/ Silicea
+        Ayurveda and Unani : Patanjali/ Baidyanath/ Dabur/ Himalaya/ Charak/ Zandu/ Aimil/ Vyas/ Organic India/
+        Alarsin/
+        Dhootapapeshwar/ Hamdard/ Gurukul/ Maharishi Ayurved/ Multani/ Nagarjuna/ Kudos/ Unjha/ Aroma Magic/ Basic
+        Ayurveda/
+        Vicco
+      </p>
+      <p><strong>Bio-Chemic:</strong>Calcarea Flour/ Calcarea Phos/ Calcarea Sulph/ Ferrum Phos/ Kali Mur/ Kali
+        Phos/
+        Kali Sulph/ Mag Phos/ Nat Mur/ Nat
+        Phos/ Nat Sulph/ Silicea</p>
+      <p><strong>Ayurveda and Unani:</strong> Patanjali/ Baidyanath/ Dabur/ Himalaya/ Charak/ Zandu/ Aimil/ Vyas/
+        Organic India/ Alarsin/
+        Dhootapapeshwar/ Hamdard/ Gurukul/ Maharishi Ayurved/ Multani/ Nagarjuna/ Kudos/ Unjha/ Aroma Magic/ Basic
+        Ayurveda/
+        Vicco</p>
+      <p><strong>Ayurvedic Medicines:</strong> Ras and Sindoor/ Bhasm and Pishti/ Bati, Gutika and Guggulu/ Asava
+        Arishta and Kadha/ Loha and
+        Mandur/ Churan, Avleha and Pak/ Tailam and Ghrita/ Chyawanprash/ Honey/ Digestives/ Green Tea</p>
+      <p><strong>Herbal and Vegetable Juice:</strong> AloeVera Juice/ Amla Juice/ Apple Cider Vinegar/ Lauki Juice/
+        Jamun Juice/ Karela (Bitter
+        Guard) Juice/ Triphala Juice/ Panch Tulsi Juice/ Grass Meal Juice/ Neem Leaf Juice/ Brahmi Juice/ Giloy
+        Juice/
+        Noni
+        Juice</p>
+      <p><strong>Aroma Oils (Essential Oils):</strong> Beautiful Skin Oil/ Fairy Oil/ Stimulate Oil/ Dry Skin Oil/
+        Tea Tree Oil/ Jasmine Oil/
+        Sandalwood Oil/ Patchouli Oil/ Fennel Seed Oil/ Petitgrain Oil/ Exotica Oil/ Cedarwood Oil/ Cinnamom Oil/
+        Oily
+        Skin Oil/
+        Vertiver Oil/ Cypress Oil/ Rose Oil/ Rosemary Oil/ Frankincense Oil/ Ginger Oil/ Geranium Oil/ Flaky Oil/
+        Ylang Ylang
+        Oil/ Peppermint Oil/ Juniper Berry Oil/ Clarysage Oil/ Dreams Oil/ Bergamot Oil/ Lemongrass Oil/ Sensitive
+        Skin Oil/
+        Orange Oil/ Carrot Seed Oil/ Peace Oil/ Rosewood Oil/ Basil Oil/ Neroli Oil/ Lavender Oil/ Clove Oil/ Pine
+        Oil/
+        Eucaplytus Oil/ Happiness Oil/ Palmarosa Oil/ Lemon Oil/ Thyme Oil/ Morning Due Oil/ Nutmeg Oil</p>
+      <p><strong>Beauty and Personal Care:</strong> Natural and Organic Cosmetics/ Creams/ Shampoo/ Hair Oils/
+        Mehandi/ Hair Color/ Talcs/ Soaps/
+        Tooth Paste and Mouth Wash</p>
+      <h2>About Healthmug</h2>
+      <p>With a vision of bridging the gap between a pharmacy and the consumers, Healthmug came into its existence
+        in
+        2016. A
+        vision that quickly broadened up and helped it in becoming more than just a mere online portal, to an online
+        marketplace
+        for shopping Ayurvedic to Homeopathy to Unani medicines to Health Supplements and much more. Since its
+        inception,
+        Healthmug has grown into a world-class e-platform for everything related to health & fitness. What draws a
+        major
+        distinction between us and our contemporaries is the way we promote a harmonious relationship between the
+        sellers and
+        the buyers for the greater good.</p>
+      <p>Healthmug is the brainchild of Dr. Mohit Agarwal & Mr. Anubhav Bansal. They started this online platform
+        with
+        an idea of
+        supporting the local manufacturers & sellers through building a platform for Ayurvedic, Homeopathy & Unani
+        medicines and
+        to improve the health of the consumers in a holistic way. With an ever-expanding range of products and
+        services,
+        Healthmug is growing rapidly and seeks to become a one-stop portal for all healthcare needs.</p>
+      <p>While Healthmug brings medicines at your fingertips and at affordable prices, it also makes shopping online
+        an easy
+        task. Not just for the consumers, even for the sellers & the brands, this platform makes selling products
+        easy
+        and
+        hassle-free. Since day one, we have supported many small & medium local brands to sell their products and
+        have
+        helped
+        them in sharpening their entrepreneurial skills. Along with these, we have also given numerous big brands a
+        platform to
+        expand their customer base. We believe in the philosophy of growing together and thus we motivate the
+        sellers
+        to do
+        their best. All thanks to our comprehendible policies, everyone from a small seller to a wholesaler to a
+        brand, can
+        easily connect with us and sell their products.</p>
+      <p>Shop for medicines, wellness products, and health supplements online from top brands like Dr. Reckeweg, Dr.
+        Willmar
+        Schwabe, Adel Pekana, SBL, Haslab, Bakson etc. Customers can shop from a wide range of Ayurvedic products
+        available
+        online like Bhasma & Pishti, Bati, Gutika & Guggulu Ras, Sindoor, Asava Arishtha etc. at attractive prices.
+        For organic
+        food items, Herbal Juices, Green Teas, etc. from popular brands like Dabur, Baidyanath, Zandu, Himalaya,
+        Organic India,
+        Unjha, Basic Ayurveda and counting, customers can shop online and buy these products at attractive prices
+        and
+        offers.
+        Customers can now enjoy the benefit of shopping online for Allopathic medicines and getting them delivered
+        right at
+        their doorsteps. Shop from our online pharmacy for Allopathic medicines and drugs at great prices. Shop
+        online
+        from the
+        widest range of products listed across on our website, across a wide range of categories and give yourself
+        and
+        your
+        loved ones a gift of wellbeing. Come, join us and start living a healthy life and be a part of the Healthmug
+        family.</p>
+      <div id="copyRight">
+        <p>Copyright© 2019. All rights reserved.</p>
+        <h6>In compliance with Drug and Cosmetic Act and Rules, we dont sell schedule H, H1, X or any habit forming
+          drugs.</h6>
+        <h3>Healthmug.com</h3>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
+
+
+<script>
+  document.querySelector("#addToCart").addEventListener("click", function () {
+    // localStorage.setItem(JSON.stringify("price", document.querySelector("price").textContent))
+    window.location.href = "addToCart.html"
+  })
+</script>
