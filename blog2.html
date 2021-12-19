@@ -237,7 +237,7 @@
     
     <div id="firstbox">
         <div>
-            <img style="cursor: pointer;" src="https://static.oxinis.com/healthmug/image/blog/healthmug-logo.png"/>
+            <img style="cursor: pointer;" src="https://static.oxinis.com/healthmug/image/blog/healthmug-logo.png" id="return"/>
         </div>
         <div><p>OILS</p></div>
         <div><p>BEAUTY</p></div>
@@ -666,3 +666,9 @@
 
 </body>
 </html>
+<script>
+  
+    document.querySelector("#return").addEventListener("click", function () {
+      window.location.href = "landing_page.html"
+    })
+</script>

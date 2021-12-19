@@ -1,171 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        #firstbox{
-            width: 100%;
-            display: flex;
-            border-bottom: solid #51c9a6;
-            font-family: sans-serif;
-            display: flex;
-            /* cursor: pointer; */
-        }
-        #firstbox>div>p{
-            padding-left: 50px;
-            font-size: medium;
-            cursor: pointer;
-            /* border: 1px solid red; */
-        }
-        #secondbox{
-            width: 100%;
-            display: flex;
-        }
-        #mini1s{
-            width: 50%;
-            border: 1px solid transparent;
-            margin-top: 150px;
-            margin-left: 50px;
-            font-family: sans-serif;
-        }
-        #mini1s>img{
-            width: 100%;
-        }
-        #mini1s>P{
-            color: gray;
-            line-height: 25px;
-        }
-        #minibox{
-            display: flex;
-        }
-        #minibox>div{
-            border: 1px solid transparent;
-            margin-left: 60px;
-        }
-        #red{
-            margin-left: 35%  ;
-            
-        }
-        #blue{
-            width: 100%;
-            height: 200px;
-            border: 1px solid transparent;
-            display: flex;
-        }
-        #blue>div>img{
-            height: 200px;
-            margin-left: 50px;
-            border-radius: 50%;
-        }
-        #blue>div:nth-child(2){
-            margin-left: 20px;
-        }
-        #h2{
-            border-left: 5px solid red;
-            
-        }
-        #h2>h2{
-            padding-left: 5px;
-        }
-        #new{
-            width: 100%;
-            height: 500px;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: 150px 150px 150px;
-            grid-gap: 10px;
-        }
-        #new>div{
-            border: 1px solid transparent;
-            display: flex;
-            cursor: pointer;
-        }
-        #new>div>div{
-            width: 45%;
-            height: 100%;
-        }
-        #new>div>div>img{
-            height: 100%;
-            width: 100%;
-        }
-        #new>div>div>h3{
-            margin-left: 10px;
-            font-family: sans-serif;
-            color: gray;
-        }
-        #new>div>div>p{
-            margin-left: 10px;
-            font-family: sans-serif;
-            color: rgb(35, 160, 209);
-        }
-        #mini2s{
-            border: 1px solid transparent;
-            width: 40%;
-            margin-left: 20px;
-            margin-top: 150px;
-        }
-        #new1{
-            /* display: ; */
-            width: 100%;
-            height: 500px;
-            display: grid;
-            /* grid-template-columns: repeat(2, 1fr); */
-            grid-template-rows: 100px 100px 100px 100px 100px;
-            grid-gap: 10px;
-        }
-        #new1>div{
-            border: 1px solid transparent;
-            display: flex;
-            cursor: pointer;
-        }
-        #new1>div>div{
-            width: 45%;
-            height: 100%;
-            border: 1px solid transparent;
-        }
-        #new1>div>div>img{
-            height: 100%;
-            width: 100%;
-        }
-        #new1>div>div>h3{
-            margin-left: 10px;
-            font-family: sans-serif;
-            color: gray;
-            cursor: pointer;
-        }
-        #new1>div>div>p{
-            margin-left: 10px;
-            font-family: sans-serif;
-            color: rgb(35, 160, 209);
-        }
-        #share1{
-            border-left: 5px solid red;
-            
-        }
-        #share>div>h2{
-            padding-left: 5px;
-        }
-        #share2{
-            width: 60%;
-           height: 70px;
-           border: 1px solid transparent;
-           display: flex;
-        }
-        #share2>div{
-            width: 60%;
-            height: 100%;
-            border: 1px solid transparent;
-            margin-left: 10px;
-        }
-        #share2>div>a>img{
-            width: 100%;
-            height: 100%;
-            cursor: pointer;
-        }
-        
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #firstbox {
+      width: 100%;
+      display: flex;
+      border-bottom: solid #51c9a6;
+      font-family: sans-serif;
+      display: flex;
+      /* cursor: pointer; */
+    }
+
+    #firstbox>div>p {
+      padding-left: 50px;
+      font-size: medium;
+      cursor: pointer;
+      /* border: 1px solid red; */
+    }
+
+    #secondbox {
+      width: 100%;
+      display: flex;
+    }
+
+    #mini1s {
+      width: 50%;
+      border: 1px solid transparent;
+      margin-top: 150px;
+      margin-left: 50px;
+      font-family: sans-serif;
+    }
+
+    #mini1s>img {
+      width: 100%;
+    }
+
+    #mini1s>P {
+      color: gray;
+      line-height: 25px;
+    }
+
+    #minibox {
+      display: flex;
+    }
+
+    #minibox>div {
+      border: 1px solid transparent;
+      margin-left: 60px;
+    }
+
+    #red {
+      margin-left: 35%;
+
+    }
+
+    #blue {
+      width: 100%;
+      height: 200px;
+      border: 1px solid transparent;
+      display: flex;
+    }
+
+    #blue>div>img {
+      height: 200px;
+      margin-left: 50px;
+      border-radius: 50%;
+    }
+
+    #blue>div:nth-child(2) {
+      margin-left: 20px;
+    }
+
+    #h2 {
+      border-left: 5px solid red;
+
+    }
+
+    #h2>h2 {
+      padding-left: 5px;
+    }
+
+    #new {
+      width: 100%;
+      height: 500px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 150px 150px 150px;
+      grid-gap: 10px;
+    }
+
+    #new>div {
+      border: 1px solid transparent;
+      display: flex;
+      cursor: pointer;
+    }
+
+    #new>div>div {
+      width: 45%;
+      height: 100%;
+    }
+
+    #new>div>div>img {
+      height: 100%;
+      width: 100%;
+    }
+
+    #new>div>div>h3 {
+      margin-left: 10px;
+      font-family: sans-serif;
+      color: gray;
+    }
+
+    #new>div>div>p {
+      margin-left: 10px;
+      font-family: sans-serif;
+      color: rgb(35, 160, 209);
+    }
+
+    #mini2s {
+      border: 1px solid transparent;
+      width: 40%;
+      margin-left: 20px;
+      margin-top: 150px;
+    }
+
+    #new1 {
+      /* display: ; */
+      width: 100%;
+      height: 500px;
+      display: grid;
+      /* grid-template-columns: repeat(2, 1fr); */
+      grid-template-rows: 100px 100px 100px 100px 100px;
+      grid-gap: 10px;
+    }
+
+    #new1>div {
+      border: 1px solid transparent;
+      display: flex;
+      cursor: pointer;
+    }
+
+    #new1>div>div {
+      width: 45%;
+      height: 100%;
+      border: 1px solid transparent;
+    }
+
+    #new1>div>div>img {
+      height: 100%;
+      width: 100%;
+    }
+
+    #new1>div>div>h3 {
+      margin-left: 10px;
+      font-family: sans-serif;
+      color: gray;
+      cursor: pointer;
+    }
+
+    #new1>div>div>p {
+      margin-left: 10px;
+      font-family: sans-serif;
+      color: rgb(35, 160, 209);
+    }
+
+    #share1 {
+      border-left: 5px solid red;
+
+    }
+
+    #share>div>h2 {
+      padding-left: 5px;
+    }
+
+    #share2 {
+      width: 60%;
+      height: 70px;
+      border: 1px solid transparent;
+      display: flex;
+    }
+
+    #share2>div {
+      width: 60%;
+      height: 100%;
+      border: 1px solid transparent;
+      margin-left: 10px;
+    }
+
+    #share2>div>a>img {
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
+
     /* Title Bar */
     #btm2 {
       /* height: 20%; */
@@ -230,205 +262,265 @@
       margin: 0%;
       font-weight: lighter;
     }
-    
-    </style>
+  </style>
 </head>
+
 <body style="font-family: sans-serif;">
-    
-    <div id="firstbox">
-        <div>
-            <img style="cursor: pointer;" src="https://static.oxinis.com/healthmug/image/blog/healthmug-logo.png"/>
-        </div>
-        <div><p>OILS</p></div>
-        <div><p>BEAUTY</p></div>
-        <div><p>HEALTH CARE</p></div>
 
+  <div id="firstbox">
+    <div>
+      <img style="cursor: pointer;" src="https://static.oxinis.com/healthmug/image/blog/healthmug-logo.png"
+        id="return" />
+    </div>
+    <div>
+      <p>OILS</p>
+    </div>
+    <div>
+      <p>BEAUTY</p>
+    </div>
+    <div>
+      <p>HEALTH CARE</p>
+    </div>
+
+    <!-- <hr> -->
+  </div>
+  <div id="secondbox">
+    <div id="mini1s">
+      <h1>6 Essential Oils You Need To Keep At Home</h1>
+      <div id="minibox">
+        <div> Sohini Hazra</div>
+        <div> July 18, 2019</div>
+        <div> Views : 2739</div>
+        <div> 1 Comment</div>
+      </div>
+      <br>
+      <br>
+      <img src="https://static.oxinis.com/healthmug/image/blog/article/2-banner-700.jpg" alt="">
+      <p>Korean beauty has always been a bit of mystery for all of us. We all long for that hourglass clear skin and
+        glossy glow.</p>
+      <p>There are various products that claim to treat and make your skin flawless just like those Glowing Korean
+        Women. But here’s the thing, Koreans are naturally blessed with beautiful and clear skin from their ancestors.
+        Koreans have always been known for their beauty. But can you achieve such a glow on your skin? The answer is
+        Yes!</p>
+      <p>Body image is the perception that a person has of their physical self and the thoughts and feelings that result
+        from that perception.</p>
+      <p>According to the definition, these feelings can be positive (that the person feels extremely confident under
+        his/her own skin) negative (that the person doesn't feel confident under his/ her own skin) or both, and are
+        influenced by individual and environmental factors. But in accordance to research studies, chances are that the
+        latter part is more predominant i.e That feeling that you don't look like a supermodel, that you do not confer
+        to the conventional beauty standards of having a zero to negative figure, beautiful hair and flawless skin,
+        proper height and booty etc. This leads to the changing eating patterns. Because after all! Where will all those
+        carbs go?</p>
+      <P>The MINDS Foundation recognises that both social stigma and economic burden keeps many of the Indians from
+        seeking help for mental health issues. India, a refuge for billions but refuge only physically and I don't think
+        so the same goes for mental health as well! Is the same even taken into consideration?</P>
+      <strong>Here’s a list of essential oils that you MUST keep at home.</strong>
+      <h2>Lavender Oil</h2>
+      <img src="https://static.oxinis.com/healthmug/image/blog/article/2-1.jpg" alt="">
+      <P>The male or female suffering from anorexia nervosa will typically have an obsessive fear of gaining weight,
+        refusal to maintain a healthy body weight and an unrealistic perception of body image. Many people with anorexia
+        nervosa will fiercely limit the quantity of food they consume and view themselves as overweight, even when they
+        are clearly underweight. Anorexia can have damaging health effects, such as brain damage, multi-organ failure,
+        bone loss, heart difficulties, and infertility. The risk of death is highest in individuals with this disease.
+        Combating this mental condition requires mental strength and above all will power. Still some medicines can
+        provide you with a tranquil sensation so as to aid the process of recovery. Ayurvedic medicines can go a long
+        way in the healing process of the mind like Ashwagandha Tablets by Himalaya. You can directly click on the link
+        to buy the medicine.</P><span><a
+          href="https://www.healthmug.com/product/himalaya-ashwagandha-tablet-60tab/677797299">https://www.healthmug.com/product/himalaya-ashwagandha-tablet-60tab/677797299</a></span>
+      <p>Lavender essential oil is also used for the treatment of hair loss and insomnia; it assists in digestion,
+        strengthens the immune system, reduces anxiety and mental stress and defends the body against diseases like
+        typhoid, diphtheria, and tuberculoses.</p>
+      <p>A word of caution, make sure that you DO NOT ingest this oil. It is also not advisable for people with
+        extremely sensitive skin, lactating women and diabetic patients.</p>
+      <h2>Rose Oil</h2>
+      <img src="https://static.oxinis.com/healthmug/image/blog/article/2-2.jpg" alt="">
+      <p>This eating disorder is characterized by repeated binge eating followed by behaviours that compensate for the
+        overeating, such as forced vomiting, excessive exercise, or extreme use of laxatives or diuretics. Men and women
+        who suffer from Bulimia may fear weight gain and feel severely unhappy with their body size and shape. The
+        binge-eating and purging cycle is typically done in secret, creating feelings of shame, guilt, and lack of
+        control. Bulimia can have injuring effects, such as gastrointestinal problems, severe dehydration, and heart
+        difficulties resulting from an electrolyte imbalance. Combating this mental condition requires mental strength
+        and above all will power. Still some medicines can provide you with a tranquil sensation so as to aid the
+        process of recovery. Ayurvedic medicines can go a long way in the healing process of the mind like Dr.
+        Reckeweg's sedative drops. You can buy the medicine here by directly clicking on the link.</p>
+      <a
+        href="https://www.healthmug.com/product/dr-reckeweg-r15-vita-c15-250ml/1842571711">https://www.healthmug.com/product/dr-reckeweg-r15-vita-c15-250ml/1842571711</a>
+      <h2>Sandalwood Oil</h2>
+      <img src="https://static.oxinis.com/healthmug/image/blog/article/2-3.jpg" alt="">
+      <p>This eating disorder is characterized by repeated binge eating followed by behaviours that compensate for the
+        overeating, such as forced vomiting, excessive exercise, or extreme use of laxatives or diuretics. Men and women
+        who suffer from Bulimia may fear weight gain and feel severely unhappy with their body size and shape. The
+        binge-eating and purging cycle is typically done in secret, creating feelings of shame, guilt, and lack of
+        control. Bulimia can have injuring effects, such as gastrointestinal problems, severe dehydration, and heart
+        difficulties resulting from an electrolyte imbalance. Combating this mental condition requires mental strength
+        and above all will power. Still some medicines can provide you with a tranquil sensation so as to aid the
+        process of recovery. Ayurvedic medicines can go a long way in the healing process of the mind like Dr.
+        Reckeweg's sedative drops. You can buy the medicine here by directly clicking on the link.</p>
+      <a
+        href="https://www.healthmug.com/product/dr-reckeweg-r15-vita-c15-250ml/1842571711">https://www.healthmug.com/product/dr-reckeweg-r15-vita-c15-250ml/1842571711</a>
+      <p>Although there are a lot more different classes and categories of eating disorders which have cropped up
+        recently due to the increasing social stigma and peer pressure, yet to summarize these were the common few
+        types.</p>
+      <p>If you land upon identifying with one of these eating disorders or struggle everyday with your body image, I
+        would like to say that always remember that you are not alone. Nobody is perfect and there are millions out
+        there who feel the same. Always seek medical help if the burden feels cumbersome. Coming out is pretty difficult
+        but then help is always available. If my blog impacts even a single person, I would deem myself as successful.
+      </p>
+      <p>In the end I would like to end by quoting a few lines from Maya Angelou:</p>
+      <strong>"Pretty women wonder where my secret lies.
+
+      </strong><br><br>
+      <strong>I'm not cute or built to suit a fashion model's size</strong><br><br>
+      <strong>But when I start to tell them,</strong><br><br>
+      <strong>They think I'm telling lies..."</strong><br><br>
+      <p>Folks, this is the confidence one should inculcate within oneself. Maya Angelou is as an inspiration for many
+        and continues to be my idol.</p>
+
+      <div id="red">
+        <p>- SHARE THIS POST -</p>
+        <img
+          src="https://th.bing.com/th?q=Blue+Facebook+Icon&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.05&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247"
+          alt="">
+
+      </div>
+      <hr>
+      <div id="blue">
         <!-- <hr> -->
-    </div>
-    <div id="secondbox">
-        <div id="mini1s">
-          <h1>6 Essential Oils You Need To Keep At Home</h1>
-            <div id="minibox">
-                <div> Sohini Hazra</div>
-                <div> July 18, 2019</div>
-                <div> Views : 2739</div>
-                <div> 1 Comment</div>
-            </div>
-            <br>
-            <br>
-            <img 
-            src="https://static.oxinis.com/healthmug/image/blog/article/2-banner-700.jpg" alt="">
-            <p>Korean beauty has always been a bit of mystery for all of us. We all long for that hourglass clear skin and glossy glow.</p>
-            <p>There are various products that claim to treat and make your skin flawless just like those Glowing Korean Women. But here’s the thing, Koreans are naturally blessed with beautiful and clear skin from their ancestors. Koreans have always been known for their beauty. But can you achieve such a glow on your skin? The answer is Yes!</p>
-            <p>Body image is the perception that a person has of their physical self and the thoughts and feelings that result from that perception.</p>
-            <p>According to the definition, these feelings can be positive (that the person feels extremely confident under his/her own skin) negative (that the person doesn't feel confident under his/ her own skin) or both, and are influenced by individual and environmental factors. But in accordance to research studies, chances are that the latter part is more predominant i.e That feeling that you don't look like a supermodel, that you do not confer to the conventional beauty standards of having a zero to negative figure, beautiful hair and flawless skin, proper height and booty etc. This leads to the changing eating patterns. Because after all! Where will all those carbs go?</p>
-            <P>The MINDS Foundation recognises that both social stigma and economic burden keeps many of the Indians from seeking help for mental health issues. India, a refuge for billions but refuge only physically and I don't think so the same goes for mental health as well! Is the same even taken into consideration?</P>
-            <strong>Here’s a list of essential oils that you MUST keep at home.</strong>
-           <h2>Lavender Oil</h2>
-            <img 
-            src="https://static.oxinis.com/healthmug/image/blog/article/2-1.jpg" alt="">
-            <P>The male or female suffering from anorexia nervosa will typically have an obsessive fear of gaining weight, refusal to maintain a healthy body weight and an unrealistic perception of body image. Many people with anorexia nervosa will fiercely limit the quantity of food they consume and view themselves as overweight, even when they are clearly underweight. Anorexia can have damaging health effects, such as brain damage, multi-organ failure, bone loss, heart difficulties, and infertility. The risk of death is highest in individuals with this disease. Combating this mental condition requires mental strength and above all will power. Still some medicines can provide you with a tranquil sensation so as to aid the process of recovery. Ayurvedic medicines can go a long way in the healing process of the mind like Ashwagandha Tablets by Himalaya. You can directly click on the link to buy the medicine.</P><span><a href="https://www.healthmug.com/product/himalaya-ashwagandha-tablet-60tab/677797299">https://www.healthmug.com/product/himalaya-ashwagandha-tablet-60tab/677797299</a></span>
-            <p>Lavender essential oil is also used for the treatment of hair loss and insomnia; it assists in digestion, strengthens the immune system, reduces anxiety and mental stress and defends the body against diseases like typhoid, diphtheria, and tuberculoses.</p>
-            <p>A word of caution, make sure that you DO NOT ingest this oil. It is also not advisable for people with extremely sensitive skin, lactating women and diabetic patients.</p>
-            <h2>Rose Oil</h2>
-            <img src="https://static.oxinis.com/healthmug/image/blog/article/2-2.jpg" alt="">
-            <p>This eating disorder is characterized by repeated binge eating followed by behaviours that compensate for the overeating, such as forced vomiting, excessive exercise, or extreme use of laxatives or diuretics. Men and women who suffer from Bulimia may fear weight gain and feel severely unhappy with their body size and shape. The binge-eating and purging cycle is typically done in secret, creating feelings of shame, guilt, and lack of control. Bulimia can have injuring effects, such as gastrointestinal problems, severe dehydration, and heart difficulties resulting from an electrolyte imbalance. Combating this mental condition requires mental strength and above all will power. Still some medicines can provide you with a tranquil sensation so as to aid the process of recovery. Ayurvedic medicines can go a long way in the healing process of the mind like Dr. Reckeweg's sedative drops. You can buy the medicine here by directly clicking on the link.</p>
-            <a href="https://www.healthmug.com/product/dr-reckeweg-r15-vita-c15-250ml/1842571711">https://www.healthmug.com/product/dr-reckeweg-r15-vita-c15-250ml/1842571711</a>
-            <h2>Sandalwood Oil</h2>
-            <img src="https://static.oxinis.com/healthmug/image/blog/article/2-3.jpg" alt="">
-            <p>This eating disorder is characterized by repeated binge eating followed by behaviours that compensate for the overeating, such as forced vomiting, excessive exercise, or extreme use of laxatives or diuretics. Men and women who suffer from Bulimia may fear weight gain and feel severely unhappy with their body size and shape. The binge-eating and purging cycle is typically done in secret, creating feelings of shame, guilt, and lack of control. Bulimia can have injuring effects, such as gastrointestinal problems, severe dehydration, and heart difficulties resulting from an electrolyte imbalance. Combating this mental condition requires mental strength and above all will power. Still some medicines can provide you with a tranquil sensation so as to aid the process of recovery. Ayurvedic medicines can go a long way in the healing process of the mind like Dr. Reckeweg's sedative drops. You can buy the medicine here by directly clicking on the link.</p>
-            <a href="https://www.healthmug.com/product/dr-reckeweg-r15-vita-c15-250ml/1842571711">https://www.healthmug.com/product/dr-reckeweg-r15-vita-c15-250ml/1842571711</a>
-            <p>Although there are a lot more different classes and categories of eating disorders which have cropped up recently due to the increasing social stigma and peer pressure, yet to summarize these were the common few types.</p>
-            <p>If you land upon identifying with one of these eating disorders or struggle everyday with your body image, I would like to say that always remember that you are not alone. Nobody is perfect and there are millions out there who feel the same. Always seek medical help if the burden feels cumbersome. Coming out is pretty difficult but then help is always available. If my blog impacts even a single person, I would deem myself as successful.</p>
-            <p>In the end I would like to end by quoting a few lines from Maya Angelou:</p>
-            <strong>"Pretty women wonder where my secret lies.
-
-            </strong><br><br>
-            <strong>I'm not cute or built to suit a fashion model's size</strong><br><br>
-            <strong>But when I start to tell them,</strong><br><br>
-            <strong>They think I'm telling lies..."</strong><br><br>
-            <p>Folks, this is the confidence one should inculcate within oneself. Maya Angelou is as an inspiration for many and continues to be my idol.</p>
-
-            <div id="red">
-                <p>- SHARE THIS POST -</p>
-                <img src="https://th.bing.com/th?q=Blue+Facebook+Icon&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.05&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247" alt="">
-
-            </div>
-            <hr>
-            <div id="blue">
-                <!-- <hr> -->
-                <div>
-                    <img src="https://static.oxinis.com/healthmug/image/blog/author/12.jpg"
-                    />
-                </div>
-                <div>
-                    <h3>Jahanvi Gupta</h3>
-                    <p>Just a couple of lines which I think are enough to define who, what and how I am! I am an independent lady, With my spine straight. No matter how much you twist it It would NOT break..</p>
-                </div>
-                <!-- <hr> -->
-            </div>
-            <hr>
-            <div id="h2">
-                <h2>Related post</h2>
-            </div>
-            <div id="new">
-                <div>
-                    <div>
-                        <img src="https://static.oxinis.com/healthmug/image/blog/article/203-banner-120.jpg" alt="">
-                    </div>
-                    <div>
-                        <h3>The Insomniac Couch/Coach!!!</h3>
-                        <p>Healthmug Writer</p>
-                    </div>
-
-                </div>
-                <div>
-                    <div>
-                        <img src=https://static.oxinis.com/healthmug/image/blog/article/2-banner-120.jpg alt="">
-                    </div>
-                    <div>
-                        <h3>Dwayne “The Rock” Johnson’s healthy lifestyle and motivation</h3>
-                        <!-- <p>Healthmug Writer</p> -->
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <img src=https://static.oxinis.com/healthmug/image/blog/article/14-banner-120.jpg alt="">
-                    </div>
-                    <div>
-                        <h3>Quick and easy tips to bid farewell to those irritating PMS symptoms</h3>
-                        <!-- <p>Healthmug Writer</p> -->
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <img src="https://static.oxinis.com/healthmug/image/blog/article/5-banner-120.jpg" alt="">
-                    </div>
-                    <div>
-                        <h3>2020 Health Resolutions</h3>
-                        <p>Healthmug Writer</p>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <img src="https://static.oxinis.com/healthmug/image/blog/article/1-banner-120.jpg" alt="">
-                    </div>
-                    <div>
-                        <h3>3 Steps Everyday Skin Care Guide for Healthy Looking Skin</h3>
-                        <!-- <p>Healthmug Writer</p> -->
-                    </div>
-                </div>
-            </div>
+        <div>
+          <img src="https://static.oxinis.com/healthmug/image/blog/author/12.jpg" />
         </div>
-        <div id="mini2s">
-
-            <div id="share">
-                <div id="share1"><h2>Share</h2></div>
-                <div id="share2">
-                    <div>
-                        <a href="https://www.facebook.com/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR76V7w3SQDNkzWGlAJ6J7e43N1IOIAi5P9Zg&usqp=CAU" alt=""
-                        ></a>
-                    </div>
-                    <div></div>
-                </div>
-                
-
-            </div>
-
-            <div id="h2">
-                <h2>Tranding post</h2>
-            </div>
-            <div id="new1">
-                <div>
-                    <div>
-                        <img src="https://static.oxinis.com/healthmug/image/blog/article/216-banner-120.jpg" alt="">
-                    </div>
-                    <div>
-                        <h3>The Insomniac Couch/Coach!!!</h3>
-                        <p>Healthmug Writer</p>
-                    </div>
-
-                </div>
-                <div>
-                    <div>
-                        <img src=https://static.oxinis.com/healthmug/image/blog/article/215-banner-120.jpg alt="">
-                    </div>
-                    <div>
-                        <h3>Dwayne “The Rock” Johnson’s healthy lifestyle and motivation</h3>
-                        <!-- <p>Healthmug Writer</p> -->
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <img src=https://static.oxinis.com/healthmug/image/blog/article/214-banner-120.jpg alt="">
-                    </div>
-                    <div>
-                        <h3>Quick and easy tips to bid farewell to those irritating PMS symptoms</h3>
-                        <!-- <p>Healthmug Writer</p> -->
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <img src="https://static.oxinis.com/healthmug/image/blog/article/213-banner-120.jpg" alt="">
-                    </div>
-                    <div>
-                        <h3>2020 Health Resolutions</h3>
-                        <p>Healthmug Writer</p>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <img src="https://static.oxinis.com/healthmug/image/blog/article/212-banner-120.jpg" alt="">
-                    </div>
-                    <div>
-                        <h3>3 Steps Everyday Skin Care Guide for Healthy Looking Skin</h3>
-                        <!-- <p>Healthmug Writer</p> -->
-                    </div>
-                </div>
-            </div>
+        <div>
+          <h3>Jahanvi Gupta</h3>
+          <p>Just a couple of lines which I think are enough to define who, what and how I am! I am an independent lady,
+            With my spine straight. No matter how much you twist it It would NOT break..</p>
         </div>
+        <!-- <hr> -->
+      </div>
+      <hr>
+      <div id="h2">
+        <h2>Related post</h2>
+      </div>
+      <div id="new">
+        <div>
+          <div>
+            <img src="https://static.oxinis.com/healthmug/image/blog/article/203-banner-120.jpg" alt="">
+          </div>
+          <div>
+            <h3>The Insomniac Couch/Coach!!!</h3>
+            <p>Healthmug Writer</p>
+          </div>
+
+        </div>
+        <div>
+          <div>
+            <img src=https://static.oxinis.com/healthmug/image/blog/article/2-banner-120.jpg alt="">
+          </div>
+          <div>
+            <h3>Dwayne “The Rock” Johnson’s healthy lifestyle and motivation</h3>
+            <!-- <p>Healthmug Writer</p> -->
+          </div>
+        </div>
+        <div>
+          <div>
+            <img src=https://static.oxinis.com/healthmug/image/blog/article/14-banner-120.jpg alt="">
+          </div>
+          <div>
+            <h3>Quick and easy tips to bid farewell to those irritating PMS symptoms</h3>
+            <!-- <p>Healthmug Writer</p> -->
+          </div>
+        </div>
+        <div>
+          <div>
+            <img src="https://static.oxinis.com/healthmug/image/blog/article/5-banner-120.jpg" alt="">
+          </div>
+          <div>
+            <h3>2020 Health Resolutions</h3>
+            <p>Healthmug Writer</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img src="https://static.oxinis.com/healthmug/image/blog/article/1-banner-120.jpg" alt="">
+          </div>
+          <div>
+            <h3>3 Steps Everyday Skin Care Guide for Healthy Looking Skin</h3>
+            <!-- <p>Healthmug Writer</p> -->
+          </div>
+        </div>
+      </div>
     </div>
-    
+    <div id="mini2s">
+
+      <div id="share">
+        <div id="share1">
+          <h2>Share</h2>
+        </div>
+        <div id="share2">
+          <div>
+            <a href="https://www.facebook.com/"><img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR76V7w3SQDNkzWGlAJ6J7e43N1IOIAi5P9Zg&usqp=CAU"
+                alt=""></a>
+          </div>
+          <div></div>
+        </div>
+
+
+      </div>
+
+      <div id="h2">
+        <h2>Tranding post</h2>
+      </div>
+      <div id="new1">
+        <div>
+          <div>
+            <img src="https://static.oxinis.com/healthmug/image/blog/article/216-banner-120.jpg" alt="">
+          </div>
+          <div>
+            <h3>The Insomniac Couch/Coach!!!</h3>
+            <p>Healthmug Writer</p>
+          </div>
+
+        </div>
+        <div>
+          <div>
+            <img src=https://static.oxinis.com/healthmug/image/blog/article/215-banner-120.jpg alt="">
+          </div>
+          <div>
+            <h3>Dwayne “The Rock” Johnson’s healthy lifestyle and motivation</h3>
+            <!-- <p>Healthmug Writer</p> -->
+          </div>
+        </div>
+        <div>
+          <div>
+            <img src=https://static.oxinis.com/healthmug/image/blog/article/214-banner-120.jpg alt="">
+          </div>
+          <div>
+            <h3>Quick and easy tips to bid farewell to those irritating PMS symptoms</h3>
+            <!-- <p>Healthmug Writer</p> -->
+          </div>
+        </div>
+        <div>
+          <div>
+            <img src="https://static.oxinis.com/healthmug/image/blog/article/213-banner-120.jpg" alt="">
+          </div>
+          <div>
+            <h3>2020 Health Resolutions</h3>
+            <p>Healthmug Writer</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img src="https://static.oxinis.com/healthmug/image/blog/article/212-banner-120.jpg" alt="">
+          </div>
+          <div>
+            <h3>3 Steps Everyday Skin Care Guide for Healthy Looking Skin</h3>
+            <!-- <p>Healthmug Writer</p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div>
     <div id="btm1">
       <div>
@@ -663,4 +755,11 @@
   </div>
 
 </body>
+
 </html>
+<script>
+
+  document.querySelector("#return").addEventListener("click", function () {
+    window.location.href = "landing_page.html"
+  })
+</script>
