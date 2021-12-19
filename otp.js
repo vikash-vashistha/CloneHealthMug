@@ -12,3 +12,7 @@ function signIn(event) {
   //   alert("❌❌OTP doesn't match❌❌");
   // }
 }
+
+document.querySelector("#return").addEventListener("click", function () {
+  window.location.href = "landing_page.html";
+});

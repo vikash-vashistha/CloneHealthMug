@@ -393,3 +393,7 @@ var productData = [
     //   console.log(searchitm);
       display(searchitm)
   }
+  
+  document.querySelector("#return").addEventListener("click", function () {
+    window.location.href = "landing_page.html";
+  });

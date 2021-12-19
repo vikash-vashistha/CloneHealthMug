@@ -692,17 +692,20 @@ img {
 }
 
 #nav-2 li {
-  margin-top: 5px;
+  margin-top: 0px;
   margin-left: 30px;
   color: white;
   float: left;
   padding: 0px;
+  padding-top: 5px;
   list-style: none;
   font-size: 13px;
 }
 
-li:hover {
+#nav-2 li:hover {
   cursor: pointer;
+  background-color: whitesmoke;
+  color: #505050;
 }
 
 input[type="text"] {

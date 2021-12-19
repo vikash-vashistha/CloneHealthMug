@@ -649,3 +649,7 @@ function searching(valu) {
 document.querySelector(".items").addEventListener("click", function () {
   window.location.href = "productPage.html";
 });
+
+document.querySelector("#return").addEventListener("click", function () {
+  window.location.href = "landing_page.html";
+});

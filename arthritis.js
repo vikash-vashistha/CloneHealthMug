@@ -672,3 +672,6 @@ var productData = [
   }
   
   
+  document.querySelector("#return").addEventListener("click", function () {
+    window.location.href = "landing_page.html";
+  });

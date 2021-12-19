@@ -668,3 +668,8 @@ var productData = [
         console.log(filtbyprice)
         display(filtbyprice)
   }
+
+  
+  document.querySelector("#return").addEventListener("click", function () {
+    window.location.href = "landing_page.html";
+  });

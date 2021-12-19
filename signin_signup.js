@@ -13,3 +13,7 @@ function signIn(event) {
   localStorage.setItem("dataBase", JSON.stringify(arr));
   window.location.href = "signUp.html";
 }
+
+document.querySelector("#return").addEventListener("click", function () {
+  window.location.href = "landing_page.html";
+});
