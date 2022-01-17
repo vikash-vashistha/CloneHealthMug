@@ -539,5 +539,5 @@ function filtby500() {
 }
 
 document.querySelector("#return").addEventListener("click", function () {
-  window.location.href = "landing_page.html";
+  window.location.href = "index.html";
 });
