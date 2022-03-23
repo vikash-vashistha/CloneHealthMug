@@ -21,8 +21,13 @@ A web application for all medical-related problems.
 
 ### Thanks 😊.
 
-![healthmug](/images/img.png)
-
+> ![healthmug clone](https://static.oxinis.com/healthmug/image/healthmug/healthmug-logo.png)
+![healthmug](/images/img1.png)
+![healthmug](/images/img2.png)
+![healthmug](/images/img3.png)
+![healthmug](/images/img4.png)
+![healthmug](/images/img5.png)
+![healthmug](/images/img6.png)
+![healthmug](/images/img7.png)
 ### Members
 > Vikash Vashistha, Sagar Kale, Ravi Prasad Keshri, Saniya Zehra, Shailendra Singh, Rahul Kumar
-> ![healthmug clone](https://static.oxinis.com/healthmug/image/healthmug/healthmug-logo.png)
